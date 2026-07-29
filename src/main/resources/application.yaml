@@ -1,5 +1,8 @@
 server:
   port: 8082
+  tomcat:
+    threads:
+      max: 50
 
 spring:
   application:
@@ -18,3 +21,12 @@ spring:
   flyway:
     enabled: true
     baseline-on-migrate: true
+
+  main:
+    lazy-initialization: true
+
+  jmx:
+    enabled: false
+
+jwt:
+  secret: ${JWT_ACCESS_SECRET:uPq3xK8mR5vY2wZ9aB4cD7eF1gH3iJ6kL0nO5pQ8rS2tU4vW6xY9zA1bC3dE7fG9}
