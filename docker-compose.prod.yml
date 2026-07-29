@@ -4,6 +4,9 @@ services:
     container_name: content-builder
     restart: unless-stopped
     ports: ["8082:8082"]
+    mem_limit: 150m
+    environment:
+      JAVA_TOOL_OPTIONS: "-Xms64m -Xmx192m -XX:+UseContainerSupport"
     networks: [dts-network]
 
 networks:
