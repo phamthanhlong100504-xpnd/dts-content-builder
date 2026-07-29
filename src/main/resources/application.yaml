@@ -1,3 +1,20 @@
+server:
+  port: 8082
+
 spring:
   application:
     name: content-builder
+  datasource:
+    url: jdbc:postgresql://103.75.182.249:5434/content-builder
+    username: postgres
+    password: K59Ptl*100504
+  jpa:
+    hibernate:
+      ddl-auto: update
+    properties:
+      hibernate:
+        dialect: org.hibernate.dialect.PostgreSQLDialect
+
+  flyway:
+    enabled: true
+    baseline-on-migrate: true

@@ -1,0 +1,10 @@
+services:
+  content-builder:
+    image: ghcr.io/phamthanhlong100504-xpnd/content-builder:latest
+    container_name: content-builder
+    restart: unless-stopped
+    ports: ["8082:8082"]
+    networks: [dts-network]
+
+networks:
+  dts-network: { external: true }
