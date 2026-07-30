@@ -1,8 +1,10 @@
 package com.dts.content_builder.api.controller;
 
 import com.dts.content_builder.api.form.CreateQuestionRequest;
+import com.dts.content_builder.api.response.PageResponse;
 import com.dts.content_builder.api.response.QuestionResponse;
 import com.dts.content_builder.application.enums.QuestionStatus;
+import com.dts.content_builder.application.enums.QuestionType;
 import com.dts.content_builder.application.service.QuestionService;
 import jakarta.validation.Valid;
 import lombok.RequiredArgsConstructor;
@@ -20,6 +22,9 @@ import org.springframework.web.bind.annotation.RequestParam;
 import org.springframework.web.bind.annotation.ResponseStatus;
 import org.springframework.web.bind.annotation.RestController;
 import com.dts.content_builder.api.form.UpdateQuestionRequest;
+import org.springframework.data.domain.Pageable;
+import org.springframework.data.domain.Sort;
+import org.springframework.data.web.PageableDefault;
 
 import java.util.UUID;
 
@@ -48,6 +53,17 @@ public class QuestionController {
             @AuthenticationPrincipal UUID userId) {
         
         return questionService.createQuestion(request, userId, QuestionStatus.PUBLISHED);
+    }
+
+    @GetMapping
+    @PreAuthorize("hasAuthority('PERM_questions:read')")
+    public PageResponse<QuestionResponse> listQuestions(
+            @RequestParam(required = false) String keyword,
+            @RequestParam(required = false) QuestionType type,
+            @RequestParam(required = false) QuestionStatus status,
+            @RequestParam(required = false) UUID createdBy,
+            @PageableDefault(sort = "createdAt", direction = Sort.Direction.DESC) Pageable pageable) {
+        return questionService.listQuestions(keyword, type, status, createdBy, pageable);
     }
 
     @GetMapping("/{id}")

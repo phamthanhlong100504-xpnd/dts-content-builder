@@ -3,6 +3,7 @@ package com.dts.content_builder.application.service;
 import com.dts.content_builder.api.form.CreateQuestionRequest;
 import com.dts.content_builder.api.form.QuestionOptionItemRequest;
 import com.dts.content_builder.api.form.UpdateQuestionRequest;
+import com.dts.content_builder.api.response.PageResponse;
 import com.dts.content_builder.api.response.QuestionResponse;
 import com.dts.content_builder.application.enums.QuestionStatus;
 import com.dts.content_builder.application.enums.QuestionType;
@@ -13,7 +14,10 @@ import com.dts.content_builder.domain.entity.QuestionEntity;
 import com.dts.content_builder.domain.entity.QuestionOptionEntity;
 import com.dts.content_builder.domain.repository.QuestionOptionRepository;
 import com.dts.content_builder.domain.repository.QuestionRepository;
+import com.dts.content_builder.domain.specification.QuestionSpecification;
 import lombok.RequiredArgsConstructor;
+import org.springframework.data.domain.Page;
+import org.springframework.data.domain.Pageable;
 import org.springframework.stereotype.Service;
 import org.springframework.transaction.annotation.Transactional;
 
@@ -51,6 +55,17 @@ public class QuestionService {
         }
 
         return questionMapper.toResponse(question, savedOptions);
+    }
+
+    @Transactional(readOnly = true)
+    public PageResponse<QuestionResponse> listQuestions(String keyword, QuestionType type, QuestionStatus status, UUID createdBy, Pageable pageable) {
+        Page<QuestionEntity> page = questionRepository.findAll(
+                QuestionSpecification.filterQuestions(keyword, type, status, createdBy),
+                pageable
+        );
+
+        Page<QuestionResponse> responsePage = page.map(question -> questionMapper.toResponse(question, null));
+        return PageResponse.of(responsePage);
     }
 
     @Transactional(readOnly = true)

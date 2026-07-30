@@ -2,6 +2,7 @@ package com.dts.content_builder.domain.repository;
 
 import com.dts.content_builder.domain.entity.QuestionEntity;
 import org.springframework.data.jpa.repository.JpaRepository;
+import org.springframework.data.jpa.repository.JpaSpecificationExecutor;
 import org.springframework.stereotype.Repository;
 
 import org.springframework.data.jpa.repository.Modifying;
@@ -12,7 +13,7 @@ import java.util.Optional;
 import java.util.UUID;
 
 @Repository
-public interface QuestionRepository extends JpaRepository<QuestionEntity, UUID> {
+public interface QuestionRepository extends JpaRepository<QuestionEntity, UUID>, JpaSpecificationExecutor<QuestionEntity> {
     Optional<QuestionEntity> findByIdAndDeletedAtIsNull(UUID id);
 
     @Modifying

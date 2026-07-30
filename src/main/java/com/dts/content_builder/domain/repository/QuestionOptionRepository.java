@@ -9,11 +9,19 @@ import org.springframework.data.jpa.repository.Query;
 import org.springframework.data.repository.query.Param;
 
 import java.util.List;
+import java.util.Optional;
 import java.util.UUID;
 
 @Repository
 public interface QuestionOptionRepository extends JpaRepository<QuestionOptionEntity, UUID> {
     List<QuestionOptionEntity> findByQuestionId(UUID questionId);
+
+    Optional<QuestionOptionEntity> findByIdAndQuestionIdAndDeletedAtIsNull(UUID id, UUID questionId);
+
+    List<QuestionOptionEntity> findByIdInAndQuestionIdAndDeletedAtIsNull(List<UUID> ids, UUID questionId);
+
+    @Query("SELECT COALESCE(MAX(o.sortOrder), -1) FROM QuestionOptionEntity o WHERE o.questionId = :questionId AND o.deletedAt IS NULL")
+    Integer findMaxSortOrderByQuestionId(@Param("questionId") UUID questionId);
 
     List<QuestionOptionEntity> findByQuestionIdAndDeletedAtIsNullOrderBySortOrderAscCreatedAtAsc(UUID questionId);
 
