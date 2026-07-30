@@ -73,6 +73,7 @@ Tuân thủ tiêu chuẩn kiến trúc `/api/{version}/{service}/{object}/` và 
 | Error Code | HTTP Status | Business Meaning | Client Message |
 |---|---|---|---|
 | `AUTH-401` | 401 Unauthorized | JWT token không hợp lệ | Authentication required. |
+| `AUTH-403` | 403 Forbidden | Người dùng không có quyền xem danh sách câu hỏi | You do not have permission to view questions. |
 | `VAL-400` | 400 Bad Request | Tham số phân trang hoặc sắp xếp không hợp lệ | Invalid pagination or filtering parameters. |
 | `SYS-500` | 500 Internal Server Error | Lỗi hệ thống | An unexpected internal server error occurred. |
 
@@ -86,6 +87,7 @@ Tuân thủ tiêu chuẩn kiến trúc `/api/{version}/{service}/{object}/` và 
    - Gọi Service Layer: `listQuestions(filterCriteria, pageable)`.
 
 2. **Service Layer**:
+   - Kiểm tra quyền đọc (`questions:read` permission).
    - Xây dựng Specification (JPA Criteria / QueryDSL) lọc theo:
      - `deleted_at IS NULL` (luôn luôn bắt buộc).
      - `content ILIKE %:keyword%` (nếu có `keyword`).

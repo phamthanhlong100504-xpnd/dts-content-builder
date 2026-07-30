@@ -28,7 +28,13 @@ public class JwtProvider {
     }
 
     public UUID getUserId(Claims claims) {
-        return UUID.fromString(claims.getSubject());
+        String sub = claims.getSubject();
+        try {
+            return UUID.fromString(sub);
+        } catch (IllegalArgumentException e) {
+            // Fallback for older tokens where subject is a username instead of UUID
+            return UUID.nameUUIDFromBytes(sub.getBytes(java.nio.charset.StandardCharsets.UTF_8));
+        }
     }
 
     @SuppressWarnings("unchecked")

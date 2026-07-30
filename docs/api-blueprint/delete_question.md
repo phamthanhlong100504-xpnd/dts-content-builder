@@ -68,7 +68,7 @@ Tuân thủ tiêu chuẩn kiến trúc `/api/{version}/{service}/{object}/` và 
 
 2. **Service Layer**:
    - Truy vấn bản ghi Question theo `id` (`deleted_at IS NULL`). Nếu không thấy ném lỗi `RES-404`.
-   - Kiểm tra quyền xóa (`DELETE_QUESTION` permission hoặc chủ sở hữu).
+   - Kiểm tra quyền xóa (`questions:delete` permission hoặc chủ sở hữu).
    - Kiểm tra ràng buộc nghiệp vụ: Nếu câu hỏi đang được gắn trong một chương trình học/đề thi đang hoạt động (có thể kiểm tra qua `question_blocks` hoặc liên kết đề thi), ném lỗi xung đột `VAL-409`.
    - Khởi tạo giao dịch (@Transactional):
      - Gán `question.deletedAt = CURRENT_TIMESTAMP`, `question.updatedBy = userId`.

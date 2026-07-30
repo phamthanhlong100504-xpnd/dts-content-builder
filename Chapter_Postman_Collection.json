@@ -1,0 +1,220 @@
+{
+	"info": {
+		"_postman_id": "c1f72a91-48d6-44b2-a6f0-10db9fbc5e59",
+		"name": "Content Builder - Chapter APIs",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "1. Create Draft Chapter",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Authorization",
+						"value": "Bearer {{jwt_token}}"
+					},
+					{
+						"key": "Content-Type",
+						"value": "application/json"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"title\": \"Chapter 1: Introduction\",\n    \"metadata\": {\n        \"duration_minutes\": 45\n    }\n}"
+				},
+				"url": {
+					"raw": "{{base_url}}/api/v1/content-builder/chapters/draft",
+					"host": [
+						"{{base_url}}"
+					],
+					"path": [
+						"api",
+						"v1",
+						"content-builder",
+						"chapters",
+						"draft"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "2. Create Published Chapter",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Authorization",
+						"value": "Bearer {{jwt_token}}"
+					},
+					{
+						"key": "Content-Type",
+						"value": "application/json"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"title\": \"Chapter 2: Advanced Topics\",\n    \"metadata\": {},\n    \"questionBlocks\": [\n        {\n            \"questionId\": \"123e4567-e89b-12d3-a456-426614174000\",\n            \"title\": \"Section 1 Quiz\",\n            \"sortOrder\": 0\n        }\n    ]\n}"
+				},
+				"url": {
+					"raw": "{{base_url}}/api/v1/content-builder/chapters/published",
+					"host": [
+						"{{base_url}}"
+					],
+					"path": [
+						"api",
+						"v1",
+						"content-builder",
+						"chapters",
+						"published"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "3. List Chapters",
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "Authorization",
+						"value": "Bearer {{jwt_token}}"
+					}
+				],
+				"url": {
+					"raw": "{{base_url}}/api/v1/content-builder/chapters?keyword=Chapter&status=DRAFT&page=0&size=20",
+					"host": [
+						"{{base_url}}"
+					],
+					"path": [
+						"api",
+						"v1",
+						"content-builder",
+						"chapters"
+					],
+					"query": [
+						{
+							"key": "keyword",
+							"value": "Chapter"
+						},
+						{
+							"key": "status",
+							"value": "DRAFT"
+						},
+						{
+							"key": "page",
+							"value": "0"
+						},
+						{
+							"key": "size",
+							"value": "20"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "4. Get Chapter Detail",
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "Authorization",
+						"value": "Bearer {{jwt_token}}"
+					}
+				],
+				"url": {
+					"raw": "{{base_url}}/api/v1/content-builder/chapters/{{chapter_id}}",
+					"host": [
+						"{{base_url}}"
+					],
+					"path": [
+						"api",
+						"v1",
+						"content-builder",
+						"chapters",
+						"{{chapter_id}}"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "5. Update Chapter",
+			"request": {
+				"method": "PUT",
+				"header": [
+					{
+						"key": "Authorization",
+						"value": "Bearer {{jwt_token}}"
+					},
+					{
+						"key": "Content-Type",
+						"value": "application/json"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"title\": \"Chapter 1: Updated Introduction\",\n    \"status\": \"PUBLISHED\",\n    \"metadata\": {}\n}"
+				},
+				"url": {
+					"raw": "{{base_url}}/api/v1/content-builder/chapters/{{chapter_id}}",
+					"host": [
+						"{{base_url}}"
+					],
+					"path": [
+						"api",
+						"v1",
+						"content-builder",
+						"chapters",
+						"{{chapter_id}}"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "6. Delete Chapter",
+			"request": {
+				"method": "DELETE",
+				"header": [
+					{
+						"key": "Authorization",
+						"value": "Bearer {{jwt_token}}"
+					}
+				],
+				"url": {
+					"raw": "{{base_url}}/api/v1/content-builder/chapters/{{chapter_id}}",
+					"host": [
+						"{{base_url}}"
+					],
+					"path": [
+						"api",
+						"v1",
+						"content-builder",
+						"chapters",
+						"{{chapter_id}}"
+					]
+				}
+			},
+			"response": []
+		}
+	],
+	"variable": [
+		{
+			"key": "base_url",
+			"value": "http://localhost:8082"
+		},
+		{
+			"key": "jwt_token",
+			"value": "YOUR_ACCESS_TOKEN_HERE"
+		},
+		{
+			"key": "chapter_id",
+			"value": "REPLACE_WITH_UUID"
+		}
+	]
+}

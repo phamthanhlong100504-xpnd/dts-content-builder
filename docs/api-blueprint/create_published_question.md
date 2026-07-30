@@ -103,7 +103,7 @@ Tuân thủ tiêu chuẩn kiến trúc `/api/{version}/{service}/{object}/` và 
    - Trích xuất `userId` và gọi Service Layer phương thức `createQuestion(request, userId, "PUBLISHED")`.
 
 2. **Service Layer**:
-   - Kiểm tra quyền hạn xuất bản nội dung (`PUBLISH_QUESTION` permission).
+   - Kiểm tra quyền hạn xuất bản nội dung (`questions:update` permission).
    - **Strict Business Validation cho trạng thái PUBLISHED**:
      - Đối với `SINGLE_CHOICE`, `MULTIPLE_CHOICE`: Mảng `options` phải có tối thiểu 2 phần tử. Phải có ít nhất 1 đáp án đúng (`isCorrect = true`). Riêng `SINGLE_CHOICE` chỉ được chính xác 1 đáp án đúng.
      - Đối với `TRUE_FALSE`: Phải có chính xác 2 đáp án (Đúng và Sai), trong đó có 1 đáp án đúng.

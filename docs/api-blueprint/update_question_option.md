@@ -91,7 +91,7 @@ Tuân thủ tiêu chuẩn kiến trúc `/api/{version}/{service}/{object}/` và 
 
 2. **Service Layer**:
    - Truy vấn bản ghi QuestionOption theo `id = optionId` và `question_id = questionId` (`deleted_at IS NULL`). Nếu không thấy ném lỗi `RES-404`.
-   - Kiểm tra quyền hạn của người dùng.
+   - Kiểm tra quyền cập nhật câu hỏi (`questions:update` permission).
    - Kiểm tra nghiệp vụ: Nếu thay đổi `isCorrect` từ `false` sang `true` trên câu hỏi `SINGLE_CHOICE`, cần xác minh không có đáp án nào khác đang là `true`.
    - Cập nhật thông tin vào thực thể QuestionOption, gán `updatedBy = userId`.
    - Lưu xuống DB qua Repository Layer.

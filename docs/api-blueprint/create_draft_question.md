@@ -104,7 +104,7 @@ Tuân thủ tiêu chuẩn kiến trúc `/api/{version}/{service}/{object}/` và 
    - Gọi xuống Service Layer phương thức `createQuestion(request, userId, "DRAFT")`.
 
 2. **Service Layer**:
-   - Kiểm tra quyền hạn (Permission Validation): Xác minh `userId` có quyền tạo nội dung tài liệu.
+   - Kiểm tra quyền hạn (Permission Validation): Xác minh `userId` có quyền tạo nội dung tài liệu (`questions:create` permission).
    - Kiểm tra quy tắc nghiệp vụ (Business Validation):
      - Nếu loại câu hỏi là `SINGLE_CHOICE` và mảng `options` được cung cấp, kiểm tra số lượng đáp án có `isCorrect = true` không được vượt quá 1.
      - Nếu loại câu hỏi là `TRUE_FALSE` và có mảng `options`, số lượng phần tử tối đa là 2.

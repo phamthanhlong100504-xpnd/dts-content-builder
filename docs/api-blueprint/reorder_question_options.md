@@ -87,7 +87,7 @@ Tuân thủ tiêu chuẩn kiến trúc `/api/{version}/{service}/{object}/` và 
    - Trích xuất `userId`, gọi Service Layer: `reorderOptions(questionId, requestList, userId)`.
 
 2. **Service Layer**:
-   - Kiểm tra quyền chỉnh sửa câu hỏi của người dùng.
+   - Kiểm tra quyền cập nhật câu hỏi (`questions:update` permission).
    - Kiểm tra validation trong bộ nhớ:
      - Tập hợp danh sách các `id` trong payload không được có phần tử trùng lặp.
      - Tập hợp các `sortOrder` không được trùng lặp.

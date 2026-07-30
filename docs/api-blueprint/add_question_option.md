@@ -93,7 +93,7 @@ Tuân thủ tiêu chuẩn kiến trúc `/api/{version}/{service}/{object}/` và 
 
 2. **Service Layer**:
    - Truy vấn kiểm tra sự tồn tại của Question theo `questionId` (`deleted_at IS NULL`). Nếu không thấy ném lỗi `RES-404`.
-   - Kiểm tra quyền chỉnh sửa câu hỏi này.
+   - Kiểm tra quyền cập nhật câu hỏi (`questions:update` permission).
    - Kiểm tra quy tắc nghiệp vụ:
      - Nếu `isCorrect == true` và `question.type == "SINGLE_CHOICE"`: Đếm số đáp án đúng hiện có trong DB của câu hỏi này (`is_correct = true AND deleted_at IS NULL`). Nếu `count >= 1`, ném lỗi vi phạm nghiệp vụ (`VAL-422`) hoặc yêu cầu client sửa đáp án cũ trước.
    - Nếu `sortOrder` là null: Thực hiện câu lệnh SELECT MAX(sort_order) từ `question_options` theo `question_id`, gán `sortOrder = max + 1` (mặc định 0 nếu chưa có đáp án nào).

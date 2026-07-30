@@ -77,6 +77,7 @@ Tuân thủ tiêu chuẩn kiến trúc `/api/{version}/{service}/{object}/` và 
 | Error Code | HTTP Status | Business Meaning | Client Message |
 |---|---|---|---|
 | `AUTH-401` | 401 Unauthorized | Thiếu hoặc JWT token không hợp lệ | Authentication required. |
+| `AUTH-403` | 403 Forbidden | Người dùng không có quyền xem câu hỏi này | You do not have permission to view this question. |
 | `RES-404` | 404 Not Found | Câu hỏi không tồn tại hoặc đã bị xóa mềm (`deleted_at IS NOT NULL`) | Question not found with the specified ID. |
 | `SYS-500` | 500 Internal Server Error | Lỗi hệ thống | An unexpected internal server error occurred. |
 
@@ -90,6 +91,7 @@ Tuân thủ tiêu chuẩn kiến trúc `/api/{version}/{service}/{object}/` và 
    - Gọi Service Layer: `getQuestionById(id, includeOptions)`.
 
 2. **Service Layer**:
+   - Kiểm tra quyền đọc (`questions:read` permission).
    - Gọi Repository truy vấn bản ghi Question theo `id` với điều kiện `deleted_at IS NULL`.
    - Nếu không tìm thấy, ném ngoại lệ `ResourceNotFoundException` (trả lỗi `RES-404`).
    - Nếu `includeOptions == true`:

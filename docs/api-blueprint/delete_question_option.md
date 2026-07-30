@@ -68,7 +68,7 @@ Tuân thủ tiêu chuẩn kiến trúc `/api/{version}/{service}/{object}/` và 
 
 2. **Service Layer**:
    - Truy vấn bản ghi QuestionOption theo `id` và `question_id` (`deleted_at IS NULL`). Nếu không thấy ném `RES-404`.
-   - Kiểm tra quyền xóa của người dùng.
+   - Kiểm tra quyền xóa của người dùng (`questions:delete` permission).
    - Kiểm tra câu hỏi cha: Nếu câu hỏi đang có `status == "PUBLISHED"`:
      - Kiểm tra nếu đáp án bị xóa là đáp án đúng duy nhất, hoặc làm cho số lượng đáp án còn lại < 2: Ném lỗi `VAL-422` yêu cầu chuyển câu hỏi về DRAFT trước khi xóa, hoặc tự động cảnh báo.
    - Khởi tạo giao dịch (@Transactional): Gán `option.deletedAt = CURRENT_TIMESTAMP`, `option.updatedBy = userId`.

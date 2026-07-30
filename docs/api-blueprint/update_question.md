@@ -83,7 +83,7 @@ Tuân thủ tiêu chuẩn kiến trúc `/api/{version}/{service}/{object}/` và 
 
 2. **Service Layer**:
    - Truy vấn bản ghi Question từ DB theo `id` (`deleted_at IS NULL`). Nếu không thấy ném lỗi `RES-404`.
-   - Kiểm tra quyền: Người dùng phải là người tạo (`createdBy == userId`) hoặc có role Admin/Editor (`EDIT_ANY_QUESTION` permission).
+   - Kiểm tra quyền: Người dùng phải là người tạo (`createdBy == userId`) hoặc có role Admin/Editor (`questions:update` permission).
    - Nếu `request.status == "PUBLISHED"` và trạng thái hiện tại là `DRAFT`:
      - Kiểm tra trong bảng `question_options` xem câu hỏi này đã có đủ số lượng đáp án tối thiểu và có đáp án đúng (`isCorrect = true`) hay chưa. Nếu chưa đủ, ném ngoại lệ vi phạm nghiệp vụ (`VAL-422`).
    - Cập nhật các trường thông tin từ request vào thực thể Question.
