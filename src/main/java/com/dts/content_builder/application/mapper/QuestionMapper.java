@@ -2,6 +2,7 @@ package com.dts.content_builder.application.mapper;
 
 import com.dts.content_builder.api.form.CreateQuestionRequest;
 import com.dts.content_builder.api.form.QuestionOptionItemRequest;
+import com.dts.content_builder.api.form.UpdateQuestionRequest;
 import com.dts.content_builder.api.response.QuestionOptionResponse;
 import com.dts.content_builder.api.response.QuestionResponse;
 import com.dts.content_builder.application.enums.QuestionStatus;
@@ -31,6 +32,19 @@ public class QuestionMapper {
                 .createdBy(userId)
                 .createdAt(LocalDateTime.now())
                 .build();
+    }
+
+    public void updateEntity(QuestionEntity entity, UpdateQuestionRequest request, UUID userId) {
+        entity.setType(request.getType());
+        entity.setContent(request.getContent());
+        entity.setExplanations(request.getExplanations());
+        entity.setMediaFileIds(request.getMediaFileIds());
+        entity.setAttachments(request.getAttachments());
+        entity.setReferences(request.getReferences());
+        entity.setStatus(request.getStatus());
+        entity.setMetadata(request.getMetadata());
+        entity.setUpdatedBy(userId);
+        entity.setUpdatedAt(LocalDateTime.now());
     }
 
     public QuestionOptionEntity toOptionEntity(QuestionOptionItemRequest request, UUID questionId, UUID userId, QuestionStatus status) {
@@ -64,6 +78,8 @@ public class QuestionMapper {
                 .metadata(entity.getMetadata())
                 .createdBy(entity.getCreatedBy())
                 .createdAt(entity.getCreatedAt())
+                .updatedBy(entity.getUpdatedBy())
+                .updatedAt(entity.getUpdatedAt())
                 .options(optionResponses)
                 .build();
     }

@@ -30,3 +30,8 @@ spring:
 
 jwt:
   secret: ${JWT_ACCESS_SECRET:uPq3xK8mR5vY2wZ9aB4cD7eF1gH3iJ6kL0nO5pQ8rS2tU4vW6xY9zA1bC3dE7fG9}
+
+logging:
+  pattern:
+    console: "%d{yyyy-MM-dd HH:mm:ss.SSS} %5p [%X{traceId}] --- [%15.15t] %-40.40logger{39} : %m%n"
+    file: "%d{yyyy-MM-dd HH:mm:ss.SSS} %5p [%X{traceId}] --- [%15.15t] %-40.40logger{39} : %m%n"
