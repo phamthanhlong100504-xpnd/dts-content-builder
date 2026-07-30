@@ -18,4 +18,6 @@ public class LearningProgramResponse {
     private UUID createdBy;
     private LocalDateTime createdAt;
     private LocalDateTime updatedAt;
+
+    private java.util.List<ChapterBlockTreeResponse> chapterBlocks;
 }

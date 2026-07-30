@@ -11,4 +11,8 @@ import java.util.UUID;
 public interface LearningProgramRepository extends JpaRepository<LearningProgramEntity, UUID>, JpaSpecificationExecutor<LearningProgramEntity> {
     
     java.util.Optional<LearningProgramEntity> findByIdAndDeletedAtIsNull(UUID id);
+
+    boolean existsByCodeAndDeletedAtIsNull(String code);
+
+    boolean existsByCodeAndIdNotAndDeletedAtIsNull(String code, UUID id);
 }

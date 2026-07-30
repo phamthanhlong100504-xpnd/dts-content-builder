@@ -26,4 +26,13 @@ public interface ChapterBlockRepository extends JpaRepository<ChapterBlockEntity
     long countByParentIdAndDeletedAtIsNull(UUID parentId);
     
     Optional<ChapterBlockEntity> findByIdAndLearningProgramIdAndDeletedAtIsNull(UUID id, UUID learningProgramId);
+
+    @org.springframework.data.jpa.repository.Modifying
+    @Query("UPDATE ChapterBlockEntity cb SET cb.deletedAt = :deletedAt, cb.updatedBy = :updatedBy, cb.updatedAt = :updatedAt WHERE cb.learningProgramId = :learningProgramId AND cb.deletedAt IS NULL")
+    int deleteByLearningProgramId(
+            @Param("learningProgramId") UUID learningProgramId,
+            @Param("deletedAt") java.time.LocalDateTime deletedAt,
+            @Param("updatedBy") UUID updatedBy,
+            @Param("updatedAt") java.time.LocalDateTime updatedAt
+    );
 }
