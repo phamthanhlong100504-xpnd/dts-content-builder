@@ -1,5 +1,5 @@
 -- V1__init_question_schema.sql
-CREATE TABLE questions (
+CREATE TABLE IF NOT EXISTS questions (
     id UUID PRIMARY KEY,
     type VARCHAR(50) NOT NULL,
     content TEXT NOT NULL,
@@ -16,7 +16,7 @@ CREATE TABLE questions (
     deleted_at TIMESTAMP
 );
 
-CREATE TABLE question_options (
+CREATE TABLE IF NOT EXISTS question_options (
     id UUID PRIMARY KEY,
     question_id UUID NOT NULL,
     content TEXT NOT NULL,
