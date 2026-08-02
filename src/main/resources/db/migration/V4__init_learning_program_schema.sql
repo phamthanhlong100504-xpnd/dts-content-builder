@@ -8,7 +8,7 @@
 -- Hỗ trợ cơ chế Soft Delete thông qua deleted_at.
 
 -- Section 1 — CREATE TABLE
-CREATE TABLE learning_programs (
+CREATE TABLE IF NOT EXISTS learning_programs (
     id             UUID            NOT NULL DEFAULT gen_random_uuid(), -- Định danh duy nhất của chương trình học
     title          VARCHAR(255)    NOT NULL,                           -- Tên chương trình học
     code           VARCHAR(100)    NULL,                               -- Mã chương trình dùng để import/export hoặc tích hợp
@@ -74,7 +74,7 @@ CREATE TRIGGER trg_learning_programs_updated_at
 -- Lưu ý: Không sử dụng ràng buộc khóa ngoại mức DB đối với tham chiếu cross-service hoặc tự tham chiếu nhằm tối ưu hiệu năng và tính linh hoạt.
 
 -- Section 1 — CREATE TABLE
-CREATE TABLE chapter_blocks (
+CREATE TABLE IF NOT EXISTS chapter_blocks (
     id                     UUID            NOT NULL DEFAULT gen_random_uuid(), -- Định danh nhóm chủ đề / node cây
     learning_program_id    UUID            NOT NULL,                           -- ID chương trình học sở hữu node này
     parent_id              UUID            NULL,                               -- ID node cha trong cây phân cấp (NULL nếu là node gốc)

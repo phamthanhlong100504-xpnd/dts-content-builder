@@ -7,7 +7,7 @@
 -- Hỗ trợ cơ chế Soft Delete (deleted_at).
 
 -- Section 1 — CREATE TABLE
-CREATE TABLE chapters (
+CREATE TABLE IF NOT EXISTS chapters (
     id            UUID            NOT NULL DEFAULT gen_random_uuid(), -- Định danh duy nhất của chủ đề
     title         VARCHAR(255)    NOT NULL,                           -- Tên chủ đề
     status        VARCHAR(30)     NOT NULL DEFAULT 'DRAFT',           -- Trạng thái chủ đề (DRAFT, PUBLISHED, ARCHIVED, HIDDEN)
@@ -56,7 +56,7 @@ CREATE TRIGGER trg_chapters_updated_at
 -- Mỗi question_block có thể chứa các khối con (parent_id) hoặc gắn trực tiếp với câu hỏi cụ thể (question_id).
 
 -- Section 1 — CREATE TABLE
-CREATE TABLE question_blocks (
+CREATE TABLE IF NOT EXISTS question_blocks (
     id            UUID            NOT NULL DEFAULT gen_random_uuid(), -- Định danh duy nhất nhóm câu hỏi
     chapter_id    UUID            NOT NULL,                           -- ID chapter sở hữu khối câu hỏi này
     parent_id     UUID            NULL,                               -- ID khối câu hỏi cha (NULL nếu là node gốc)
