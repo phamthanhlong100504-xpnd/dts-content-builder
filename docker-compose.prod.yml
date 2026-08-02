@@ -7,6 +7,7 @@ services:
     mem_limit: 224m
     environment:
       JAVA_TOOL_OPTIONS: "-Xms64m -Xmx128m -XX:+UseSerialGC -XX:MaxMetaspaceSize=128m -Xss512k"
+      EUREKA_URI: "http://eureka-server:8761/eureka/"
     networks: [dts-network]
 
 networks:
