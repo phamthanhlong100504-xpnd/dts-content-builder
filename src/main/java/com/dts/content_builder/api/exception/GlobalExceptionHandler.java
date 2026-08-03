@@ -60,7 +60,8 @@ public class GlobalExceptionHandler {
     @ResponseStatus(HttpStatus.INTERNAL_SERVER_ERROR)
     public ErrorResponse handleGenericException(Exception ex) {
         log.error("Unexpected server error occurred", ex);
-        return buildErrorResponse(HttpStatus.INTERNAL_SERVER_ERROR, "Internal Server Error", "An unexpected error occurred. Please contact support.");
+        String detailedMessage = "An unexpected error occurred. Type: " + ex.getClass().getName() + ", Message: " + ex.getMessage();
+        return buildErrorResponse(HttpStatus.INTERNAL_SERVER_ERROR, "Internal Server Error", detailedMessage);
     }
 
     private ErrorResponse buildErrorResponse(HttpStatus status, String error, String message) {
