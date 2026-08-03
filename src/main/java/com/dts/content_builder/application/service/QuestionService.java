@@ -10,8 +10,15 @@ import com.dts.content_builder.application.enums.QuestionType;
 import com.dts.content_builder.application.exception.BusinessValidationException;
 import com.dts.content_builder.application.exception.ResourceNotFoundException;
 import com.dts.content_builder.application.mapper.QuestionMapper;
+import com.dts.content_builder.api.response.InternalQuestionMetadataResponse;
+import com.dts.content_builder.domain.entity.ChapterBlockEntity;
+import com.dts.content_builder.domain.entity.QuestionBlockEntity;
 import com.dts.content_builder.domain.entity.QuestionEntity;
 import com.dts.content_builder.domain.entity.QuestionOptionEntity;
+import com.dts.content_builder.domain.repository.ChapterBlockRepository;
+import com.dts.content_builder.domain.repository.QuestionBlockRepository;
+import com.dts.content_builder.domain.repository.QuestionOptionRepository;
+import com.dts.content_builder.domain.repository.QuestionBlockRepository;
 import com.dts.content_builder.domain.repository.QuestionOptionRepository;
 import com.dts.content_builder.domain.repository.QuestionRepository;
 import com.dts.content_builder.domain.specification.QuestionSpecification;
@@ -22,7 +29,9 @@ import org.springframework.stereotype.Service;
 import org.springframework.transaction.annotation.Transactional;
 
 import java.util.ArrayList;
+import java.util.Collections;
 import java.util.List;
+import java.util.Map;
 import java.util.UUID;
 import java.util.stream.Collectors;
 
@@ -33,6 +42,8 @@ public class QuestionService {
 
     private final QuestionRepository questionRepository;
     private final QuestionOptionRepository questionOptionRepository;
+    private final QuestionBlockRepository questionBlockRepository;
+    private final ChapterBlockRepository chapterBlockRepository;
     private final QuestionMapper questionMapper;
 
     public QuestionResponse createQuestion(CreateQuestionRequest request, UUID userId, QuestionStatus status) {
@@ -165,5 +176,75 @@ public class QuestionService {
                 }
             }
         }
+    }
+
+    @Transactional(readOnly = true)
+    public List<InternalQuestionMetadataResponse> getQuestionsMetadataForExam(UUID contentId, String contentType) {
+        List<UUID> questionIds = new ArrayList<>();
+
+        if ("CHAPTER".equals(contentType)) {
+            List<QuestionBlockEntity> qbList = questionBlockRepository.findByChapterIdAndDeletedAtIsNullOrderBySortOrderAscCreatedAtAsc(contentId);
+            questionIds = qbList.stream().map(QuestionBlockEntity::getQuestionId).filter(java.util.Objects::nonNull).collect(Collectors.toList());
+        } else if ("LEARNING_PROGRAM".equals(contentType)) {
+            List<ChapterBlockEntity> cbList = chapterBlockRepository.findByLearningProgramIdAndDeletedAtIsNull(contentId);
+            List<UUID> chapterIds = cbList.stream().map(ChapterBlockEntity::getChapterId).filter(java.util.Objects::nonNull).collect(Collectors.toList());
+            if (!chapterIds.isEmpty()) {
+                List<QuestionBlockEntity> qbList = questionBlockRepository.findByChapterIdInAndDeletedAtIsNull(chapterIds);
+                questionIds = qbList.stream().map(QuestionBlockEntity::getQuestionId).filter(java.util.Objects::nonNull).collect(Collectors.toList());
+            }
+        } else {
+            throw new BusinessValidationException("Invalid contentType. Must be CHAPTER or LEARNING_PROGRAM");
+        }
+
+        if (questionIds.isEmpty()) {
+            return Collections.emptyList();
+        }
+
+        List<QuestionOptionEntity> allOptions = questionOptionRepository.findByQuestionIdInAndDeletedAtIsNull(questionIds);
+        Map<UUID, List<UUID>> optionsMap = allOptions.stream()
+                .collect(Collectors.groupingBy(
+                        QuestionOptionEntity::getQuestionId,
+                        Collectors.mapping(QuestionOptionEntity::getId, Collectors.toList())
+                ));
+
+        return questionIds.stream()
+                .map(qId -> InternalQuestionMetadataResponse.builder()
+                        .id(qId)
+                        .optionIds(optionsMap.getOrDefault(qId, Collections.emptyList()))
+                        .build())
+                .collect(Collectors.toList());
+    }
+
+    @Transactional(readOnly = true)
+    public List<com.dts.content_builder.api.response.InternalQuestionDetailResponse> getQuestionsBatch(List<UUID> questionIds) {
+        if (questionIds == null || questionIds.isEmpty()) {
+            return Collections.emptyList();
+        }
+
+        List<QuestionEntity> questions = questionRepository.findByIdInAndDeletedAtIsNull(questionIds);
+        List<QuestionOptionEntity> allOptions = questionOptionRepository.findByQuestionIdInAndDeletedAtIsNull(questionIds);
+        
+        Map<UUID, List<com.dts.content_builder.api.response.InternalQuestionOptionResponse>> optionsMap = allOptions.stream()
+                .collect(Collectors.groupingBy(
+                        QuestionOptionEntity::getQuestionId,
+                        Collectors.mapping(
+                                opt -> com.dts.content_builder.api.response.InternalQuestionOptionResponse.builder()
+                                        .id(opt.getId())
+                                        .content(opt.getContent())
+                                        .sortOrder(opt.getSortOrder())
+                                        .isCorrect(opt.getIsCorrect())
+                                        .build(),
+                                Collectors.toList()
+                        )
+                ));
+
+        return questions.stream()
+                .map(q -> com.dts.content_builder.api.response.InternalQuestionDetailResponse.builder()
+                        .id(q.getId())
+                        .content(q.getContent())
+                        .type(q.getType().name())
+                        .options(optionsMap.getOrDefault(q.getId(), Collections.emptyList()))
+                        .build())
+                .collect(Collectors.toList());
     }
 }

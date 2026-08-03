@@ -14,6 +14,8 @@ import java.util.UUID;
 @Repository
 public interface QuestionBlockRepository extends JpaRepository<QuestionBlockEntity, UUID> {
     List<QuestionBlockEntity> findByChapterIdAndDeletedAtIsNullOrderBySortOrderAscCreatedAtAsc(UUID chapterId);
+    
+    List<QuestionBlockEntity> findByChapterIdInAndDeletedAtIsNull(List<UUID> chapterIds);
 
     Optional<QuestionBlockEntity> findByIdAndChapterIdAndDeletedAtIsNull(UUID id, UUID chapterId);
 

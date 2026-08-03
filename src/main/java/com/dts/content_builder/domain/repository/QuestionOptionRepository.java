@@ -20,6 +20,8 @@ public interface QuestionOptionRepository extends JpaRepository<QuestionOptionEn
 
     List<QuestionOptionEntity> findByIdInAndQuestionIdAndDeletedAtIsNull(List<UUID> ids, UUID questionId);
 
+    List<QuestionOptionEntity> findByQuestionIdInAndDeletedAtIsNull(List<UUID> questionIds);
+
     @Query("SELECT COALESCE(MAX(o.sortOrder), -1) FROM QuestionOptionEntity o WHERE o.questionId = :questionId AND o.deletedAt IS NULL")
     Integer findMaxSortOrderByQuestionId(@Param("questionId") UUID questionId);
 
