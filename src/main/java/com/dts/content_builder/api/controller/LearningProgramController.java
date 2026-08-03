@@ -46,19 +46,16 @@ public class LearningProgramController {
     @PreAuthorize("hasAuthority('PERM_learning-programs:create')")
     public LearningProgramResponse createPublishedLearningProgram(
             @jakarta.validation.Valid @org.springframework.web.bind.annotation.RequestBody com.dts.content_builder.api.form.CreatePublishedLearningProgramRequest request,
-            @org.springframework.security.core.annotation.AuthenticationPrincipal UUID userId,
-            com.dts.content_builder.domain.repository.ChapterBlockRepository chapterBlockRepository,
-            com.dts.content_builder.domain.repository.ChapterRepository chapterRepository) {
-        return learningProgramService.createPublished(request, userId, chapterBlockRepository, chapterRepository);
+            @org.springframework.security.core.annotation.AuthenticationPrincipal UUID userId) {
+        return learningProgramService.createPublished(request, userId);
     }
 
     @GetMapping("/{id}")
     @PreAuthorize("hasAuthority('PERM_learning-programs:read')")
     public LearningProgramResponse getLearningProgramDetail(
             @org.springframework.web.bind.annotation.PathVariable UUID id,
-            @RequestParam(defaultValue = "false") boolean includeChapterBlocks,
-            com.dts.content_builder.application.service.ChapterBlockService chapterBlockService) {
-        return learningProgramService.getDetail(id, includeChapterBlocks, chapterBlockService);
+            @RequestParam(defaultValue = "false") boolean includeChapterBlocks) {
+        return learningProgramService.getDetail(id, includeChapterBlocks);
     }
 
     @org.springframework.web.bind.annotation.PutMapping("/{id}")
@@ -66,9 +63,8 @@ public class LearningProgramController {
     public LearningProgramResponse updateLearningProgram(
             @org.springframework.web.bind.annotation.PathVariable UUID id,
             @jakarta.validation.Valid @org.springframework.web.bind.annotation.RequestBody com.dts.content_builder.api.form.UpdateLearningProgramRequest request,
-            @org.springframework.security.core.annotation.AuthenticationPrincipal UUID userId,
-            com.dts.content_builder.domain.repository.ChapterBlockRepository chapterBlockRepository) {
-        return learningProgramService.update(id, request, userId, chapterBlockRepository);
+            @org.springframework.security.core.annotation.AuthenticationPrincipal UUID userId) {
+        return learningProgramService.update(id, request, userId);
     }
 
     @org.springframework.web.bind.annotation.DeleteMapping("/{id}")
@@ -76,8 +72,7 @@ public class LearningProgramController {
     @PreAuthorize("hasAuthority('PERM_learning-programs:delete')")
     public void deleteLearningProgram(
             @org.springframework.web.bind.annotation.PathVariable UUID id,
-            @org.springframework.security.core.annotation.AuthenticationPrincipal UUID userId,
-            com.dts.content_builder.domain.repository.ChapterBlockRepository chapterBlockRepository) {
-        learningProgramService.delete(id, userId, chapterBlockRepository);
+            @org.springframework.security.core.annotation.AuthenticationPrincipal UUID userId) {
+        learningProgramService.delete(id, userId);
     }
 }

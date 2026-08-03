@@ -27,6 +27,9 @@ public class LearningProgramService {
 
     private final LearningProgramRepository learningProgramRepository;
     private final LearningProgramMapper learningProgramMapper;
+    private final com.dts.content_builder.domain.repository.ChapterBlockRepository chapterBlockRepository;
+    private final com.dts.content_builder.domain.repository.ChapterRepository chapterRepository;
+    private final ChapterBlockService chapterBlockService;
 
     @Transactional(readOnly = true)
     public PageResponse<LearningProgramResponse> listLearningPrograms(
@@ -112,7 +115,7 @@ public class LearningProgramService {
     }
 
     @Transactional
-    public LearningProgramResponse createPublished(com.dts.content_builder.api.form.CreatePublishedLearningProgramRequest request, UUID userId, com.dts.content_builder.domain.repository.ChapterBlockRepository chapterBlockRepository, com.dts.content_builder.domain.repository.ChapterRepository chapterRepository) {
+    public LearningProgramResponse createPublished(com.dts.content_builder.api.form.CreatePublishedLearningProgramRequest request, UUID userId) {
         if (request.getCode() != null && !request.getCode().trim().isEmpty()) {
             if (learningProgramRepository.existsByCodeAndDeletedAtIsNull(request.getCode())) {
                 throw new IllegalArgumentException("Learning program with this code already exists");
@@ -168,7 +171,7 @@ public class LearningProgramService {
     }
 
     @Transactional(readOnly = true)
-    public LearningProgramResponse getDetail(UUID id, boolean includeChapterBlocks, ChapterBlockService chapterBlockService) {
+    public LearningProgramResponse getDetail(UUID id, boolean includeChapterBlocks) {
         LearningProgramEntity entity = learningProgramRepository.findByIdAndDeletedAtIsNull(id)
                 .orElseThrow(() -> new jakarta.persistence.EntityNotFoundException("Learning program not found"));
 
@@ -182,7 +185,7 @@ public class LearningProgramService {
     }
 
     @Transactional
-    public LearningProgramResponse update(UUID id, com.dts.content_builder.api.form.UpdateLearningProgramRequest request, UUID userId, com.dts.content_builder.domain.repository.ChapterBlockRepository chapterBlockRepository) {
+    public LearningProgramResponse update(UUID id, com.dts.content_builder.api.form.UpdateLearningProgramRequest request, UUID userId) {
         LearningProgramEntity entity = learningProgramRepository.findByIdAndDeletedAtIsNull(id)
                 .orElseThrow(() -> new jakarta.persistence.EntityNotFoundException("Learning program not found"));
 
@@ -219,7 +222,7 @@ public class LearningProgramService {
     }
 
     @Transactional
-    public void delete(UUID id, UUID userId, com.dts.content_builder.domain.repository.ChapterBlockRepository chapterBlockRepository) {
+    public void delete(UUID id, UUID userId) {
         LearningProgramEntity entity = learningProgramRepository.findByIdAndDeletedAtIsNull(id)
                 .orElseThrow(() -> new jakarta.persistence.EntityNotFoundException("Learning program not found"));
 
