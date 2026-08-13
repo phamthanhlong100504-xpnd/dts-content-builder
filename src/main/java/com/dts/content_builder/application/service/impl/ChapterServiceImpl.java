@@ -164,4 +164,94 @@ public class ChapterServiceImpl implements ChapterService {
         // Cascade soft delete to question blocks
         questionBlockRepository.softDeleteByChapterId(id, userId);
     }
+
+    @Override
+    public com.dts.content_builder.api.response.QuestionBlockResponse addQuestionBlock(UUID chapterId, com.dts.content_builder.api.form.CreateQuestionBlockRequest request, UUID userId) {
+        ChapterEntity chapter = chapterRepository.findByIdAndDeletedAtIsNull(chapterId)
+                .orElseThrow(() -> new ResourceNotFoundException("Chapter not found with ID: " + chapterId));
+
+        if (request.getQuestionId() != null) {
+            questionRepository.findByIdAndDeletedAtIsNull(request.getQuestionId())
+                    .orElseThrow(() -> new BusinessValidationException("Question not found with ID: " + request.getQuestionId()));
+        }
+
+        int sortOrder = request.getSortOrder() != null ? request.getSortOrder() : 
+                (int) questionBlockRepository.countByChapterIdAndDeletedAtIsNull(chapterId);
+
+        QuestionBlockEntity blockEntity = QuestionBlockEntity.builder()
+                .id(UUID.randomUUID())
+                .chapterId(chapterId)
+                .parentId(request.getParentId())
+                .questionId(request.getQuestionId())
+                .title(request.getTitle())
+                .sortOrder(sortOrder)
+                .status(request.getStatus() != null ? request.getStatus() : ChapterStatus.DRAFT)
+                .metadata(request.getMetadata())
+                .build();
+        
+        blockEntity.setCreatedBy(userId);
+        blockEntity.setCreatedAt(java.time.LocalDateTime.now());
+
+        blockEntity = questionBlockRepository.save(blockEntity);
+        return chapterMapper.toResponse(blockEntity);
+    }
+
+    @Override
+    public com.dts.content_builder.api.response.QuestionBlockResponse updateQuestionBlock(UUID chapterId, UUID blockId, com.dts.content_builder.api.form.UpdateQuestionBlockRequest request, UUID userId) {
+        QuestionBlockEntity blockEntity = questionBlockRepository.findByIdAndChapterIdAndDeletedAtIsNull(blockId, chapterId)
+                .orElseThrow(() -> new ResourceNotFoundException("Question Block not found with ID: " + blockId));
+
+        if (request.getQuestionId() != null && !request.getQuestionId().equals(blockEntity.getQuestionId())) {
+            questionRepository.findByIdAndDeletedAtIsNull(request.getQuestionId())
+                    .orElseThrow(() -> new BusinessValidationException("Question not found with ID: " + request.getQuestionId()));
+            blockEntity.setQuestionId(request.getQuestionId());
+        }
+
+        if (request.getTitle() != null) {
+            blockEntity.setTitle(request.getTitle());
+        }
+        if (request.getStatus() != null) {
+            blockEntity.setStatus(request.getStatus());
+        }
+        if (request.getMetadata() != null) {
+            blockEntity.setMetadata(request.getMetadata());
+        }
+
+        blockEntity.setUpdatedBy(userId);
+        blockEntity.setUpdatedAt(java.time.LocalDateTime.now());
+
+        blockEntity = questionBlockRepository.save(blockEntity);
+        return chapterMapper.toResponse(blockEntity);
+    }
+
+    @Override
+    public void deleteQuestionBlock(UUID chapterId, UUID blockId, UUID userId) {
+        QuestionBlockEntity blockEntity = questionBlockRepository.findByIdAndChapterIdAndDeletedAtIsNull(blockId, chapterId)
+                .orElseThrow(() -> new ResourceNotFoundException("Question Block not found with ID: " + blockId));
+
+        blockEntity.setDeletedAt(java.time.LocalDateTime.now());
+        blockEntity.setUpdatedBy(userId);
+        questionBlockRepository.save(blockEntity);
+    }
+
+    @Override
+    public java.util.List<com.dts.content_builder.api.response.QuestionBlockResponse> reorderQuestionBlocks(UUID chapterId, java.util.List<com.dts.content_builder.api.form.ReorderItem> request, UUID userId) {
+        java.util.List<QuestionBlockEntity> blocks = questionBlockRepository.findByChapterIdAndDeletedAtIsNullOrderBySortOrderAscCreatedAtAsc(chapterId);
+        java.util.Map<UUID, QuestionBlockEntity> blockMap = blocks.stream().collect(java.util.stream.Collectors.toMap(QuestionBlockEntity::getId, b -> b));
+        
+        java.util.List<QuestionBlockEntity> updatedBlocks = new java.util.ArrayList<>();
+        for (com.dts.content_builder.api.form.ReorderItem item : request) {
+            QuestionBlockEntity block = blockMap.get(item.getId());
+            if (block != null) {
+                block.setSortOrder(item.getSortOrder());
+                block.setUpdatedBy(userId);
+                block.setUpdatedAt(java.time.LocalDateTime.now());
+                updatedBlocks.add(block);
+            }
+        }
+        questionBlockRepository.saveAll(updatedBlocks);
+        
+        blocks = questionBlockRepository.findByChapterIdAndDeletedAtIsNullOrderBySortOrderAscCreatedAtAsc(chapterId);
+        return chapterMapper.toResponseList(blocks);
+    }
 }
