@@ -25,6 +25,7 @@ import com.dts.content_builder.domain.specification.QuestionSpecification;
 import lombok.RequiredArgsConstructor;
 import org.springframework.data.domain.Page;
 import org.springframework.data.domain.Pageable;
+import org.springframework.security.core.context.SecurityContextHolder;
 import org.springframework.stereotype.Service;
 import org.springframework.transaction.annotation.Transactional;
 
@@ -96,7 +97,7 @@ public class QuestionService {
         QuestionEntity question = questionRepository.findByIdAndDeletedAtIsNull(id)
                 .orElseThrow(() -> new ResourceNotFoundException("Question not found with ID: " + id));
 
-        if (!question.getCreatedBy().equals(userId)) {
+        if (!isAdmin() && !question.getCreatedBy().equals(userId)) {
             throw new org.springframework.security.access.AccessDeniedException("You do not have permission to update this question.");
         }
 
@@ -132,7 +133,7 @@ public class QuestionService {
         QuestionEntity question = questionRepository.findByIdAndDeletedAtIsNull(id)
                 .orElseThrow(() -> new ResourceNotFoundException("Question not found with ID: " + id));
 
-        if (!question.getCreatedBy().equals(userId)) {
+        if (!isAdmin() && !question.getCreatedBy().equals(userId)) {
             throw new org.springframework.security.access.AccessDeniedException("You do not have permission to delete this question.");
         }
 
@@ -246,5 +247,11 @@ public class QuestionService {
                         .options(optionsMap.getOrDefault(q.getId(), Collections.emptyList()))
                         .build())
                 .collect(Collectors.toList());
+    }
+
+    private boolean isAdmin() {
+        var auth = SecurityContextHolder.getContext().getAuthentication();
+        return auth != null && auth.getAuthorities().stream()
+                .anyMatch(a -> a.getAuthority().equals("ROLE_ADMIN"));
     }
 }
