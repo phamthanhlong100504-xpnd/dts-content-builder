@@ -14,3 +14,6 @@ spring:
 eureka:
   client:
     enabled: false
+
+jwt:
+  secret: YmFzZTY0c2VjcmV0a2V5YmFzZTY0c2VjcmV0a2V5YmFzZTY0c2VjcmV0a2V5YmFzZTY0c2VjcmV0a2V5Cg==

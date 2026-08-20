@@ -7,6 +7,7 @@ import com.dts.content_builder.api.form.UpdateChapterRequest;
 import com.dts.content_builder.application.enums.ChapterStatus;
 import com.dts.content_builder.application.service.ChapterService;
 import com.dts.content_builder.config.JwtAuthenticationFilter;
+import com.dts.content_builder.config.JwtProvider;
 import com.dts.content_builder.config.SecurityConfig;
 import com.fasterxml.jackson.databind.ObjectMapper;
 import org.junit.jupiter.api.Test;
@@ -26,13 +27,7 @@ import java.util.UUID;
 import static org.springframework.test.web.servlet.request.MockMvcRequestBuilders.*;
 import static org.springframework.test.web.servlet.result.MockMvcResultMatchers.status;
 
-@WebMvcTest(
-        controllers = ChapterController.class,
-        excludeFilters = @ComponentScan.Filter(
-                type = FilterType.ASSIGNABLE_TYPE,
-                classes = JwtAuthenticationFilter.class
-        )
-)
+@WebMvcTest(controllers = ChapterController.class)
 @Import(SecurityConfig.class) // Ensures MethodSecurity (PreAuthorize) is active
 public class ChapterControllerSecurityTest {
 
@@ -44,6 +39,9 @@ public class ChapterControllerSecurityTest {
 
     @MockBean
     private ChapterService chapterService;
+
+    @MockBean
+    private JwtProvider jwtProvider;
 
     // ==========================================
     // TEST POST /draft
@@ -57,7 +55,7 @@ public class ChapterControllerSecurityTest {
         mockMvc.perform(post("/api/v1/content-builder/chapters/draft")
                 .contentType(MediaType.APPLICATION_JSON)
                 .content(objectMapper.writeValueAsString(req)))
-                .andExpect(status().isUnauthorized());
+                .andExpect(status().isForbidden()); // Spring Security returns 403 by default without AuthenticationEntryPoint
     }
 
     @Test
