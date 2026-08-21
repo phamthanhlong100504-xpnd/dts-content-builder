@@ -52,9 +52,10 @@ Tuân thủ tiêu chuẩn kiến trúc `/api/{version}/{service}/{object}/` và 
 | Error Code | HTTP Status | Business Meaning | Client Message |
 |---|---|---|---|
 | `AUTH-401` | 401 Unauthorized | JWT token không hợp lệ | Authentication required. |
-| `AUTH-403` | 403 Forbidden | Không có quyền xóa đáp án | You do not have permission to delete this option. |
-| `RES-404` | 404 Not Found | Đáp án không tồn tại hoặc đã bị xóa mềm | Option not found. |
-| `VAL-422` | 422 Unprocessable Entity | Vi phạm quy tắc xuất bản của câu hỏi cha (VD: Xóa đáp án đúng duy nhất của câu hỏi đang `PUBLISHED`) | Cannot delete option: Published question would lack a correct answer. |
+| `AUTH-403` | 403 Forbidden | Không có quyền xóa đáp án này | You do not have permission to delete this option. |
+| `RES-404` | 404 Not Found | Câu hỏi hoặc đáp án không tồn tại | Option not found. |
+| `VAL-409` | 409 Conflict | Cố tình xóa đáp án của câu hỏi đã PUBLISHED | Cannot delete an option from a PUBLISHED question. |
+| `VAL-422` | 422 Unprocessable Entity | Bị xóa (xưa kia dùng cho việc xóa làm mất tính hợp lệ của câu PUBLISHED) | |
 | `SYS-500` | 500 Internal Server Error | Lỗi hệ thống | An unexpected internal server error occurred. |
 
 ---
@@ -70,7 +71,7 @@ Tuân thủ tiêu chuẩn kiến trúc `/api/{version}/{service}/{object}/` và 
    - Truy vấn bản ghi QuestionOption theo `id` và `question_id` (`deleted_at IS NULL`). Nếu không thấy ném `RES-404`.
    - Kiểm tra quyền xóa của người dùng (`questions:delete` permission).
    - Kiểm tra câu hỏi cha: Nếu câu hỏi đang có `status == "PUBLISHED"`:
-     - Kiểm tra nếu đáp án bị xóa là đáp án đúng duy nhất, hoặc làm cho số lượng đáp án còn lại < 2: Ném lỗi `VAL-422` yêu cầu chuyển câu hỏi về DRAFT trước khi xóa, hoặc tự động cảnh báo.
+     - Ném lỗi `VAL-409` (Không được phép xóa đáp án của một câu hỏi đã xuất bản để bảo toàn lịch sử. Yêu cầu chuyển trạng thái câu hỏi hiện tại và tạo phiên bản mới).
    - Khởi tạo giao dịch (@Transactional): Gán `option.deletedAt = CURRENT_TIMESTAMP`, `option.updatedBy = userId`.
    - Lưu xuống DB qua Repository Layer.
    - Evict cache `question:detail:{questionId}`.

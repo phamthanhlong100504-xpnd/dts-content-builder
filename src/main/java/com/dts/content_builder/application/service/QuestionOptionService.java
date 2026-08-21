@@ -111,16 +111,7 @@ public class QuestionOptionService {
                 .orElseThrow(() -> new ResourceNotFoundException("Option not found."));
 
         if (question.getStatus() == QuestionStatus.PUBLISHED) {
-            List<QuestionOptionEntity> existingOptions = optionRepository.findByQuestionIdAndDeletedAtIsNullOrderBySortOrderAscCreatedAtAsc(questionId);
-            if (existingOptions.size() <= 2) {
-                throw new BusinessValidationException("Cannot delete option: Published question must have at least 2 options.");
-            }
-            if (option.getIsCorrect()) {
-                long correctCount = existingOptions.stream().filter(QuestionOptionEntity::getIsCorrect).count();
-                if (correctCount <= 1) {
-                    throw new BusinessValidationException("Cannot delete option: Published question would lack a correct answer.");
-                }
-            }
+            throw new BusinessValidationException("Cannot delete an option from a PUBLISHED question. Please create a new version of the question instead.");
         }
 
         option.setDeletedAt(LocalDateTime.now());
