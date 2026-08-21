@@ -69,11 +69,11 @@ Tuân thủ tiêu chuẩn kiến trúc `/api/{version}/{service}/{object}/` và 
 2. **Service Layer**:
    - Truy vấn bản ghi Question theo `id` (`deleted_at IS NULL`). Nếu không thấy ném lỗi `RES-404`.
    - Kiểm tra quyền xóa (`questions:delete` permission hoặc chủ sở hữu).
-   - Kiểm tra ràng buộc nghiệp vụ: Nếu câu hỏi đang được gắn trong một chương trình học/đề thi đang hoạt động (có thể kiểm tra qua `question_blocks` hoặc liên kết đề thi), ném lỗi xung đột `VAL-409`.
+   - Kiểm tra trạng thái: Nếu `status == PUBLISHED`, ném lỗi `VAL-409` (Không được phép xóa câu hỏi đã xuất bản, phải dùng chức năng Deprecate).
+   - Kiểm tra ràng buộc cục bộ: Kiểm tra bảng `question_blocks` (`existsByQuestionIdAndDeletedAtIsNull`). Nếu câu hỏi đang nằm trong một chương học, ném lỗi xung đột `VAL-409`.
    - Khởi tạo giao dịch (@Transactional):
      - Gán `question.deletedAt = CURRENT_TIMESTAMP`, `question.updatedBy = userId`.
      - Thực hiện câu lệnh cập nhật batch trên bảng `question_options`: Gán `deleted_at = CURRENT_TIMESTAMP`, `updated_by = userId` cho tất cả bản ghi có `question_id = id` và `deleted_at IS NULL`.
-     - Thực hiện cập nhật tương tự cho các tham chiếu trong `question_blocks` (nếu cần gỡ bỏ khỏi cây cấu trúc chương).
    - Commit giao dịch.
    - Evict cache liên quan.
 

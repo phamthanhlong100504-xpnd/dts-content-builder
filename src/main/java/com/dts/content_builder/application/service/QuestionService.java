@@ -137,6 +137,14 @@ public class QuestionService {
             throw new org.springframework.security.access.AccessDeniedException("You do not have permission to delete this question.");
         }
 
+        if (question.getStatus() == QuestionStatus.PUBLISHED) {
+            throw new BusinessValidationException("Cannot delete a PUBLISHED question. Please deprecate it instead.");
+        }
+
+        if (questionBlockRepository.existsByQuestionIdAndDeletedAtIsNull(id)) {
+            throw new BusinessValidationException("Cannot delete question as it is currently attached to a chapter structure.");
+        }
+
         questionRepository.softDeleteQuestion(id, userId);
         questionOptionRepository.softDeleteOptionsByQuestionId(id, userId);
     }

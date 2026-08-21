@@ -25,4 +25,6 @@ public interface QuestionBlockRepository extends JpaRepository<QuestionBlockEnti
 
     @Query("SELECT COUNT(qb) FROM QuestionBlockEntity qb WHERE qb.chapterId = :chapterId AND qb.deletedAt IS NULL")
     long countByChapterIdAndDeletedAtIsNull(@Param("chapterId") UUID chapterId);
+
+    boolean existsByQuestionIdAndDeletedAtIsNull(UUID questionId);
 }
