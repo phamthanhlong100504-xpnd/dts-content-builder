@@ -77,6 +77,7 @@ Tuân thủ tiêu chuẩn kiến trúc `/api/{version}/{service}/{object}/` và 
 | `AUTH-403` | 403 Forbidden | Không có quyền sửa đáp án | You do not have permission to modify this option. |
 | `RES-404` | 404 Not Found | Đáp án hoặc câu hỏi cha không tồn tại | Option not found in the specified question. |
 | `VAL-400` | 400 Bad Request | Payload không hợp lệ | Invalid request payload. |
+| `VAL-409` | 409 Conflict | Cố tình sửa đáp án của câu hỏi đã PUBLISHED | Cannot update an option of a PUBLISHED question. |
 | `VAL-422` | 422 Unprocessable Entity | Vi phạm quy tắc nghiệp vụ (VD: Chuyển đáp án từ sai thành đúng `isCorrect=true` trong câu hỏi `SINGLE_CHOICE` đang có 1 đáp án đúng khác) | Cannot change option to correct: Single choice question already has another correct answer. |
 | `SYS-500` | 500 Internal Server Error | Lỗi hệ thống | An unexpected internal server error occurred. |
 
@@ -92,6 +93,7 @@ Tuân thủ tiêu chuẩn kiến trúc `/api/{version}/{service}/{object}/` và 
 2. **Service Layer**:
    - Truy vấn bản ghi QuestionOption theo `id = optionId` và `question_id = questionId` (`deleted_at IS NULL`). Nếu không thấy ném lỗi `RES-404`.
    - Kiểm tra quyền cập nhật câu hỏi (`questions:update` permission).
+   - Kiểm tra câu hỏi cha: Nếu câu hỏi cha đang có `status == "PUBLISHED"`, ném lỗi `VAL-409` (Không được phép sửa đáp án của câu hỏi đã xuất bản để bảo toàn lịch sử. Yêu cầu chuyển trạng thái câu hỏi hiện tại về ARCHIVED/DEPRECATED và tạo phiên bản câu hỏi mới).
    - Kiểm tra nghiệp vụ: Nếu thay đổi `isCorrect` từ `false` sang `true` trên câu hỏi `SINGLE_CHOICE`, cần xác minh không có đáp án nào khác đang là `true`.
    - Cập nhật thông tin vào thực thể QuestionOption, gán `updatedBy = userId`.
    - Lưu xuống DB qua Repository Layer.

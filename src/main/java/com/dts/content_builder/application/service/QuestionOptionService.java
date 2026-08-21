@@ -79,6 +79,10 @@ public class QuestionOptionService {
         QuestionOptionEntity option = optionRepository.findByIdAndQuestionIdAndDeletedAtIsNull(optionId, questionId)
                 .orElseThrow(() -> new ResourceNotFoundException("Option not found in the specified question."));
 
+        if (question.getStatus() == QuestionStatus.PUBLISHED) {
+            throw new BusinessValidationException("Cannot update an option of a PUBLISHED question. Please change the question status to ARCHIVED/HIDDEN and create a new version.");
+        }
+
         if (Boolean.TRUE.equals(request.getIsCorrect()) && !option.getIsCorrect() && question.getType() == QuestionType.SINGLE_CHOICE) {
             List<QuestionOptionEntity> existingOptions = optionRepository.findByQuestionIdAndDeletedAtIsNullOrderBySortOrderAscCreatedAtAsc(questionId);
             boolean hasOtherCorrect = existingOptions.stream().anyMatch(o -> o.getIsCorrect() && !o.getId().equals(optionId));
