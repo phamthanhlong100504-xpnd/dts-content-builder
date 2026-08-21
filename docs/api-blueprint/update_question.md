@@ -69,6 +69,7 @@ Tuân thủ tiêu chuẩn kiến trúc `/api/{version}/{service}/{object}/` và 
 | `AUTH-403` | 403 Forbidden | Không có quyền cập nhật câu hỏi này | You do not have permission to update this question. |
 | `RES-404` | 404 Not Found | Câu hỏi không tồn tại hoặc đã bị xóa mềm | Question not found with ID. |
 | `VAL-400` | 400 Bad Request | Payload không hợp lệ | Invalid request payload. |
+| `VAL-409` | 409 Conflict | Cố tình sửa câu hỏi đã PUBLISHED | Cannot update a PUBLISHED question to preserve history. |
 | `VAL-422` | 422 Unprocessable Entity | Vi phạm quy tắc nghiệp vụ khi chuyển sang `PUBLISHED` (VD: chưa có đủ đáp án hợp lệ trong DB) | Cannot change status to PUBLISHED: Question lacks valid options. |
 | `SYS-500` | 500 Internal Server Error | Lỗi hệ thống | An unexpected internal server error occurred. |
 
@@ -84,11 +85,16 @@ Tuân thủ tiêu chuẩn kiến trúc `/api/{version}/{service}/{object}/` và 
 2. **Service Layer**:
    - Truy vấn bản ghi Question từ DB theo `id` (`deleted_at IS NULL`). Nếu không thấy ném lỗi `RES-404`.
    - Kiểm tra quyền: Người dùng phải là người tạo (`createdBy == userId`) hoặc có role Admin/Editor (`questions:update` permission).
-   - Nếu `request.status == "PUBLISHED"` và trạng thái hiện tại là `DRAFT`:
-     - Kiểm tra trong bảng `question_options` xem câu hỏi này đã có đủ số lượng đáp án tối thiểu và có đáp án đúng (`isCorrect = true`) hay chưa. Nếu chưa đủ, ném ngoại lệ vi phạm nghiệp vụ (`VAL-422`).
-   - Cập nhật các trường thông tin từ request vào thực thể Question.
-   - Gán `updatedBy = userId` (trường `updatedAt` được tự động cập nhật bởi Trigger DB và JPA `@LastModifiedDate`).
-   - Lưu xuống DB qua Repository Layer.
+   - Kiểm tra trạng thái: Nếu trạng thái hiện tại là `PUBLISHED`:
+     - Bắt buộc `request.status` phải là `ARCHIVED` hoặc `HIDDEN` (Chỉ cho phép chuyển trạng thái). Nếu khác, ném lỗi `VAL-409`.
+     - Bắt buộc nội dung (`content`) và loại (`type`) không được thay đổi. Nếu thay đổi, ném lỗi `VAL-409` (Yêu cầu dùng tính năng Versioning để bảo toàn lịch sử).
+   - Khởi tạo giao dịch (`@Transactional`):
+     - Nếu `request.status == "PUBLISHED"` và trạng thái hiện tại là `DRAFT`:
+       - Kiểm tra trong bảng `question_options` xem câu hỏi này đã có đủ số lượng đáp án tối thiểu và có đáp án đúng (`isCorrect = true`) hay chưa. Nếu chưa đủ, ném ngoại lệ vi phạm nghiệp vụ (`VAL-422`).
+     - Cập nhật các trường thông tin từ request vào thực thể Question.
+     - Gán `updatedBy = userId` (trường `updatedAt` được tự động cập nhật bởi Trigger DB và JPA `@LastModifiedDate`).
+     - Lưu xuống DB qua Repository Layer.
+   - Commit giao dịch.
    - Evict cache liên quan (nếu có) và trả về DTO.
 
 3. **Repository Layer**:

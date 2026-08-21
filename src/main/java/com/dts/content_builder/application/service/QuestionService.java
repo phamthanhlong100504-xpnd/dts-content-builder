@@ -93,12 +93,22 @@ public class QuestionService {
         return questionMapper.toResponse(question, options);
     }
 
+    @Transactional
     public QuestionResponse updateQuestion(UUID id, UpdateQuestionRequest request, UUID userId) {
         QuestionEntity question = questionRepository.findByIdAndDeletedAtIsNull(id)
                 .orElseThrow(() -> new ResourceNotFoundException("Question not found with ID: " + id));
 
         if (!isAdmin() && !question.getCreatedBy().equals(userId)) {
             throw new org.springframework.security.access.AccessDeniedException("You do not have permission to update this question.");
+        }
+
+        if (question.getStatus() == QuestionStatus.PUBLISHED) {
+            if (request.getStatus() != QuestionStatus.ARCHIVED && request.getStatus() != QuestionStatus.HIDDEN) {
+                throw new BusinessValidationException("Cannot update a PUBLISHED question. You can only transition its status to ARCHIVED or HIDDEN.");
+            }
+            if (!question.getContent().equals(request.getContent()) || question.getType() != request.getType()) {
+                throw new BusinessValidationException("Cannot modify the content or type of a PUBLISHED question. Please create a new version.");
+            }
         }
 
         if (request.getStatus() == QuestionStatus.PUBLISHED && question.getStatus() == QuestionStatus.DRAFT) {
