@@ -262,6 +262,7 @@ public class QuestionService {
                         .id(q.getId())
                         .content(q.getContent())
                         .type(q.getType().name())
+                        .isCritical(q.getMetadata() != null && Boolean.TRUE.equals(q.getMetadata().get("isCritical")))
                         .mediaFileIds(q.getMediaFileIds())
                         .options(optionsMap.getOrDefault(q.getId(), Collections.emptyList()))
                         .build())

@@ -16,6 +16,7 @@ public class InternalQuestionDetailResponse {
     private UUID id;
     private String content;
     private String type;
+    private Boolean isCritical;
     private List<String> mediaFileIds;
     private List<InternalQuestionOptionResponse> options;
 }
