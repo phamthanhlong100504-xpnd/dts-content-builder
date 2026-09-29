@@ -8,7 +8,7 @@ spring:
   application:
     name: content-builder
   datasource:
-    url: jdbc:postgresql://103.75.182.249:5434/content-builder
+    url: jdbc:postgresql://${DB_HOST:103.20.96.85}:5434/content-builder
     username: postgres
     password: K59Ptl*100504
   jpa:
