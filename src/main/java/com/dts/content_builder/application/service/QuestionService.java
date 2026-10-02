@@ -233,6 +233,71 @@ public class QuestionService {
                         .build())
                 .collect(Collectors.toList());
     }
+    @Transactional(readOnly = true)
+    public List<InternalQuestionMetadataResponse> getQuestionsMetadataForExam(
+            UUID contentId, String contentType, String licenseClass) {
+        List<InternalQuestionMetadataResponse> candidates =
+                getQuestionsMetadataForExam(contentId, contentType);
+
+        if (licenseClass == null || licenseClass.isBlank()) {
+            return candidates;
+        }
+
+        String normalizedClass = licenseClass.trim().toUpperCase(java.util.Locale.ROOT);
+        if (!java.util.Set.of(
+                "A1", "A", "B1", "B", "C1", "C", "D1", "D2", "D",
+                "BE", "C1E", "CE", "D1E", "D2E", "DE"
+        ).contains(normalizedClass)) {
+            throw new BusinessValidationException("Invalid license class: " + licenseClass);
+        }
+
+        if (candidates.isEmpty()) {
+            return candidates;
+        }
+
+        List<UUID> questionIds = candidates.stream()
+                .map(InternalQuestionMetadataResponse::getId)
+                .distinct()
+                .collect(Collectors.toList());
+
+        Map<UUID, QuestionEntity> questionsById =
+                questionRepository.findByIdInAndDeletedAtIsNull(questionIds)
+                        .stream()
+                        .collect(Collectors.toMap(QuestionEntity::getId, question -> question));
+
+        List<InternalQuestionMetadataResponse> filtered = new ArrayList<>();
+        java.util.Set<UUID> seen = new java.util.HashSet<>();
+
+        for (InternalQuestionMetadataResponse candidate : candidates) {
+            QuestionEntity question = questionsById.get(candidate.getId());
+            if (question == null || !seen.add(candidate.getId())) {
+                continue;
+            }
+
+            Map<String, Object> metadata = question.getMetadata();
+
+            // Khi truyền hạng bằng, chỉ lấy câu thuộc bộ dữ liệu 2026 đã công bố.
+            if (question.getStatus() != QuestionStatus.PUBLISHED
+                    || metadata == null
+                    || !"dts-2026-600-v1".equals(metadata.get("bankVersion"))) {
+                continue;
+            }
+
+            Object applicable = metadata.get("applicableLicenses");
+            Object critical = metadata.get("criticalLicenses");
+            if (!(applicable instanceof List<?> applicableLicenses)
+                    || !(critical instanceof List<?>)) {
+                throw new BusinessValidationException(
+                        "Missing license rules for question: " + candidate.getId());
+            }
+
+            if (applicableLicenses.contains(normalizedClass)) {
+                filtered.add(candidate);
+            }
+        }
+
+        return filtered;
+    }
 
     @Transactional(readOnly = true)
     public List<com.dts.content_builder.api.response.InternalQuestionDetailResponse> getQuestionsBatch(List<UUID> questionIds) {
@@ -267,6 +332,76 @@ public class QuestionService {
                         .options(optionsMap.getOrDefault(q.getId(), Collections.emptyList()))
                         .build())
                 .collect(Collectors.toList());
+    }
+
+    @Transactional(readOnly = true)
+    public List<com.dts.content_builder.api.response.InternalQuestionDetailResponse>
+    getQuestionsBatchForLicense(List<UUID> questionIds, String licenseClass) {
+        if (licenseClass == null || licenseClass.isBlank()) {
+            return getQuestionsBatch(questionIds);
+        }
+
+        String normalizedClass = licenseClass.trim()
+                .toUpperCase(java.util.Locale.ROOT);
+
+        if (!java.util.Set.of(
+                "A1", "A", "B1", "B", "C1", "C", "D1", "D2", "D",
+                "BE", "C1E", "CE", "D1E", "D2E", "DE"
+        ).contains(normalizedClass)) {
+            throw new BusinessValidationException(
+                    "Invalid license class: " + licenseClass
+            );
+        }
+
+        List<com.dts.content_builder.api.response.InternalQuestionDetailResponse>
+                details = getQuestionsBatch(questionIds);
+
+        if (details.isEmpty()) {
+            return details;
+        }
+
+        Map<UUID, QuestionEntity> entities = questionRepository
+                .findByIdInAndDeletedAtIsNull(questionIds)
+                .stream()
+                .collect(Collectors.toMap(
+                        QuestionEntity::getId,
+                        question -> question
+                ));
+
+        for (com.dts.content_builder.api.response.InternalQuestionDetailResponse
+                detail : details) {
+            QuestionEntity entity = entities.get(detail.getId());
+            Map<String, Object> metadata = entity.getMetadata();
+
+            // Bộ câu hỏi cũ tiếp tục dùng cách chấm cũ.
+            if (metadata == null
+                    || !"dts-2026-600-v1".equals(metadata.get("bankVersion"))) {
+                continue;
+            }
+
+            Object applicable = metadata.get("applicableLicenses");
+            Object critical = metadata.get("criticalLicenses");
+
+            if (!(applicable instanceof List<?> applicableLicenses)
+                    || !(critical instanceof List<?> criticalLicenses)) {
+                throw new BusinessValidationException(
+                        "Missing license rules for question: " + detail.getId()
+                );
+            }
+
+            if (!applicableLicenses.contains(normalizedClass)) {
+                throw new BusinessValidationException(
+                        "Question is not applicable to license "
+                                + normalizedClass + ": " + detail.getId()
+                );
+            }
+
+            detail.setIsCritical(
+                    criticalLicenses.contains(normalizedClass)
+            );
+        }
+
+        return details;
     }
 
     private boolean isAdmin() {

@@ -1,9 +1,12 @@
 package com.dts.content_builder.api.controller;
 
+import com.dts.content_builder.api.response.InternalQuestionDetailResponse;
 import com.dts.content_builder.api.response.InternalQuestionMetadataResponse;
 import com.dts.content_builder.application.service.QuestionService;
 import lombok.RequiredArgsConstructor;
 import org.springframework.web.bind.annotation.GetMapping;
+import org.springframework.web.bind.annotation.PostMapping;
+import org.springframework.web.bind.annotation.RequestBody;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestParam;
 import org.springframework.web.bind.annotation.RestController;
@@ -21,13 +24,20 @@ public class InternalQuestionController {
     @GetMapping("/metadata")
     public List<InternalQuestionMetadataResponse> getQuestionsMetadata(
             @RequestParam("contentId") UUID contentId,
-            @RequestParam("contentType") String contentType) {
-        return questionService.getQuestionsMetadataForExam(contentId, contentType);
+            @RequestParam("contentType") String contentType,
+            @RequestParam(value = "licenseClass", required = false) String licenseClass) {
+        return questionService.getQuestionsMetadataForExam(
+                contentId, contentType, licenseClass);
     }
 
-    @org.springframework.web.bind.annotation.PostMapping("/batch")
-    public List<com.dts.content_builder.api.response.InternalQuestionDetailResponse> getQuestionsBatch(
-            @org.springframework.web.bind.annotation.RequestBody List<UUID> questionIds) {
-        return questionService.getQuestionsBatch(questionIds);
+    @PostMapping("/batch")
+    public List<InternalQuestionDetailResponse> getQuestionsBatch(
+            @RequestBody List<UUID> questionIds,
+            @RequestParam(value = "licenseClass", required = false)
+            String licenseClass) {
+        return questionService.getQuestionsBatchForLicense(
+                questionIds,
+                licenseClass
+        );
     }
 }
