@@ -13,6 +13,11 @@ import java.util.UUID;
 
 @Repository
 public interface ChapterRepository extends JpaRepository<ChapterEntity, UUID>, JpaSpecificationExecutor<ChapterEntity> {
+    @Query(value = "SELECT c.* FROM chapters c WHERE c.deleted_at IS NULL "
+            + "AND c.status = 'PUBLISHED' AND c.metadata ->> 'bankVersion' = :bankVersion "
+            + "ORDER BY c.id", nativeQuery = true)
+    java.util.List<ChapterEntity> findPublishedByBankVersion(@Param("bankVersion") String bankVersion);
+
     Optional<ChapterEntity> findByIdAndDeletedAtIsNull(UUID id);
 
     @Modifying
