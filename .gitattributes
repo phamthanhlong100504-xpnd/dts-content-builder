@@ -1,3 +1,7 @@
 /gradlew text eol=lf
 *.bat text eol=crlf
 *.jar binary
+
+# These fixtures are verified by SHA256 of their exact recorded bytes.
+src/test/resources/screen12-source-real.json -text
+src/test/resources/screen12-source-B-real.json -text
