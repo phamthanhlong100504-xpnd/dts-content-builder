@@ -1,0 +1,287 @@
+[
+  {
+    "set_id": 1,
+    "title": "Đề số 1",
+    "total_questions": 10,
+    "max_score": 50,
+    "passing_score": 35,
+    "scenario_ids": [
+      1,
+      8,
+      36,
+      49,
+      51,
+      73,
+      77,
+      84,
+      101,
+      119
+    ]
+  },
+  {
+    "set_id": 2,
+    "title": "Đề số 2",
+    "total_questions": 10,
+    "max_score": 50,
+    "passing_score": 35,
+    "scenario_ids": [
+      2,
+      10,
+      31,
+      46,
+      52,
+      64,
+      76,
+      85,
+      93,
+      110
+    ]
+  },
+  {
+    "set_id": 3,
+    "title": "Đề số 3",
+    "total_questions": 10,
+    "max_score": 50,
+    "passing_score": 35,
+    "scenario_ids": [
+      3,
+      12,
+      34,
+      45,
+      54,
+      65,
+      80,
+      87,
+      95,
+      114
+    ]
+  },
+  {
+    "set_id": 4,
+    "title": "Đề số 4",
+    "total_questions": 10,
+    "max_score": 50,
+    "passing_score": 35,
+    "scenario_ids": [
+      4,
+      15,
+      37,
+      48,
+      55,
+      66,
+      81,
+      88,
+      97,
+      117
+    ]
+  },
+  {
+    "set_id": 5,
+    "title": "Đề số 5",
+    "total_questions": 10,
+    "max_score": 50,
+    "passing_score": 35,
+    "scenario_ids": [
+      5,
+      17,
+      33,
+      44,
+      56,
+      68,
+      75,
+      89,
+      99,
+      112
+    ]
+  },
+  {
+    "set_id": 6,
+    "title": "Đề số 6",
+    "total_questions": 10,
+    "max_score": 50,
+    "passing_score": 35,
+    "scenario_ids": [
+      6,
+      18,
+      35,
+      47,
+      57,
+      69,
+      78,
+      90,
+      102,
+      115
+    ]
+  },
+  {
+    "set_id": 7,
+    "title": "Đề số 7",
+    "total_questions": 10,
+    "max_score": 50,
+    "passing_score": 35,
+    "scenario_ids": [
+      7,
+      20,
+      32,
+      50,
+      58,
+      67,
+      79,
+      83,
+      104,
+      118
+    ]
+  },
+  {
+    "set_id": 8,
+    "title": "Đề số 8",
+    "total_questions": 10,
+    "max_score": 50,
+    "passing_score": 35,
+    "scenario_ids": [
+      9,
+      21,
+      38,
+      53,
+      59,
+      70,
+      74,
+      86,
+      105,
+      116
+    ]
+  },
+  {
+    "set_id": 9,
+    "title": "Đề số 9",
+    "total_questions": 10,
+    "max_score": 50,
+    "passing_score": 35,
+    "scenario_ids": [
+      11,
+      23,
+      39,
+      45,
+      60,
+      71,
+      75,
+      82,
+      106,
+      120
+    ]
+  },
+  {
+    "set_id": 10,
+    "title": "Đề số 10",
+    "total_questions": 10,
+    "max_score": 50,
+    "passing_score": 35,
+    "scenario_ids": [
+      13,
+      24,
+      40,
+      46,
+      61,
+      72,
+      77,
+      85,
+      107,
+      113
+    ]
+  },
+  {
+    "set_id": 11,
+    "title": "Đề số 11",
+    "total_questions": 10,
+    "max_score": 50,
+    "passing_score": 35,
+    "scenario_ids": [
+      14,
+      25,
+      41,
+      48,
+      62,
+      64,
+      78,
+      88,
+      92,
+      109
+    ]
+  },
+  {
+    "set_id": 12,
+    "title": "Đề số 12",
+    "total_questions": 10,
+    "max_score": 50,
+    "passing_score": 35,
+    "scenario_ids": [
+      16,
+      26,
+      42,
+      51,
+      63,
+      66,
+      80,
+      84,
+      94,
+      111
+    ]
+  },
+  {
+    "set_id": 13,
+    "title": "Đề số 13",
+    "total_questions": 10,
+    "max_score": 50,
+    "passing_score": 35,
+    "scenario_ids": [
+      19,
+      27,
+      43,
+      52,
+      55,
+      65,
+      81,
+      87,
+      96,
+      103
+    ]
+  },
+  {
+    "set_id": 14,
+    "title": "Đề số 14",
+    "total_questions": 10,
+    "max_score": 50,
+    "passing_score": 35,
+    "scenario_ids": [
+      22,
+      28,
+      30,
+      49,
+      56,
+      68,
+      79,
+      86,
+      98,
+      108
+    ]
+  },
+  {
+    "set_id": 15,
+    "title": "Đề số 15",
+    "total_questions": 10,
+    "max_score": 50,
+    "passing_score": 35,
+    "scenario_ids": [
+      1,
+      29,
+      30,
+      47,
+      57,
+      73,
+      76,
+      83,
+      91,
+      100
+    ]
+  }
+]
