@@ -19,6 +19,9 @@ public interface QuestionRepository extends JpaRepository<QuestionEntity, UUID>,
     
     List<QuestionEntity> findByIdInAndDeletedAtIsNull(List<UUID> ids);
 
+    @Query(value = "SELECT * FROM questions WHERE metadata->>'scenarioNumber' = :scenarioNumber AND type = 'SIMULATION' AND deleted_at IS NULL LIMIT 1", nativeQuery = true)
+    Optional<QuestionEntity> findSimulationByScenarioNumber(@Param("scenarioNumber") String scenarioNumber);
+
     @Modifying
     @Query("UPDATE QuestionEntity q SET q.deletedAt = CURRENT_TIMESTAMP, q.updatedBy = :userId WHERE q.id = :id AND q.deletedAt IS NULL")
     void softDeleteQuestion(@Param("id") UUID id, @Param("userId") UUID userId);

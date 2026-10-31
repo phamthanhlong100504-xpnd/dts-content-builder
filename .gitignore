@@ -51,3 +51,8 @@ replay_pid*.log
 .env.*
 !.env.example
 !.env.sample
+
+# Simulation media binaries (large video and thumbnail assets)
+/data/simulations/**/simulations/
+*.mp4
+*.webp
