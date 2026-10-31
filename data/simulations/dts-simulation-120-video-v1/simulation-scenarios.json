@@ -1,0 +1,2402 @@
+[
+  {
+    "id": 1,
+    "scenario_number": 1,
+    "chapter_id": 1,
+    "chapter_name": "Giao thông trên đường đô thị",
+    "title": "Người đi bộ sang đường bị khuất sau xe tải",
+    "video_path": "simulations/ch1/001.mp4",
+    "thumbnail_path": "simulations/ch1/001_thumb.webp",
+    "duration_seconds": 27.0,
+    "scoring_timeline": {
+      "t5_start": 17.18,
+      "t4_start": 17.71,
+      "t3_start": 18.25,
+      "t2_start": 18.78,
+      "t1_start": 19.32,
+      "t0_end": 19.85
+    },
+    "tip": "Nhấn space khi quan sát rõ thấy người đi bộ thứ nhất xuất hiện sau xe tải để sang đường",
+    "hazard_sign": "Người đi bộ sau xe tải sang đường"
+  },
+  {
+    "id": 2,
+    "scenario_number": 2,
+    "chapter_id": 1,
+    "chapter_name": "Giao thông trên đường đô thị",
+    "title": "Người đi bộ vượt đèn đỏ sang đường",
+    "video_path": "simulations/ch1/002.mp4",
+    "thumbnail_path": "simulations/ch1/002_thumb.webp",
+    "duration_seconds": 39.5,
+    "scoring_timeline": {
+      "t5_start": 24.73,
+      "t4_start": 25.33,
+      "t3_start": 25.93,
+      "t2_start": 26.53,
+      "t1_start": 27.13,
+      "t0_end": 27.73
+    },
+    "tip": "Nhấn space khi quan sát thấy người đi bộ không dừng lại mà bắt đầu bước xuống phần đường xe chạy của mình",
+    "hazard_sign": "Người đi bộ vượt dải phân cách sang đường"
+  },
+  {
+    "id": 3,
+    "scenario_number": 3,
+    "chapter_id": 1,
+    "chapter_name": "Giao thông trên đường đô thị",
+    "title": "Xe phía trước phanh gấp để tránh xe buýt đang dừng tại bến xe buýt",
+    "video_path": "simulations/ch1/003.mp4",
+    "thumbnail_path": "simulations/ch1/003_thumb.webp",
+    "duration_seconds": 34.1,
+    "scoring_timeline": {
+      "t5_start": 21.7,
+      "t4_start": 22.29,
+      "t3_start": 22.88,
+      "t2_start": 23.47,
+      "t1_start": 24.06,
+      "t0_end": 24.65
+    },
+    "tip": "Nhấn space khi xe phía trước sáng đèn phanh (xem ảnh gợi ý)",
+    "hazard_sign": "Xe con phía trước phanh gấp tránh xe buýt"
+  },
+  {
+    "id": 4,
+    "scenario_number": 4,
+    "chapter_id": 1,
+    "chapter_name": "Giao thông trên đường đô thị",
+    "title": "Xe con từ đường nhánh đi nhanh ra tại ngã ba không có đèn tín hiệu giao thông",
+    "video_path": "simulations/ch1/004.mp4",
+    "thumbnail_path": "simulations/ch1/004_thumb.webp",
+    "duration_seconds": 34.4,
+    "scoring_timeline": {
+      "t5_start": 17.45,
+      "t4_start": 18.35,
+      "t3_start": 19.25,
+      "t2_start": 20.15,
+      "t1_start": 21.05,
+      "t0_end": 21.95
+    },
+    "tip": "Nhấn space khi bắt đầu xuất hiện đầu xe đi ra từ đường nhánh bên phải (xem ảnh gợi ý)",
+    "hazard_sign": "Xe con đi nhanh từ đường nhánh bên phải ra"
+  },
+  {
+    "id": 5,
+    "scenario_number": 5,
+    "chapter_id": 1,
+    "chapter_name": "Giao thông trên đường đô thị",
+    "title": "Xe máy đang đi thẳng, đột ngột rẽ trái sang đường trước đầu xe bạn",
+    "video_path": "simulations/ch1/005.mp4",
+    "thumbnail_path": "simulations/ch1/005_thumb.webp",
+    "duration_seconds": 33.5,
+    "scoring_timeline": {
+      "t5_start": 18.95,
+      "t4_start": 19.8,
+      "t3_start": 20.65,
+      "t2_start": 21.5,
+      "t1_start": 22.35,
+      "t0_end": 23.2
+    },
+    "tip": "Nhấn nút space khi thấy xe máy trước mặt phanh, đi chậm và rẽ trái trước mặt xe bạn",
+    "hazard_sign": "Xe máy rẽ trái tạt đầu xe bạn"
+  },
+  {
+    "id": 6,
+    "scenario_number": 6,
+    "chapter_id": 1,
+    "chapter_name": "Giao thông trên đường đô thị",
+    "title": "Xe buýt lấn làn để vượt tại ngã ba",
+    "video_path": "simulations/ch1/006.mp4",
+    "thumbnail_path": "simulations/ch1/006_thumb.webp",
+    "duration_seconds": 30.9,
+    "scoring_timeline": {
+      "t5_start": 19.88,
+      "t4_start": 20.54,
+      "t3_start": 21.2,
+      "t2_start": 21.85,
+      "t1_start": 22.51,
+      "t0_end": 23.17
+    },
+    "tip": "Nhấn space khi đầu xe buýt phía trước bắt đầu rẽ sang trái để vượt xe ô tô con màu đỏ",
+    "hazard_sign": "Xe buýt lấn làn vượt ô tô con tại ngã ba"
+  },
+  {
+    "id": 7,
+    "scenario_number": 7,
+    "chapter_id": 1,
+    "chapter_name": "Giao thông trên đường đô thị",
+    "title": "Xe phía trước phanh gấp tránh người đi bộ vượt đèn đỏ sang đường",
+    "video_path": "simulations/ch1/007.mp4",
+    "thumbnail_path": "simulations/ch1/007_thumb.webp",
+    "duration_seconds": 33.1,
+    "scoring_timeline": {
+      "t5_start": 17.2,
+      "t4_start": 18.06,
+      "t3_start": 18.92,
+      "t2_start": 19.78,
+      "t1_start": 20.64,
+      "t0_end": 21.5
+    },
+    "tip": "Nhấn space khi đèn phanh xe trước sáng do gặp người đi bộ vượt đèn đỏ qua đường",
+    "hazard_sign": "Xe phía trước phanh gấp tránh người đi bộ vượt đèn đỏ"
+  },
+  {
+    "id": 8,
+    "scenario_number": 8,
+    "chapter_id": 1,
+    "chapter_name": "Giao thông trên đường đô thị",
+    "title": "Xe đạp bất ngờ đi ra từ đường nhánh tại ngã ba",
+    "video_path": "simulations/ch1/008.mp4",
+    "thumbnail_path": "simulations/ch1/008_thumb.webp",
+    "duration_seconds": 34.2,
+    "scoring_timeline": {
+      "t5_start": 17.3,
+      "t4_start": 17.89,
+      "t3_start": 18.49,
+      "t2_start": 19.08,
+      "t1_start": 19.68,
+      "t0_end": 20.27
+    },
+    "tip": "Nhấn space khi người đi xe đạp bên trái bắt đầu rẽ vào đường chính",
+    "hazard_sign": "Xe đạp từ đường nhánh bên trái đi ra"
+  },
+  {
+    "id": 9,
+    "scenario_number": 9,
+    "chapter_id": 1,
+    "chapter_name": "Giao thông trên đường đô thị",
+    "title": "Xe ô tô làn đường đối diện lấn làn vượt xe tải đang dừng đỗ tại khu vực đông đúc",
+    "video_path": "simulations/ch1/009.mp4",
+    "thumbnail_path": "simulations/ch1/009_thumb.webp",
+    "duration_seconds": 23.4,
+    "scoring_timeline": {
+      "t5_start": 14.9,
+      "t4_start": 15.45,
+      "t3_start": 16.01,
+      "t2_start": 16.56,
+      "t1_start": 17.12,
+      "t0_end": 17.67
+    },
+    "tip": "Nhấn space khi xe taxi phía trước bắt đầu rẽ trái, đầu xe đè lên vạch phân làn",
+    "hazard_sign": "Xe ô tô làn đối diện lấn làn vượt xe tải"
+  },
+  {
+    "id": 10,
+    "scenario_number": 10,
+    "chapter_id": 1,
+    "chapter_name": "Giao thông trên đường đô thị",
+    "title": "Xe ô tô bất ngờ đi nhanh ra từ đường nhánh bên trái tại ngã ba",
+    "video_path": "simulations/ch1/010.mp4",
+    "thumbnail_path": "simulations/ch1/010_thumb.webp",
+    "duration_seconds": 31.3,
+    "scoring_timeline": {
+      "t5_start": 18.6,
+      "t4_start": 19.46,
+      "t3_start": 20.32,
+      "t2_start": 21.18,
+      "t1_start": 22.04,
+      "t0_end": 22.9
+    },
+    "tip": "Nhấn space khi xuất hiện xe con ở đường nhánh, bắt đầu rẽ vào đường chính",
+    "hazard_sign": "Xe ô tô từ đường nhánh bên trái rẽ ra đường chính"
+  },
+  {
+    "id": 11,
+    "scenario_number": 11,
+    "chapter_id": 1,
+    "chapter_name": "Giao thông trên đường đô thị",
+    "title": "Xe bồn bê-tông từ đường nhánh lấn làn để rẽ tại ngã ba không có đèn giao thông có nhiều xe đang dừng đỗ",
+    "video_path": "simulations/ch1/011.mp4",
+    "thumbnail_path": "simulations/ch1/011_thumb.webp",
+    "duration_seconds": 32.7,
+    "scoring_timeline": {
+      "t5_start": 16.9,
+      "t4_start": 18.37,
+      "t3_start": 19.84,
+      "t2_start": 21.31,
+      "t1_start": 22.78,
+      "t0_end": 24.25
+    },
+    "tip": "Nhấn space khi xe bồn phía trước rẽ đến vạch phân làn đường",
+    "hazard_sign": "Xe bồn bê tông lấn làn rẽ tại ngã ba"
+  },
+  {
+    "id": 12,
+    "scenario_number": 12,
+    "chapter_id": 1,
+    "chapter_name": "Giao thông trên đường đô thị",
+    "title": "Xe mô-tô lấn làn vượt ẩu nguy hiểm tại giao lộ",
+    "video_path": "simulations/ch1/012.mp4",
+    "thumbnail_path": "simulations/ch1/012_thumb.webp",
+    "duration_seconds": 36.9,
+    "scoring_timeline": {
+      "t5_start": 20.59,
+      "t4_start": 21.06,
+      "t3_start": 21.53,
+      "t2_start": 22.01,
+      "t1_start": 22.48,
+      "t0_end": 22.95
+    },
+    "tip": "Nhấn space khi thấy xe máy không nhường mà có tín hiệu đèn vượt qua ô tô chuẩn bị rẽ trái, có nguy cơ va chạm với xe ô tô hoặc xe của bạn",
+    "hazard_sign": "Xe máy lấn làn vượt ẩu qua ô tô chuẩn bị rẽ"
+  },
+  {
+    "id": 13,
+    "scenario_number": 13,
+    "chapter_id": 1,
+    "chapter_name": "Giao thông trên đường đô thị",
+    "title": "Người đi xe đạp từ vỉa hè bất ngờ đi xuống đường để sang đường",
+    "video_path": "simulations/ch1/013.mp4",
+    "thumbnail_path": "simulations/ch1/013_thumb.webp",
+    "duration_seconds": 30.1,
+    "scoring_timeline": {
+      "t5_start": 17.93,
+      "t4_start": 18.4,
+      "t3_start": 18.87,
+      "t2_start": 19.34,
+      "t1_start": 19.81,
+      "t0_end": 20.28
+    },
+    "tip": "Nhấn space khi  xe đạp bắt đầu đi xuống lòng đường, bánh trước chạm mặt đường",
+    "hazard_sign": "Xe đạp từ vỉa hè lao xuống lòng đường"
+  },
+  {
+    "id": 14,
+    "scenario_number": 14,
+    "chapter_id": 1,
+    "chapter_name": "Giao thông trên đường đô thị",
+    "title": "Tình huống nguy hiểm khi gặp xe tải lớn đi qua hầm chui dân sinh",
+    "video_path": "simulations/ch1/014.mp4",
+    "thumbnail_path": "simulations/ch1/014_thumb.webp",
+    "duration_seconds": 34.1,
+    "scoring_timeline": {
+      "t5_start": 20.7,
+      "t4_start": 21.46,
+      "t3_start": 22.22,
+      "t2_start": 22.98,
+      "t1_start": 23.74,
+      "t0_end": 24.5
+    },
+    "tip": "Nhấn space khi xuất hiện đầu xe ô tô ở bên kia hầm chui dân sinh, nếu không giảm tốc độ  có thể phải tránh nhau tại khu vực đường hẹp trong hầm",
+    "hazard_sign": "Xe tải đi ngược chiều qua hầm chui dân sinh"
+  },
+  {
+    "id": 15,
+    "scenario_number": 15,
+    "chapter_id": 1,
+    "chapter_name": "Giao thông trên đường đô thị",
+    "title": "Xe phía trước phanh gấp để tránh xe chuyển làn rẽ trái tại ngã ba",
+    "video_path": "simulations/ch1/015.mp4",
+    "thumbnail_path": "simulations/ch1/015_thumb.webp",
+    "duration_seconds": 33.2,
+    "scoring_timeline": {
+      "t5_start": 19.65,
+      "t4_start": 20.17,
+      "t3_start": 20.69,
+      "t2_start": 21.21,
+      "t1_start": 21.73,
+      "t0_end": 22.25
+    },
+    "tip": "Nhấn space khi xe phía trước phanh đột ngột, đèn phanh sáng",
+    "hazard_sign": "Xe phía trước phanh gấp tránh xe chuyển làn"
+  },
+  {
+    "id": 16,
+    "scenario_number": 16,
+    "chapter_id": 1,
+    "chapter_name": "Giao thông trên đường đô thị",
+    "title": "Xe ô tô từ đường nhánh bên trái bất ngờ đi nhanh ra có nguy cơ va chạm với xe bạn",
+    "video_path": "simulations/ch1/016.mp4",
+    "thumbnail_path": "simulations/ch1/016_thumb.webp",
+    "duration_seconds": 30.2,
+    "scoring_timeline": {
+      "t5_start": 17.8,
+      "t4_start": 18.33,
+      "t3_start": 18.86,
+      "t2_start": 19.39,
+      "t1_start": 19.92,
+      "t0_end": 20.45
+    },
+    "tip": "Nhấn space khi ngã rẽ bên trái có xe con xuất hiện, chuẩn bị rẽ vào đường chính",
+    "hazard_sign": "Xe ô tô từ ngõ bên trái rẽ nhanh ra đường chính"
+  },
+  {
+    "id": 17,
+    "scenario_number": 17,
+    "chapter_id": 1,
+    "chapter_name": "Giao thông trên đường đô thị",
+    "title": "Xe buýt lấn làn đường vượt ẩu tại ngã tư có đèn giao thông",
+    "video_path": "simulations/ch1/017.mp4",
+    "thumbnail_path": "simulations/ch1/017_thumb.webp",
+    "duration_seconds": 29.0,
+    "scoring_timeline": {
+      "t5_start": 14.98,
+      "t4_start": 15.5,
+      "t3_start": 16.03,
+      "t2_start": 16.55,
+      "t1_start": 17.08,
+      "t0_end": 17.6
+    },
+    "tip": "Nhấn space khi quan sát thấy xe buýt lấn sang làn đường xe bạn định rẽ",
+    "hazard_sign": "Xe buýt lấn làn đường vượt ẩu tại ngã tư"
+  },
+  {
+    "id": 18,
+    "scenario_number": 18,
+    "chapter_id": 1,
+    "chapter_name": "Giao thông trên đường đô thị",
+    "title": "Gặp tài xế xe đang dừng đỗ ven đường đột ngột mở cửa xe",
+    "video_path": "simulations/ch1/018.mp4",
+    "thumbnail_path": "simulations/ch1/018_thumb.webp",
+    "duration_seconds": 31.3,
+    "scoring_timeline": {
+      "t5_start": 17.9,
+      "t4_start": 18.54,
+      "t3_start": 19.18,
+      "t2_start": 19.82,
+      "t1_start": 20.46,
+      "t0_end": 21.1
+    },
+    "tip": "Nhấn space ngay khi thấy cửa xe đang dừng đỗ phía trước mở ra",
+    "hazard_sign": "Tài xế xe đỗ bên đường đột ngột mở cửa"
+  },
+  {
+    "id": 19,
+    "scenario_number": 19,
+    "chapter_id": 1,
+    "chapter_name": "Giao thông trên đường đô thị",
+    "title": "Tài xế xe dừng bên đường đang mở cửa xe",
+    "video_path": "simulations/ch1/019.mp4",
+    "thumbnail_path": "simulations/ch1/019_thumb.webp",
+    "duration_seconds": 28.9,
+    "scoring_timeline": {
+      "t5_start": 19.25,
+      "t4_start": 19.8,
+      "t3_start": 20.34,
+      "t2_start": 20.89,
+      "t1_start": 21.43,
+      "t0_end": 21.98
+    },
+    "tip": "Nhấn space khi xe bạn đi gần đến khu vực có nhiều xe đỗ ven đường, phía trước có xe nháy đèn mở cửa xe",
+    "hazard_sign": "Tài xế xe đỗ ngược chiều bất ngờ mở cửa xe"
+  },
+  {
+    "id": 20,
+    "scenario_number": 20,
+    "chapter_id": 1,
+    "chapter_name": "Giao thông trên đường đô thị",
+    "title": "Tài xế xe đang đỗ ven đường đi ra mở cửa xe tại khu vực đường hẹp",
+    "video_path": "simulations/ch1/020.mp4",
+    "thumbnail_path": "simulations/ch1/020_thumb.webp",
+    "duration_seconds": 37.3,
+    "scoring_timeline": {
+      "t5_start": 25.25,
+      "t4_start": 25.95,
+      "t3_start": 26.65,
+      "t2_start": 27.35,
+      "t1_start": 28.05,
+      "t0_end": 28.75
+    },
+    "tip": "Nhấn space khi thấy RÕ người lái xe từ bên đường bước ra để mở cửa xe",
+    "hazard_sign": "Người mở cửa xe tại đoạn đường hẹp"
+  },
+  {
+    "id": 21,
+    "scenario_number": 21,
+    "chapter_id": 1,
+    "chapter_name": "Giao thông trên đường đô thị",
+    "title": "Xe ô tô phía trước dừng lại và lùi vào nơi đỗ tại khu vực đường hẹp",
+    "video_path": "simulations/ch1/021.mp4",
+    "thumbnail_path": "simulations/ch1/021_thumb.webp",
+    "duration_seconds": 39.4,
+    "scoring_timeline": {
+      "t5_start": 20.1,
+      "t4_start": 20.76,
+      "t3_start": 21.42,
+      "t2_start": 22.08,
+      "t1_start": 22.74,
+      "t0_end": 23.4
+    },
+    "tip": "Nhấn space khi xe phía trước bắt đầu phanh, đi chậm để ghép vào nơi đỗ",
+    "hazard_sign": "Xe ô tô phía trước dừng lại và lùi vào nơi đỗ"
+  },
+  {
+    "id": 22,
+    "scenario_number": 22,
+    "chapter_id": 1,
+    "chapter_name": "Giao thông trên đường đô thị",
+    "title": "Gặp xe ô tô từ đường nhánh bên phải tại ngã ba đi ra với tốc độ nhanh",
+    "video_path": "simulations/ch1/022.mp4",
+    "thumbnail_path": "simulations/ch1/022_thumb.webp",
+    "duration_seconds": 32.8,
+    "scoring_timeline": {
+      "t5_start": 19.9,
+      "t4_start": 20.45,
+      "t3_start": 21.0,
+      "t2_start": 21.55,
+      "t1_start": 22.1,
+      "t0_end": 22.65
+    },
+    "tip": "Nhấn space khi quan sát thấy đầu xe khách đi ra từ ngõ bên phải (đầu xe khách ở vị trí ngang cột đèn)",
+    "hazard_sign": "Xe khách 16 chỗ từ đường nhánh bên phải lao ra"
+  },
+  {
+    "id": 23,
+    "scenario_number": 23,
+    "chapter_id": 1,
+    "chapter_name": "Giao thông trên đường đô thị",
+    "title": "Xe ô tô đối diện lấn làn vượt xe đang có tín hiệu dừng khẩn cấp",
+    "video_path": "simulations/ch1/023.mp4",
+    "thumbnail_path": "simulations/ch1/023_thumb.webp",
+    "duration_seconds": 32.7,
+    "scoring_timeline": {
+      "t5_start": 21.9,
+      "t4_start": 22.42,
+      "t3_start": 22.93,
+      "t2_start": 23.45,
+      "t1_start": 23.96,
+      "t0_end": 24.48
+    },
+    "tip": "Nhấn space khi xe con phía trước bắt đầu rẽ, lấn làn để vượt  qua xe tải đang đỗ",
+    "hazard_sign": "Xe đối diện lấn làn vượt xe tải dừng khẩn cấp"
+  },
+  {
+    "id": 24,
+    "scenario_number": 24,
+    "chapter_id": 1,
+    "chapter_name": "Giao thông trên đường đô thị",
+    "title": "Xe tải lớn ở làn đối diện lấn làn vượt xe đang thu gom rác",
+    "video_path": "simulations/ch1/024.mp4",
+    "thumbnail_path": "simulations/ch1/024_thumb.webp",
+    "duration_seconds": 34.2,
+    "scoring_timeline": {
+      "t5_start": 20.33,
+      "t4_start": 20.93,
+      "t3_start": 21.54,
+      "t2_start": 22.14,
+      "t1_start": 22.75,
+      "t0_end": 23.35
+    },
+    "tip": "Nhấn space khi xe tải rẽ trái để vượt, bánh xe bắt đầu đè lên vạch tim đường",
+    "hazard_sign": "Xe tải đối diện lấn làn vượt xe rác"
+  },
+  {
+    "id": 25,
+    "scenario_number": 25,
+    "chapter_id": 1,
+    "chapter_name": "Giao thông trên đường đô thị",
+    "title": "Xe ô tô khách bất ngờ đi ra từ nơi đỗ tại đường hẹp",
+    "video_path": "simulations/ch1/025.mp4",
+    "thumbnail_path": "simulations/ch1/025_thumb.webp",
+    "duration_seconds": 45.1,
+    "scoring_timeline": {
+      "t5_start": 17.3,
+      "t4_start": 18.68,
+      "t3_start": 20.06,
+      "t2_start": 21.44,
+      "t1_start": 22.82,
+      "t0_end": 24.2
+    },
+    "tip": "Nhấn space khi thấy xe khách phía trước nháy xi nhan, xe bắt đầu rẽ trái (ngang vị trí xe con màu trắng đi qua)",
+    "hazard_sign": "Xe khách chuyển làn rời vị trí đỗ"
+  },
+  {
+    "id": 26,
+    "scenario_number": 26,
+    "chapter_id": 1,
+    "chapter_name": "Giao thông trên đường đô thị",
+    "title": "Tránh xe tại khu vực công trình sửa đường xuất hiện sau khúc cua",
+    "video_path": "simulations/ch1/026.mp4",
+    "thumbnail_path": "simulations/ch1/026_thumb.webp",
+    "duration_seconds": 43.2,
+    "scoring_timeline": {
+      "t5_start": 19.45,
+      "t4_start": 20.36,
+      "t3_start": 21.27,
+      "t2_start": 22.18,
+      "t1_start": 23.09,
+      "t0_end": 24.0
+    },
+    "tip": "Nhấn space khi thấy đầu xe trắng xuất hiện phía sau xe ủi tại đoạn đường đang sửa chữa",
+    "hazard_sign": "Đầu xe con xuất hiện sau xe ủi công trường"
+  },
+  {
+    "id": 27,
+    "scenario_number": 27,
+    "chapter_id": 1,
+    "chapter_name": "Giao thông trên đường đô thị",
+    "title": "Xe khách bật đèn cảnh báo dừng giữa ngã tư để đón khách",
+    "video_path": "simulations/ch1/027.mp4",
+    "thumbnail_path": "simulations/ch1/027_thumb.webp",
+    "duration_seconds": 34.7,
+    "scoring_timeline": {
+      "t5_start": 20.93,
+      "t4_start": 21.5,
+      "t3_start": 22.08,
+      "t2_start": 22.65,
+      "t1_start": 23.23,
+      "t0_end": 23.8
+    },
+    "tip": "Nhấn space khi xe khách trước mặt bật đèn cảnh báo",
+    "hazard_sign": "Xe khách phía trước bật đèn cảnh báo dừng đón khách"
+  },
+  {
+    "id": 28,
+    "scenario_number": 28,
+    "chapter_id": 1,
+    "chapter_name": "Giao thông trên đường đô thị",
+    "title": "Xe ô tô phía trước đang đi, đột ngột phanh gấp khi gặp vũng nước trên đường",
+    "video_path": "simulations/ch1/028.mp4",
+    "thumbnail_path": "simulations/ch1/028_thumb.webp",
+    "duration_seconds": 35.9,
+    "scoring_timeline": {
+      "t5_start": 18.8,
+      "t4_start": 19.42,
+      "t3_start": 20.04,
+      "t2_start": 20.66,
+      "t1_start": 21.28,
+      "t0_end": 21.9
+    },
+    "tip": "Nhấn space khi xe phía trước bắt đầu phanh, đèn phanh sáng",
+    "hazard_sign": "Xe ô tô phía trước phanh gấp do gặp vũng nước"
+  },
+  {
+    "id": 29,
+    "scenario_number": 29,
+    "chapter_id": 1,
+    "chapter_name": "Giao thông trên đường đô thị",
+    "title": "Trời mưa, ô tô phía trước phanh gấp để tránh xe mô-tô tạt đầu khi gặp chướng ngại vật",
+    "video_path": "simulations/ch1/029.mp4",
+    "thumbnail_path": "simulations/ch1/029_thumb.webp",
+    "duration_seconds": 33.9,
+    "scoring_timeline": {
+      "t5_start": 18.7,
+      "t4_start": 19.42,
+      "t3_start": 20.14,
+      "t2_start": 20.86,
+      "t1_start": 21.58,
+      "t0_end": 22.3
+    },
+    "tip": "Nhấn space khi xe phía trước bắt đầu phanh, đèn phanh sáng",
+    "hazard_sign": "Xe ô tô phía trước phanh gấp tránh xe máy tạt đầu"
+  },
+  {
+    "id": 30,
+    "scenario_number": 30,
+    "chapter_id": 2,
+    "chapter_name": "Giao thông trên đường nông thôn",
+    "title": "Đường nông thôn, xe đi gặp đàn bò đang đứng trên đường",
+    "video_path": "simulations/ch2/030.mp4",
+    "thumbnail_path": "simulations/ch2/030_thumb.webp",
+    "duration_seconds": 37.1,
+    "scoring_timeline": {
+      "t5_start": 17.4,
+      "t4_start": 18.3,
+      "t3_start": 19.2,
+      "t2_start": 20.1,
+      "t1_start": 21.0,
+      "t0_end": 21.9
+    },
+    "tip": "Nhấn space khi quan sát rõ thấy đàn bò đứng cản trở lối đi ở cả hai bên phần đường xe chạy",
+    "hazard_sign": "Đàn bò đứng cản trở hai bên lòng đường"
+  },
+  {
+    "id": 31,
+    "scenario_number": 31,
+    "chapter_id": 2,
+    "chapter_name": "Giao thông trên đường nông thôn",
+    "title": "Đường nông thôn, gặp đàn bò đi từ dưới vệ đường băng qua đường",
+    "video_path": "simulations/ch2/031.mp4",
+    "thumbnail_path": "simulations/ch2/031_thumb.webp",
+    "duration_seconds": 37.6,
+    "scoring_timeline": {
+      "t5_start": 16.3,
+      "t4_start": 17.38,
+      "t3_start": 18.46,
+      "t2_start": 19.54,
+      "t1_start": 20.62,
+      "t0_end": 21.7
+    },
+    "tip": "Nhấn space khi thấy 2 con bò bắt đầu di chuyển từ dưới vệ đường lên",
+    "hazard_sign": "Đàn bò từ dưới vệ đường bước lên mặt đường"
+  },
+  {
+    "id": 32,
+    "scenario_number": 32,
+    "chapter_id": 2,
+    "chapter_name": "Giao thông trên đường nông thôn",
+    "title": "Người đi bộ băng qua đường lúc chập tối ngay trước xe bạn",
+    "video_path": "simulations/ch2/032.mp4",
+    "thumbnail_path": "simulations/ch2/032_thumb.webp",
+    "duration_seconds": 29.4,
+    "scoring_timeline": {
+      "t5_start": 18.2,
+      "t4_start": 18.98,
+      "t3_start": 19.76,
+      "t2_start": 20.54,
+      "t1_start": 21.32,
+      "t0_end": 22.1
+    },
+    "tip": "Nhấn space khi thấy người đi bộ có xu hướng di chuyển sang đường, có khả năng phải dừng lại trước xe mình do phải dừng tránh xe làn đối diện",
+    "hazard_sign": "Người đi bộ sang đường lúc chập tối"
+  },
+  {
+    "id": 33,
+    "scenario_number": 33,
+    "chapter_id": 2,
+    "chapter_name": "Giao thông trên đường nông thôn",
+    "title": "Học sinh đi ra đường tại khu vực gần trường học",
+    "video_path": "simulations/ch2/033.mp4",
+    "thumbnail_path": "simulations/ch2/033_thumb.webp",
+    "duration_seconds": 33.4,
+    "scoring_timeline": {
+      "t5_start": 19.2,
+      "t4_start": 19.84,
+      "t3_start": 20.48,
+      "t2_start": 21.12,
+      "t1_start": 21.76,
+      "t0_end": 22.4
+    },
+    "tip": "Nhấn space khi đến gần quan sát thấy nhóm học sinh đang đứng trước cổng trường",
+    "hazard_sign": "Nhóm học sinh đứng nói chuyện sát mép đường"
+  },
+  {
+    "id": 34,
+    "scenario_number": 34,
+    "chapter_id": 2,
+    "chapter_name": "Giao thông trên đường nông thôn",
+    "title": "Gặp xe khách tại đoạn đường cong vào cua chiếm hết làn đường tại khu vực đường hẹp",
+    "video_path": "simulations/ch2/034.mp4",
+    "thumbnail_path": "simulations/ch2/034_thumb.webp",
+    "duration_seconds": 27.0,
+    "scoring_timeline": {
+      "t5_start": 15.2,
+      "t4_start": 16.03,
+      "t3_start": 16.86,
+      "t2_start": 17.69,
+      "t1_start": 18.52,
+      "t0_end": 19.35
+    },
+    "tip": "Nhấn space khi thấy xe khách phía trước xuất hiện, lấn hẳn sang làn đường của mình",
+    "hazard_sign": "Xe khách vào cua lấn hết làn đường xe bạn"
+  },
+  {
+    "id": 35,
+    "scenario_number": 35,
+    "chapter_id": 2,
+    "chapter_name": "Giao thông trên đường nông thôn",
+    "title": "Xe khách phía trước đột ngột phanh giảm tốc độ tránh xe đối diện tại đoạn đường cong",
+    "video_path": "simulations/ch2/035.mp4",
+    "thumbnail_path": "simulations/ch2/035_thumb.webp",
+    "duration_seconds": 27.6,
+    "scoring_timeline": {
+      "t5_start": 13.2,
+      "t4_start": 13.88,
+      "t3_start": 14.56,
+      "t2_start": 15.24,
+      "t1_start": 15.92,
+      "t0_end": 16.6
+    },
+    "tip": "Nhấn space khi thấy xe tải phía trước lấn hẳn sang làn ngược chiều khi cua, bắt buộc xe khách phải giảm tốc để tránh",
+    "hazard_sign": "Xe khách phía trước phanh giảm tốc tránh xe đối diện"
+  },
+  {
+    "id": 36,
+    "scenario_number": 36,
+    "chapter_id": 2,
+    "chapter_name": "Giao thông trên đường nông thôn",
+    "title": "Đường nông thôn, xuất hiện xe máy đi ra từ ngõ bên phải",
+    "video_path": "simulations/ch2/036.mp4",
+    "thumbnail_path": "simulations/ch2/036_thumb.webp",
+    "duration_seconds": 34.4,
+    "scoring_timeline": {
+      "t5_start": 23.55,
+      "t4_start": 24.06,
+      "t3_start": 24.57,
+      "t2_start": 25.08,
+      "t1_start": 25.59,
+      "t0_end": 26.1
+    },
+    "tip": "Nhấn space khi quan sát thấy hình ảnh người đi xe máy xuất hiện phía sau hàng rào trong ngõ chuẩn bị đi ra",
+    "hazard_sign": "Xe máy đi ra từ ngõ khuất sau hàng rào bên phải"
+  },
+  {
+    "id": 37,
+    "scenario_number": 37,
+    "chapter_id": 2,
+    "chapter_name": "Giao thông trên đường nông thôn",
+    "title": "Đường nông thôn, nhóm xe đạp đi ra từ ngõ bên phải",
+    "video_path": "simulations/ch2/037.mp4",
+    "thumbnail_path": "simulations/ch2/037_thumb.webp",
+    "duration_seconds": 35.4,
+    "scoring_timeline": {
+      "t5_start": 24.56,
+      "t4_start": 25.1,
+      "t3_start": 25.65,
+      "t2_start": 26.19,
+      "t1_start": 26.74,
+      "t0_end": 27.28
+    },
+    "tip": "Nhấn space khi quan sát thấy hình ảnh của 2 người đi xe đạp xuất hiện phía sau hàng rào trong ngõ chuẩn bị đi ra",
+    "hazard_sign": "Nhóm xe đạp đi ra từ ngõ khuất bên phải"
+  },
+  {
+    "id": 38,
+    "scenario_number": 38,
+    "chapter_id": 2,
+    "chapter_name": "Giao thông trên đường nông thôn",
+    "title": "Ban đêm xe ô tô tải ngược chiều bật đèn chiếu xa làm 2 xe máy phía trước giảm tốc độ",
+    "video_path": "simulations/ch2/038.mp4",
+    "thumbnail_path": "simulations/ch2/038_thumb.webp",
+    "duration_seconds": 32.6,
+    "scoring_timeline": {
+      "t5_start": 18.0,
+      "t4_start": 18.6,
+      "t3_start": 19.2,
+      "t2_start": 19.8,
+      "t1_start": 20.4,
+      "t0_end": 21.0
+    },
+    "tip": "Nhấn space khi thấy hai xe máy phía trước phanh, đèn phanh sáng",
+    "hazard_sign": "Hai xe máy phía trước phanh gấp tránh xe tải chói pha"
+  },
+  {
+    "id": 39,
+    "scenario_number": 39,
+    "chapter_id": 2,
+    "chapter_name": "Giao thông trên đường nông thôn",
+    "title": "Xe tải từ đường nhánh nhập làn nguy hiểm",
+    "video_path": "simulations/ch2/039.mp4",
+    "thumbnail_path": "simulations/ch2/039_thumb.webp",
+    "duration_seconds": 31.9,
+    "scoring_timeline": {
+      "t5_start": 21.72,
+      "t4_start": 22.32,
+      "t3_start": 22.91,
+      "t2_start": 23.51,
+      "t1_start": 24.1,
+      "t0_end": 24.7
+    },
+    "tip": "Nhấn space khi bánh trước xe tải bắt đầu nhập vào làn xe mình",
+    "hazard_sign": "Xe tải từ đường nhánh nhập làn đường chính"
+  },
+  {
+    "id": 40,
+    "scenario_number": 40,
+    "chapter_id": 2,
+    "chapter_name": "Giao thông trên đường nông thôn",
+    "title": "Gần cổng làng, phía sau có xe mô-tô lấn làn để vượt xe ô tô đang dừng đỗ",
+    "video_path": "simulations/ch2/040.mp4",
+    "thumbnail_path": "simulations/ch2/040_thumb.webp",
+    "duration_seconds": 34.8,
+    "scoring_timeline": {
+      "t5_start": 16.7,
+      "t4_start": 17.38,
+      "t3_start": 18.06,
+      "t2_start": 18.74,
+      "t1_start": 19.42,
+      "t0_end": 20.1
+    },
+    "tip": "Nhấn space ngay khi thấy có xe máy xuất hiện, chuẩn bị vượt ở phía sau xe tải đang đỗ",
+    "hazard_sign": "Xe máy xuất hiện sau xe tải chuẩn bị vượt"
+  },
+  {
+    "id": 41,
+    "scenario_number": 41,
+    "chapter_id": 2,
+    "chapter_name": "Giao thông trên đường nông thôn",
+    "title": "Xe con làn đối diện rẽ nhanh cắt qua đầu xe bạn tại ngã ba",
+    "video_path": "simulations/ch2/041.mp4",
+    "thumbnail_path": "simulations/ch2/041_thumb.webp",
+    "duration_seconds": 33.5,
+    "scoring_timeline": {
+      "t5_start": 19.55,
+      "t4_start": 19.91,
+      "t3_start": 20.28,
+      "t2_start": 20.64,
+      "t1_start": 21.01,
+      "t0_end": 21.37
+    },
+    "tip": "Nhấn space khi thấy xe con bật đèn xi nhan xin rẽ trái (vị trí ngang vạch dành người đi bộ sang đường)",
+    "hazard_sign": "Xe con làn đối diện rẽ nhanh cắt mặt xe bạn"
+  },
+  {
+    "id": 42,
+    "scenario_number": 42,
+    "chapter_id": 2,
+    "chapter_name": "Giao thông trên đường nông thôn",
+    "title": "Tại ngã tư, đèn xanh, xe bạn bắt đầu di chuyển có xe mô-tô rẽ cắt ngang qua đầu xe bạn",
+    "video_path": "simulations/ch2/042.mp4",
+    "thumbnail_path": "simulations/ch2/042_thumb.webp",
+    "duration_seconds": 31.9,
+    "scoring_timeline": {
+      "t5_start": 17.3,
+      "t4_start": 17.83,
+      "t3_start": 18.36,
+      "t2_start": 18.89,
+      "t1_start": 19.42,
+      "t0_end": 19.95
+    },
+    "tip": "Nhấn space khi xe máy không dừng đèn đỏ, xi nhan để rẽ (thời điểm vị trí xe qua cột đèn giao thông)",
+    "hazard_sign": "Xe máy vượt đèn đỏ rẽ cắt ngang đầu xe"
+  },
+  {
+    "id": 43,
+    "scenario_number": 43,
+    "chapter_id": 2,
+    "chapter_name": "Giao thông trên đường nông thôn",
+    "title": "Trời mưa, xe con giảm nhanh tốc độ để tránh xe tải chuyển làn đột ngột tránh chướng ngại vật phía trước",
+    "video_path": "simulations/ch2/043.mp4",
+    "thumbnail_path": "simulations/ch2/043_thumb.webp",
+    "duration_seconds": 35.5,
+    "scoring_timeline": {
+      "t5_start": 16.3,
+      "t4_start": 17.14,
+      "t3_start": 17.98,
+      "t2_start": 18.82,
+      "t1_start": 19.66,
+      "t0_end": 20.5
+    },
+    "tip": "Nhấn space thời điểm xe tải xi nhan để chuyển làn",
+    "hazard_sign": "Xe tải phía trước chuyển làn tránh vật cản"
+  },
+  {
+    "id": 44,
+    "scenario_number": 44,
+    "chapter_id": 3,
+    "chapter_name": "Giao thông trên đường cao tốc",
+    "title": "Phía sau làn phải có xe con vượt lên và chuyển làn cắt ngang nguy hiểm trước mặt xe bạn",
+    "video_path": "simulations/ch3/044.mp4",
+    "thumbnail_path": "simulations/ch3/044_thumb.webp",
+    "duration_seconds": 27.1,
+    "scoring_timeline": {
+      "t5_start": 14.95,
+      "t4_start": 15.72,
+      "t3_start": 16.49,
+      "t2_start": 17.26,
+      "t1_start": 18.03,
+      "t0_end": 18.8
+    },
+    "tip": "Nhấn space khi quan sát thấy bánh xe con màu trắng đè làn vạch phân làn (chuẩn bị nhập vào làn xe mình)",
+    "hazard_sign": "Xe con làn phải vượt lên và tạt đầu nhập làn"
+  },
+  {
+    "id": 45,
+    "scenario_number": 45,
+    "chapter_id": 3,
+    "chapter_name": "Giao thông trên đường cao tốc",
+    "title": "Xe tải ở làn phải vượt lên và đột ngột chuyển làn sang làn giữa làm xe phía trước phải phanh gấp",
+    "video_path": "simulations/ch3/045.mp4",
+    "thumbnail_path": "simulations/ch3/045_thumb.webp",
+    "duration_seconds": 29.2,
+    "scoring_timeline": {
+      "t5_start": 19.75,
+      "t4_start": 20.3,
+      "t3_start": 20.85,
+      "t2_start": 21.4,
+      "t1_start": 21.95,
+      "t0_end": 22.5
+    },
+    "tip": "Nhấn space khi quan sát thấy xe tải chuyển làn ngay trước đầu xe con phía trước, bánh xe tải bắt đầu đè lên vạch phân làn",
+    "hazard_sign": "Xe tải làn phải chuyển làn gấp làm xe trước phanh"
+  },
+  {
+    "id": 46,
+    "scenario_number": 46,
+    "chapter_id": 3,
+    "chapter_name": "Giao thông trên đường cao tốc",
+    "title": "Xe ô tô con ở làn bên trái vượt lên và chuyển làn phải cắt qua nguy hiểm trước đầu xe bạn để rẽ ra đường gom",
+    "video_path": "simulations/ch3/046.mp4",
+    "thumbnail_path": "simulations/ch3/046_thumb.webp",
+    "duration_seconds": 37.0,
+    "scoring_timeline": {
+      "t5_start": 27.03,
+      "t4_start": 27.65,
+      "t3_start": 28.27,
+      "t2_start": 28.89,
+      "t1_start": 29.51,
+      "t0_end": 30.13
+    },
+    "tip": "Nhấn space khi xe màu trắng chuyển làn ngay sát đầu xe bạn, bánh xe chuẩn bị đè lên vạch phân làn",
+    "hazard_sign": "Xe con làn trái tạt đầu rẽ vào đường gom"
+  },
+  {
+    "id": 47,
+    "scenario_number": 47,
+    "chapter_id": 3,
+    "chapter_name": "Giao thông trên đường cao tốc",
+    "title": "Xe cấp cứu xin đường, xe con bên trái tăng tốc vượt lên và chuyển làn cắt qua đầu xe bạn",
+    "video_path": "simulations/ch3/047.mp4",
+    "thumbnail_path": "simulations/ch3/047_thumb.webp",
+    "duration_seconds": 36.0,
+    "scoring_timeline": {
+      "t5_start": 24.9,
+      "t4_start": 25.52,
+      "t3_start": 26.14,
+      "t2_start": 26.76,
+      "t1_start": 27.38,
+      "t0_end": 28.0
+    },
+    "tip": "Nhấn space khi quan sát thấy xe trắng xi nhan chuyển làn ở sát đầu xe bạn bên trái",
+    "hazard_sign": "Xe con làn trái tăng tốc, chuyển làn cắt ngang đầu xe"
+  },
+  {
+    "id": 48,
+    "scenario_number": 48,
+    "chapter_id": 3,
+    "chapter_name": "Giao thông trên đường cao tốc",
+    "title": "Xe bạn có tín hiệu để chuyển làn trái thì có xe phía sau nháy pha liên tục để vượt",
+    "video_path": "simulations/ch3/048.mp4",
+    "thumbnail_path": "simulations/ch3/048_thumb.webp",
+    "duration_seconds": 33.6,
+    "scoring_timeline": {
+      "t5_start": 14.9,
+      "t4_start": 15.41,
+      "t3_start": 15.92,
+      "t2_start": 16.43,
+      "t1_start": 16.94,
+      "t0_end": 17.45
+    },
+    "tip": "Nhấn space tại thời điểm đèn xi nhan đã nháy lần 2 (tuy nhiên khoảng cách với xe trắng đi làn trái phía sau không đủ an toàn để chuyển làn)",
+    "hazard_sign": "Xe con phía sau nháy pha liên tục xin vượt"
+  },
+  {
+    "id": 49,
+    "scenario_number": 49,
+    "chapter_id": 3,
+    "chapter_name": "Giao thông trên đường cao tốc",
+    "title": "Ô tô phía trước phanh gấp do có xe tải tạt sang đột ngột vì gặp chướng ngại vật",
+    "video_path": "simulations/ch3/049.mp4",
+    "thumbnail_path": "simulations/ch3/049_thumb.webp",
+    "duration_seconds": 33.2,
+    "scoring_timeline": {
+      "t5_start": 16.9,
+      "t4_start": 17.91,
+      "t3_start": 18.92,
+      "t2_start": 19.93,
+      "t1_start": 20.94,
+      "t0_end": 21.95
+    },
+    "tip": "Nhấn space tại thời điểm xe tải phía trước xi nhan để xin chuyển sang làn của mình (xe trắng phía trước có thể phanh gấp để tránh va chạm)",
+    "hazard_sign": "Xe tải tạt sang làn xe bạn tránh chướng ngại vật"
+  },
+  {
+    "id": 50,
+    "scenario_number": 50,
+    "chapter_id": 3,
+    "chapter_name": "Giao thông trên đường cao tốc",
+    "title": "Xe tải phía trước làn phải đột ngột tăng tốc và chuyển sang làn giữa làm xe con phía trước phanh gấp",
+    "video_path": "simulations/ch3/050.mp4",
+    "thumbnail_path": "simulations/ch3/050_thumb.webp",
+    "duration_seconds": 35.2,
+    "scoring_timeline": {
+      "t5_start": 18.8,
+      "t4_start": 19.62,
+      "t3_start": 20.44,
+      "t2_start": 21.26,
+      "t1_start": 22.08,
+      "t0_end": 22.9
+    },
+    "tip": "Nhấn space tại thời điểm xe tải phía trước xi nhan để xin chuyển sang làn của mình (xe trắng phía trước có thể phanh gấp để tránh va chạm)",
+    "hazard_sign": "Xe tải làn phải tăng tốc chuyển làn cắt đầu"
+  },
+  {
+    "id": 51,
+    "scenario_number": 51,
+    "chapter_id": 3,
+    "chapter_name": "Giao thông trên đường cao tốc",
+    "title": "Xe tải bật đèn cảnh báo đi ngược đường ở làn bên phải cao tốc",
+    "video_path": "simulations/ch3/051.mp4",
+    "thumbnail_path": "simulations/ch3/051_thumb.webp",
+    "duration_seconds": 36.0,
+    "scoring_timeline": {
+      "t5_start": 19.0,
+      "t4_start": 20.02,
+      "t3_start": 21.04,
+      "t2_start": 22.06,
+      "t1_start": 23.08,
+      "t0_end": 24.1
+    },
+    "tip": "Nhấn space khi bắt đầu thấy xe tải đi vào cao tốc và đi ngược chiều ",
+    "hazard_sign": "Xe tải đi ngược chiều ở làn bên phải cao tốc"
+  },
+  {
+    "id": 52,
+    "scenario_number": 52,
+    "chapter_id": 3,
+    "chapter_name": "Giao thông trên đường cao tốc",
+    "title": "Qua đoạn đường cong đột nhiên có xe tải đi lùi trong làn khẩn cấp",
+    "video_path": "simulations/ch3/052.mp4",
+    "thumbnail_path": "simulations/ch3/052_thumb.webp",
+    "duration_seconds": 34.9,
+    "scoring_timeline": {
+      "t5_start": 22.5,
+      "t4_start": 23.22,
+      "t3_start": 23.94,
+      "t2_start": 24.66,
+      "t1_start": 25.38,
+      "t0_end": 26.1
+    },
+    "tip": "Nhấn space khi bắt đầu nhận thấy xe tải màu trắng đi lùi trong làn khẩn cấp",
+    "hazard_sign": "Xe tải đi lùi trong làn dừng khẩn cấp"
+  },
+  {
+    "id": 53,
+    "scenario_number": 53,
+    "chapter_id": 3,
+    "chapter_name": "Giao thông trên đường cao tốc",
+    "title": "Trên đường cao tốc ban đêm, đột nhiên có xe tải đi chiều ngược lại ở làn khẩn cấp",
+    "video_path": "simulations/ch3/053.mp4",
+    "thumbnail_path": "simulations/ch3/053_thumb.webp",
+    "duration_seconds": 35.6,
+    "scoring_timeline": {
+      "t5_start": 22.9,
+      "t4_start": 23.63,
+      "t3_start": 24.36,
+      "t2_start": 25.09,
+      "t1_start": 25.82,
+      "t0_end": 26.55
+    },
+    "tip": "Nhấn space khi xe tải phía trước đột nhiên xi nhan xin rẽ và quan sát thấy đèn pha của xe đi ngược chiều trong làn khẩn cấp",
+    "hazard_sign": "Xe tải ngược chiều bật đèn pha trong làn khẩn cấp"
+  },
+  {
+    "id": 54,
+    "scenario_number": 54,
+    "chapter_id": 3,
+    "chapter_name": "Giao thông trên đường cao tốc",
+    "title": "Xe tải từ đường nhánh nhập vào cao tốc với tốc độ cao",
+    "video_path": "simulations/ch3/054.mp4",
+    "thumbnail_path": "simulations/ch3/054_thumb.webp",
+    "duration_seconds": 31.4,
+    "scoring_timeline": {
+      "t5_start": 19.4,
+      "t4_start": 20.22,
+      "t3_start": 21.04,
+      "t2_start": 21.86,
+      "t1_start": 22.68,
+      "t0_end": 23.5
+    },
+    "tip": "Nhấn space khi thấy xe tải xi nhan và đi tốc độ cao chuẩn bị nhập vào cao tốc",
+    "hazard_sign": "Xe tải từ đường nhánh nhập vào cao tốc tốc độ cao"
+  },
+  {
+    "id": 55,
+    "scenario_number": 55,
+    "chapter_id": 3,
+    "chapter_name": "Giao thông trên đường cao tốc",
+    "title": "Cao tốc, xe tải đột ngột giảm tốc và chuyển sang làn xe bạn do gặp xe đang gặp sự cố trên đường",
+    "video_path": "simulations/ch3/055.mp4",
+    "thumbnail_path": "simulations/ch3/055_thumb.webp",
+    "duration_seconds": 36.1,
+    "scoring_timeline": {
+      "t5_start": 17.35,
+      "t4_start": 18.15,
+      "t3_start": 18.95,
+      "t2_start": 19.75,
+      "t1_start": 20.55,
+      "t0_end": 21.35
+    },
+    "tip": "Nhấn space khi xe tải xi nhan chuyển làn, bánh xe tải đè vạch phân làn",
+    "hazard_sign": "Xe tải phía trước chuyển làn tránh xe gặp sự cố"
+  },
+  {
+    "id": 56,
+    "scenario_number": 56,
+    "chapter_id": 3,
+    "chapter_name": "Giao thông trên đường cao tốc",
+    "title": "Xe con đang dừng ở làn khẩn cấp xi nhan nhập làn trước xe bạn",
+    "video_path": "simulations/ch3/056.mp4",
+    "thumbnail_path": "simulations/ch3/056_thumb.webp",
+    "duration_seconds": 27.3,
+    "scoring_timeline": {
+      "t5_start": 17.45,
+      "t4_start": 17.98,
+      "t3_start": 18.51,
+      "t2_start": 19.04,
+      "t1_start": 19.57,
+      "t0_end": 20.1
+    },
+    "tip": "Nhấn space khi thấy xe ô tô con màu trắng trong làn khẩn cấp xi nhan để chuyển vào làn xe mình đang chạy",
+    "hazard_sign": "Xe con từ làn khẩn cấp xi nhan nhập làn"
+  },
+  {
+    "id": 57,
+    "scenario_number": 57,
+    "chapter_id": 3,
+    "chapter_name": "Giao thông trên đường cao tốc",
+    "title": "Xe con phía trước giảm tốc độ và chuyển sang làn xe bạn do gặp đoạn đường đang sửa chữa phía trước",
+    "video_path": "simulations/ch3/057.mp4",
+    "thumbnail_path": "simulations/ch3/057_thumb.webp",
+    "duration_seconds": 59.6,
+    "scoring_timeline": {
+      "t5_start": 30.5,
+      "t4_start": 31.82,
+      "t3_start": 33.14,
+      "t2_start": 34.46,
+      "t1_start": 35.78,
+      "t0_end": 37.1
+    },
+    "tip": "Nhấn space khi thấy 2 đèn cảnh báo của công trường nháy sáng",
+    "hazard_sign": "Xe con phía trước chuyển làn tránh đoạn đường sửa chữa"
+  },
+  {
+    "id": 58,
+    "scenario_number": 58,
+    "chapter_id": 3,
+    "chapter_name": "Giao thông trên đường cao tốc",
+    "title": "Xe tải phía trước giảm tốc độ, chuyển sang làn giữa do gặp đoạn đường đang sửa chữa phía trước",
+    "video_path": "simulations/ch3/058.mp4",
+    "thumbnail_path": "simulations/ch3/058_thumb.webp",
+    "duration_seconds": 46.9,
+    "scoring_timeline": {
+      "t5_start": 24.2,
+      "t4_start": 25.17,
+      "t3_start": 26.14,
+      "t2_start": 27.11,
+      "t1_start": 28.08,
+      "t0_end": 29.05
+    },
+    "tip": "Nhấn space khi xe tải phía trước phanh,  quan sát thấy đèn phanh sáng rõ",
+    "hazard_sign": "Xe tải phía trước giảm tốc và chuyển làn tránh khu vực sửa đường"
+  },
+  {
+    "id": 59,
+    "scenario_number": 59,
+    "chapter_id": 3,
+    "chapter_name": "Giao thông trên đường cao tốc",
+    "title": "Xe container đang đi từ làn trái chuyển ra đường nhánh cắt qua làn đường xe bạn",
+    "video_path": "simulations/ch3/059.mp4",
+    "thumbnail_path": "simulations/ch3/059_thumb.webp",
+    "duration_seconds": 38.7,
+    "scoring_timeline": {
+      "t5_start": 26.9,
+      "t4_start": 27.54,
+      "t3_start": 28.18,
+      "t2_start": 28.82,
+      "t1_start": 29.46,
+      "t0_end": 30.1
+    },
+    "tip": "Nhấn space khi thấy xe tải phía trước bắt đầu nháy đèn để chuyển làn",
+    "hazard_sign": "Xe container chuyển làn từ trái cắt ngang ra đường nhánh"
+  },
+  {
+    "id": 60,
+    "scenario_number": 60,
+    "chapter_id": 3,
+    "chapter_name": "Giao thông trên đường cao tốc",
+    "title": "Xe 16 chỗ từ làn đường khẩn cấp đi ra vào làn xe bạn",
+    "video_path": "simulations/ch3/060.mp4",
+    "thumbnail_path": "simulations/ch3/060_thumb.webp",
+    "duration_seconds": 33.7,
+    "scoring_timeline": {
+      "t5_start": 17.35,
+      "t4_start": 18.07,
+      "t3_start": 18.79,
+      "t2_start": 19.51,
+      "t1_start": 20.23,
+      "t0_end": 20.95
+    },
+    "tip": "Nhấn space khi thấy xe phía trước bật xi nhan để chuẩn bị nhập làn",
+    "hazard_sign": "Xe 16 chỗ từ làn khẩn cấp chuyển làn vào cao tốc"
+  },
+  {
+    "id": 61,
+    "scenario_number": 61,
+    "chapter_id": 3,
+    "chapter_name": "Giao thông trên đường cao tốc",
+    "title": "Xe con từ đường nhánh nhập làn nguy hiểm cắt qua đầu xe bạn",
+    "video_path": "simulations/ch3/061.mp4",
+    "thumbnail_path": "simulations/ch3/061_thumb.webp",
+    "duration_seconds": 37.4,
+    "scoring_timeline": {
+      "t5_start": 26.9,
+      "t4_start": 27.72,
+      "t3_start": 28.54,
+      "t2_start": 29.36,
+      "t1_start": 30.18,
+      "t0_end": 31.0
+    },
+    "tip": "Nhấn space khi thấy xe trắng nhập làn trước mặt, bánh xe bắt đầu đè vạch qua làn của mình",
+    "hazard_sign": "Xe con từ đường nhánh nhập làn cắt qua đầu xe bạn"
+  },
+  {
+    "id": 62,
+    "scenario_number": 62,
+    "chapter_id": 3,
+    "chapter_name": "Giao thông trên đường cao tốc",
+    "title": "Xe con đi ngược chiều nguy hiểm tại làn đường tốc độ cao nhất trên cao tốc",
+    "video_path": "simulations/ch3/062.mp4",
+    "thumbnail_path": "simulations/ch3/062_thumb.webp",
+    "duration_seconds": 36.9,
+    "scoring_timeline": {
+      "t5_start": 25.85,
+      "t4_start": 26.67,
+      "t3_start": 27.49,
+      "t2_start": 28.31,
+      "t1_start": 29.13,
+      "t0_end": 29.95
+    },
+    "tip": "Nhấn space NGAY KHI quan sát thấy hình ảnh của xe ô tô màu đỏ đi ngược chiều trước mặt",
+    "hazard_sign": "Xe ô tô con đi ngược chiều ở làn ngoài cùng cao tốc"
+  },
+  {
+    "id": 63,
+    "scenario_number": 63,
+    "chapter_id": 3,
+    "chapter_name": "Giao thông trên đường cao tốc",
+    "title": "Đàn gia súc từ bên đường đi ra cắt qua làn đường xe bạn tại khu vực cao tốc bị hỏng hộ lan",
+    "video_path": "simulations/ch3/063.mp4",
+    "thumbnail_path": "simulations/ch3/063_thumb.webp",
+    "duration_seconds": 30.1,
+    "scoring_timeline": {
+      "t5_start": 14.5,
+      "t4_start": 15.3,
+      "t3_start": 16.1,
+      "t2_start": 16.9,
+      "t1_start": 17.7,
+      "t0_end": 18.5
+    },
+    "tip": "Nhấn space khi bắt đầu quan sát thấy xuất hiện hình ảnh con bò đứng sát làn đường cao tốc",
+    "hazard_sign": "Đàn gia súc đi ra làn cao tốc chỗ hộ lan hỏng"
+  },
+  {
+    "id": 64,
+    "scenario_number": 64,
+    "chapter_id": 4,
+    "chapter_name": "Giao thông trên đường núi",
+    "title": "Phía đường cong xuất hiện xe tải đi đối diện làm xe khách phía trước giảm tốc độ đột ngột",
+    "video_path": "simulations/ch4/064.mp4",
+    "thumbnail_path": "simulations/ch4/064_thumb.webp",
+    "duration_seconds": 33.2,
+    "scoring_timeline": {
+      "t5_start": 20.3,
+      "t4_start": 21.14,
+      "t3_start": 21.98,
+      "t2_start": 22.82,
+      "t1_start": 23.66,
+      "t0_end": 24.5
+    },
+    "tip": "Nhấn space phía trước đoạn đường cong xuất hiện xe tải đi ngược chiều, xe khách trước mặt phanh, đèn phanh sáng",
+    "hazard_sign": "Xe khách phía trước phanh gấp do gặp xe tải ngược chiều"
+  },
+  {
+    "id": 65,
+    "scenario_number": 65,
+    "chapter_id": 4,
+    "chapter_name": "Giao thông trên đường núi",
+    "title": "Đường đèo dốc ban đêm gần đoạn đường cong, đột ngột tại khúc cua có xe khách lấn làn vượt xe tải lớn",
+    "video_path": "simulations/ch4/065.mp4",
+    "thumbnail_path": "simulations/ch4/065_thumb.webp",
+    "duration_seconds": 42.8,
+    "scoring_timeline": {
+      "t5_start": 26.98,
+      "t4_start": 27.94,
+      "t3_start": 28.91,
+      "t2_start": 29.87,
+      "t1_start": 30.84,
+      "t0_end": 31.8
+    },
+    "tip": "Nhấn space khi gần đến biển báo hiệu đường cong trước mặt, quan sát thấy bên kia đoạn đường cong có đèn xe ngược chiều",
+    "hazard_sign": "Ánh đèn xe khách ngược chiều lấn làn tại khúc cua đêm"
+  },
+  {
+    "id": 66,
+    "scenario_number": 66,
+    "chapter_id": 4,
+    "chapter_name": "Giao thông trên đường núi",
+    "title": "Đi phía sau xe tải chở vật liệu không được chằng buộc cẩn thận",
+    "video_path": "simulations/ch4/066.mp4",
+    "thumbnail_path": "simulations/ch4/066_thumb.webp",
+    "duration_seconds": 28.0,
+    "scoring_timeline": {
+      "t5_start": 19.4,
+      "t4_start": 20.1,
+      "t3_start": 20.8,
+      "t2_start": 21.5,
+      "t1_start": 22.2,
+      "t0_end": 22.9
+    },
+    "tip": "Nhấn space khi xe chở vật liệu phía trước phanh lại, đèn phanh sáng rõ",
+    "hazard_sign": "Xe tải chở vật liệu không chằng buộc phanh gấp"
+  },
+  {
+    "id": 67,
+    "scenario_number": 67,
+    "chapter_id": 4,
+    "chapter_name": "Giao thông trên đường núi",
+    "title": "Xe ô tô phía trước phanh gấp do có động vật hoang dã đứng ven đường",
+    "video_path": "simulations/ch4/067.mp4",
+    "thumbnail_path": "simulations/ch4/067_thumb.webp",
+    "duration_seconds": 38.9,
+    "scoring_timeline": {
+      "t5_start": 22.69,
+      "t4_start": 23.51,
+      "t3_start": 24.33,
+      "t2_start": 25.16,
+      "t1_start": 25.98,
+      "t0_end": 26.8
+    },
+    "tip": "Nhấn space khi thấy xe phía trước phanh tại đoạn đường cong (đèn phanh sáng rõ)",
+    "hazard_sign": "Động vật hoang dã đứng ven đường làm xe trước phanh"
+  },
+  {
+    "id": 68,
+    "scenario_number": 68,
+    "chapter_id": 4,
+    "chapter_name": "Giao thông trên đường núi",
+    "title": "Đường núi, sương mù, có đàn bò đứng sát đường ngay sau đoạn đường cong",
+    "video_path": "simulations/ch4/068.mp4",
+    "thumbnail_path": "simulations/ch4/068_thumb.webp",
+    "duration_seconds": 32.9,
+    "scoring_timeline": {
+      "t5_start": 21.0,
+      "t4_start": 21.6,
+      "t3_start": 22.2,
+      "t2_start": 22.8,
+      "t1_start": 23.4,
+      "t0_end": 24.0
+    },
+    "tip": "Nhấn space ngay khi thấy hình ảnh con bò đứng cạnh đường đi (chú ý quan sát vì sương mù)",
+    "hazard_sign": "Đàn bò đứng sát mép đường sương mù sau đoạn cua"
+  },
+  {
+    "id": 69,
+    "scenario_number": 69,
+    "chapter_id": 4,
+    "chapter_name": "Giao thông trên đường núi",
+    "title": "Xe con vào cua lấn làn nguy hiểm va chạm với xe ngược chiều trên đường đồi núi",
+    "video_path": "simulations/ch4/069.mp4",
+    "thumbnail_path": "simulations/ch4/069_thumb.webp",
+    "duration_seconds": 37.7,
+    "scoring_timeline": {
+      "t5_start": 24.8,
+      "t4_start": 25.26,
+      "t3_start": 25.72,
+      "t2_start": 26.18,
+      "t1_start": 26.64,
+      "t0_end": 27.1
+    },
+    "tip": "Nhấn space khi thấy xe con màu trắng vào cua ẩu lấn hẳn sang làn đường ngược chiều, có nguy cơ va chạm với xe trước mặt",
+    "hazard_sign": "Xe con vào cua ẩu lấn hẳn sang làn ngược chiều"
+  },
+  {
+    "id": 70,
+    "scenario_number": 70,
+    "chapter_id": 4,
+    "chapter_name": "Giao thông trên đường núi",
+    "title": "Xe khách lấn làn vượt xe container ngay tại khúc cua trên đường núi",
+    "video_path": "simulations/ch4/070.mp4",
+    "thumbnail_path": "simulations/ch4/070_thumb.webp",
+    "duration_seconds": 58.0,
+    "scoring_timeline": {
+      "t5_start": 38.1,
+      "t4_start": 38.94,
+      "t3_start": 39.78,
+      "t2_start": 40.62,
+      "t1_start": 41.46,
+      "t0_end": 42.3
+    },
+    "tip": "Nhấn space khi thấy xe tải xuất hiện tại khúc cua, có ánh sáng nháy đèn báo hiệu có xe sau chuẩn bị vượt",
+    "hazard_sign": "Xe khách lấn làn vượt xe đầu kéo ngay khúc cua"
+  },
+  {
+    "id": 71,
+    "scenario_number": 71,
+    "chapter_id": 4,
+    "chapter_name": "Giao thông trên đường núi",
+    "title": "Đường núi, trời mưa, xe phía trước đột ngột dừng lại vì hỏng máy",
+    "video_path": "simulations/ch4/071.mp4",
+    "thumbnail_path": "simulations/ch4/071_thumb.webp",
+    "duration_seconds": 36.1,
+    "scoring_timeline": {
+      "t5_start": 21.9,
+      "t4_start": 22.81,
+      "t3_start": 23.72,
+      "t2_start": 24.63,
+      "t1_start": 25.54,
+      "t0_end": 26.45
+    },
+    "tip": "Nhấn space ngay khi xe phía trước sáng đèn phanh",
+    "hazard_sign": "Xe phía trước phanh gấp do gặp sự cố hỏng máy"
+  },
+  {
+    "id": 72,
+    "scenario_number": 72,
+    "chapter_id": 4,
+    "chapter_name": "Giao thông trên đường núi",
+    "title": "Xe tải lấn làn đường xe bạn để vượt các xe khác trên đường núi thời tiết sương mù",
+    "video_path": "simulations/ch4/072.mp4",
+    "thumbnail_path": "simulations/ch4/072_thumb.webp",
+    "duration_seconds": 36.9,
+    "scoring_timeline": {
+      "t5_start": 25.0,
+      "t4_start": 25.87,
+      "t3_start": 26.74,
+      "t2_start": 27.61,
+      "t1_start": 28.48,
+      "t0_end": 29.35
+    },
+    "tip": "Nhấn space khi quan sát xuất hiện hình ảnh xe tải thứ 2 đang vượt lên, lấn hẳn sang làn xe bạn",
+    "hazard_sign": "Xe tải thứ hai lấn làn vượt ẩu trong sương mù"
+  },
+  {
+    "id": 73,
+    "scenario_number": 73,
+    "chapter_id": 4,
+    "chapter_name": "Giao thông trên đường núi",
+    "title": "Xe con lấn làn xe bạn để vượt xe tải trên đường núi ngay tại đoạn đường quanh co",
+    "video_path": "simulations/ch4/073.mp4",
+    "thumbnail_path": "simulations/ch4/073_thumb.webp",
+    "duration_seconds": 37.1,
+    "scoring_timeline": {
+      "t5_start": 25.2,
+      "t4_start": 25.75,
+      "t3_start": 26.29,
+      "t2_start": 26.84,
+      "t1_start": 27.38,
+      "t0_end": 27.93
+    },
+    "tip": "Nhấn space khi quan sát thấy xe con màu trắng vượt lên, lấn sang làn xe bạn",
+    "hazard_sign": "Xe con lấn sang làn xe bạn để vượt xe tải đường đèo"
+  },
+  {
+    "id": 74,
+    "scenario_number": 74,
+    "chapter_id": 5,
+    "chapter_name": "Giao thông trên đường quốc lộ",
+    "title": "Xe ô tô phía trước phanh gấp để tránh đoàn xe đạp từ đường nhánh đi ra",
+    "video_path": "simulations/ch5/074.mp4",
+    "thumbnail_path": "simulations/ch5/074_thumb.webp",
+    "duration_seconds": 38.7,
+    "scoring_timeline": {
+      "t5_start": 21.13,
+      "t4_start": 21.98,
+      "t3_start": 22.83,
+      "t2_start": 23.68,
+      "t1_start": 24.53,
+      "t0_end": 25.38
+    },
+    "tip": "Nhấn space khi xuất hiện người đi xe đạp ở ngã rẽ phía trước, xe tải phanh sáng đèn",
+    "hazard_sign": "Đoàn xe đạp từ đường nhánh đi ra làm xe trước phanh"
+  },
+  {
+    "id": 75,
+    "scenario_number": 75,
+    "chapter_id": 5,
+    "chapter_name": "Giao thông trên đường quốc lộ",
+    "title": "Trẻ em đột ngột lao ra để nhặt quả bóng bị lăn ra đường",
+    "video_path": "simulations/ch5/075.mp4",
+    "thumbnail_path": "simulations/ch5/075_thumb.webp",
+    "duration_seconds": 29.7,
+    "scoring_timeline": {
+      "t5_start": 15.1,
+      "t4_start": 15.7,
+      "t3_start": 16.3,
+      "t2_start": 16.9,
+      "t1_start": 17.5,
+      "t0_end": 18.1
+    },
+    "tip": "Nhấn space ngay khi thấy xuất hiện cậu bé đuổi theo quả bóng chuẩn bị lăn ra đường",
+    "hazard_sign": "Cậu bé chạy đuổi theo quả bóng lăn ra đường"
+  },
+  {
+    "id": 76,
+    "scenario_number": 76,
+    "chapter_id": 5,
+    "chapter_name": "Giao thông trên đường quốc lộ",
+    "title": "Em bé đột ngột chạy ra đường",
+    "video_path": "simulations/ch5/076.mp4",
+    "thumbnail_path": "simulations/ch5/076_thumb.webp",
+    "duration_seconds": 32.5,
+    "scoring_timeline": {
+      "t5_start": 16.35,
+      "t4_start": 17.04,
+      "t3_start": 17.72,
+      "t2_start": 18.41,
+      "t1_start": 19.09,
+      "t0_end": 19.78
+    },
+    "tip": "Nhấn space ngay khi thấy xuất hiện hình ảnh em bé (áo đỏ) chạy ra đường",
+    "hazard_sign": "Em bé áo đỏ đột ngột chạy ra lòng đường"
+  },
+  {
+    "id": 77,
+    "scenario_number": 77,
+    "chapter_id": 5,
+    "chapter_name": "Giao thông trên đường quốc lộ",
+    "title": "Xe con từ làn phải (khuất tầm nhìn) cắt ngang qua các xe đang đi thẳng để sang đường",
+    "video_path": "simulations/ch5/077.mp4",
+    "thumbnail_path": "simulations/ch5/077_thumb.webp",
+    "duration_seconds": 32.0,
+    "scoring_timeline": {
+      "t5_start": 16.2,
+      "t4_start": 16.96,
+      "t3_start": 17.71,
+      "t2_start": 18.47,
+      "t1_start": 19.22,
+      "t0_end": 19.98
+    },
+    "tip": "Nhấn space khi quan sát thấy đầu xe (màu đỏ) ló ra phía sau xe khách",
+    "hazard_sign": "Xe con đỏ từ làn khuất sau xe khách cắt ngang sang đường"
+  },
+  {
+    "id": 78,
+    "scenario_number": 78,
+    "chapter_id": 5,
+    "chapter_name": "Giao thông trên đường quốc lộ",
+    "title": "Đèn vừa chuyển xanh, đột ngột xe mô-tô làn trái phía trước cố vượt đèn đỏ cắt qua trước đầu xe",
+    "video_path": "simulations/ch5/078.mp4",
+    "thumbnail_path": "simulations/ch5/078_thumb.webp",
+    "duration_seconds": 30.6,
+    "scoring_timeline": {
+      "t5_start": 21.4,
+      "t4_start": 21.95,
+      "t3_start": 22.49,
+      "t2_start": 23.04,
+      "t1_start": 23.58,
+      "t0_end": 24.13
+    },
+    "tip": "Nhấn space khi thấy xe máy có ý định vượt đèn đỏ, bánh trước xe máy đè lên vạch sang đường dành cho người đi bộ",
+    "hazard_sign": "Xe máy cố vượt đèn đỏ cắt ngang đầu xe khi vừa xanh"
+  },
+  {
+    "id": 79,
+    "scenario_number": 79,
+    "chapter_id": 5,
+    "chapter_name": "Giao thông trên đường quốc lộ",
+    "title": "Xe mô-tô đi ra từ đường nhánh nguy hiểm phía sau xe buýt vừa đi qua.",
+    "video_path": "simulations/ch5/079.mp4",
+    "thumbnail_path": "simulations/ch5/079_thumb.webp",
+    "duration_seconds": 34.2,
+    "scoring_timeline": {
+      "t5_start": 19.5,
+      "t4_start": 20.09,
+      "t3_start": 20.68,
+      "t2_start": 21.27,
+      "t1_start": 21.86,
+      "t0_end": 22.45
+    },
+    "tip": "Nhấn space khi thấy 2 xe máy trước mặt nhập vào làn đường chính đang khi xe khách màu đỏ vừa đi qua",
+    "hazard_sign": "Hai xe máy từ đường nhánh nhập làn sau khi xe buýt qua"
+  },
+  {
+    "id": 80,
+    "scenario_number": 80,
+    "chapter_id": 5,
+    "chapter_name": "Giao thông trên đường quốc lộ",
+    "title": "Xe mô tô vượt lên đột ngột giảm tốc và chuyển sang làn xe bạn để tránh chướng ngại vật trên đường",
+    "video_path": "simulations/ch5/080.mp4",
+    "thumbnail_path": "simulations/ch5/080_thumb.webp",
+    "duration_seconds": 26.4,
+    "scoring_timeline": {
+      "t5_start": 16.5,
+      "t4_start": 17.01,
+      "t3_start": 17.52,
+      "t2_start": 18.03,
+      "t1_start": 18.54,
+      "t0_end": 19.05
+    },
+    "tip": "Nhấn space ngay khi thấy xe máy xi nhan để chuyển làn ngay trước mặt",
+    "hazard_sign": "Xe mô-tô xi nhan chuyển làn đột ngột tránh chướng ngại vật"
+  },
+  {
+    "id": 81,
+    "scenario_number": 81,
+    "chapter_id": 5,
+    "chapter_name": "Giao thông trên đường quốc lộ",
+    "title": "Xe bán tải từ đường bên kia quay đầu đột ngột lấn làn xe bạn",
+    "video_path": "simulations/ch5/081.mp4",
+    "thumbnail_path": "simulations/ch5/081_thumb.webp",
+    "duration_seconds": 34.0,
+    "scoring_timeline": {
+      "t5_start": 25.3,
+      "t4_start": 25.93,
+      "t3_start": 26.55,
+      "t2_start": 27.18,
+      "t1_start": 27.8,
+      "t0_end": 28.43
+    },
+    "tip": "Nhấn space khi thấy xe bán tải chuẩn bị quay đầu",
+    "hazard_sign": "Xe bán tải quay đầu đột ngột lấn sang làn xe bạn"
+  },
+  {
+    "id": 82,
+    "scenario_number": 82,
+    "chapter_id": 5,
+    "chapter_name": "Giao thông trên đường quốc lộ",
+    "title": "Xe tải lớn ở làn đường ngược chiều lấn làn xe bạn để vượt qua xe buýt",
+    "video_path": "simulations/ch5/082.mp4",
+    "thumbnail_path": "simulations/ch5/082_thumb.webp",
+    "duration_seconds": 35.2,
+    "scoring_timeline": {
+      "t5_start": 16.4,
+      "t4_start": 17.39,
+      "t3_start": 18.38,
+      "t2_start": 19.37,
+      "t1_start": 20.36,
+      "t0_end": 21.35
+    },
+    "tip": "Nhấn space khi thấy có xe ngược chiều lấn làn xe bạn (quan sát được xe nháy đèn)",
+    "hazard_sign": "Xe tải lớn đối diện lấn làn vượt xe buýt"
+  },
+  {
+    "id": 83,
+    "scenario_number": 83,
+    "chapter_id": 5,
+    "chapter_name": "Giao thông trên đường quốc lộ",
+    "title": "Xuất hiện gia súc từ vệ đường đi ra đường quốc lộ ngay trước mặt xe bạn",
+    "video_path": "simulations/ch5/083.mp4",
+    "thumbnail_path": "simulations/ch5/083_thumb.webp",
+    "duration_seconds": 30.4,
+    "scoring_timeline": {
+      "t5_start": 17.4,
+      "t4_start": 17.97,
+      "t3_start": 18.54,
+      "t2_start": 19.11,
+      "t1_start": 19.68,
+      "t0_end": 20.25
+    },
+    "tip": "Nhấn space khi thấy đàn bò bên vệ đường có xu hướng đi vào phần đường xe chạy",
+    "hazard_sign": "Đàn bò bên vệ đường di chuyển vào làn xe chạy"
+  },
+  {
+    "id": 84,
+    "scenario_number": 84,
+    "chapter_id": 5,
+    "chapter_name": "Giao thông trên đường quốc lộ",
+    "title": "Xe con phía trước giảm tốc đột ngột và chuyển làn để tránh xe buýt đang dừng",
+    "video_path": "simulations/ch5/084.mp4",
+    "thumbnail_path": "simulations/ch5/084_thumb.webp",
+    "duration_seconds": 31.6,
+    "scoring_timeline": {
+      "t5_start": 19.45,
+      "t4_start": 20.16,
+      "t3_start": 20.87,
+      "t2_start": 21.58,
+      "t1_start": 22.29,
+      "t0_end": 23.0
+    },
+    "tip": "Nhấn space khi thấy xe con màu đỏ phía trước xi nhan (lần 2) để chuyển làn",
+    "hazard_sign": "Xe con đỏ phía trước xi nhan chuyển làn tránh xe buýt"
+  },
+  {
+    "id": 85,
+    "scenario_number": 85,
+    "chapter_id": 5,
+    "chapter_name": "Giao thông trên đường quốc lộ",
+    "title": "Khúc gỗ trên xe tải phía trước bị rơi xuống do xe phanh gấp",
+    "video_path": "simulations/ch5/085.mp4",
+    "thumbnail_path": "simulations/ch5/085_thumb.webp",
+    "duration_seconds": 39.4,
+    "scoring_timeline": {
+      "t5_start": 26.2,
+      "t4_start": 26.67,
+      "t3_start": 27.13,
+      "t2_start": 27.6,
+      "t1_start": 28.06,
+      "t0_end": 28.53
+    },
+    "tip": "Nhấn space ngay khi thấy xe chở đồ chằng buộc sơ sài phía trước phanh gấp (có nguy cơ cao rơi xô dịch rơi đồ)",
+    "hazard_sign": "Khúc gỗ trên xe tải phía trước rơi xuống lòng đường"
+  },
+  {
+    "id": 86,
+    "scenario_number": 86,
+    "chapter_id": 5,
+    "chapter_name": "Giao thông trên đường quốc lộ",
+    "title": "Xe con đi phía trước giảm tốc và chuyển làn đột ngột để tránh chướng ngại vật",
+    "video_path": "simulations/ch5/086.mp4",
+    "thumbnail_path": "simulations/ch5/086_thumb.webp",
+    "duration_seconds": 30.8,
+    "scoring_timeline": {
+      "t5_start": 14.43,
+      "t4_start": 15.23,
+      "t3_start": 16.04,
+      "t2_start": 16.84,
+      "t1_start": 17.65,
+      "t0_end": 18.45
+    },
+    "tip": "Nhấn space khi thấy đầu xe con phía trước quay trái (có ý định lấn sang làn ngược chiều, nhiều nguy cơ)",
+    "hazard_sign": "Xe con đi trước chuyển làn đột ngột tránh chướng ngại vật"
+  },
+  {
+    "id": 87,
+    "scenario_number": 87,
+    "chapter_id": 5,
+    "chapter_name": "Giao thông trên đường quốc lộ",
+    "title": "Đi qua chỗ giao cắt với đường sắt ban đêm, không có đèn tín hiệu, phía sau xe con, đột nhiên có tàu đi tới",
+    "video_path": "simulations/ch5/087.mp4",
+    "thumbnail_path": "simulations/ch5/087_thumb.webp",
+    "duration_seconds": 34.2,
+    "scoring_timeline": {
+      "t5_start": 13.4,
+      "t4_start": 14.31,
+      "t3_start": 15.22,
+      "t2_start": 16.13,
+      "t1_start": 17.04,
+      "t0_end": 17.95
+    },
+    "tip": "Nhấn space khi thấy đến đoạn giao nhau với đường sắt, có tàu chuẩn bị đi qua",
+    "hazard_sign": "Tàu hỏa chạy cắt ngang đường bộ ban đêm"
+  },
+  {
+    "id": 88,
+    "scenario_number": 88,
+    "chapter_id": 5,
+    "chapter_name": "Giao thông trên đường quốc lộ",
+    "title": "Xe mô-tô phanh và chuyển làn để tránh xe buýt vào trả khách",
+    "video_path": "simulations/ch5/088.mp4",
+    "thumbnail_path": "simulations/ch5/088_thumb.webp",
+    "duration_seconds": 31.2,
+    "scoring_timeline": {
+      "t5_start": 21.3,
+      "t4_start": 21.84,
+      "t3_start": 22.38,
+      "t2_start": 22.92,
+      "t1_start": 23.46,
+      "t0_end": 24.0
+    },
+    "tip": "Nhấn space khi quan sát thấy xe máy xi nhan để rẽ sang làn của mình (đèn xi nhan sáng rõ)",
+    "hazard_sign": "Xe máy chuyển làn tránh xe buýt đang trả khách"
+  },
+  {
+    "id": 89,
+    "scenario_number": 89,
+    "chapter_id": 5,
+    "chapter_name": "Giao thông trên đường quốc lộ",
+    "title": "Xe đạp từ bên kia đường đối diện băng qua đường không quan sát trước mặt xe bạn",
+    "video_path": "simulations/ch5/089.mp4",
+    "thumbnail_path": "simulations/ch5/089_thumb.webp",
+    "duration_seconds": 30.5,
+    "scoring_timeline": {
+      "t5_start": 18.5,
+      "t4_start": 19.2,
+      "t3_start": 19.9,
+      "t2_start": 20.6,
+      "t1_start": 21.3,
+      "t0_end": 22.0
+    },
+    "tip": "Nhấn space khi thấy xe đạp có ý định sang đường không dừng lại ",
+    "hazard_sign": "Xe đạp từ bên kia đường đối diện băng qua đường"
+  },
+  {
+    "id": 90,
+    "scenario_number": 90,
+    "chapter_id": 5,
+    "chapter_name": "Giao thông trên đường quốc lộ",
+    "title": "Xe bán tải phía trước giảm tốc độ và chuyển làn khẩn cấp để tránh xe mô-tô đi ngược chiều",
+    "video_path": "simulations/ch5/090.mp4",
+    "thumbnail_path": "simulations/ch5/090_thumb.webp",
+    "duration_seconds": 29.0,
+    "scoring_timeline": {
+      "t5_start": 16.6,
+      "t4_start": 17.35,
+      "t3_start": 18.1,
+      "t2_start": 18.85,
+      "t1_start": 19.6,
+      "t0_end": 20.35
+    },
+    "tip": "Nhấn space khi thấy bán tải trước mặt rẽ phải để tránh xe máy đi ngược chiều  (bánh xe đè lên vạch phân làn) ",
+    "hazard_sign": "Xe bán tải né xe máy đi ngược chiều tạt sang làn xe bạn"
+  },
+  {
+    "id": 91,
+    "scenario_number": 91,
+    "chapter_id": 6,
+    "chapter_name": "Giao thông trên đường tai nạn giao thông",
+    "title": "[Tai nạn] Xe ô tô Innova lùi trên cao tốc Hà Nội - Thái Nguyên",
+    "video_path": "simulations/ch6/091.mp4",
+    "thumbnail_path": "simulations/ch6/091_thumb.webp",
+    "duration_seconds": 31.0,
+    "scoring_timeline": {
+      "t5_start": 15.69,
+      "t4_start": 16.55,
+      "t3_start": 17.4,
+      "t2_start": 18.26,
+      "t1_start": 19.11,
+      "t0_end": 19.97
+    },
+    "tip": "Nhấn space khi thấy có xe đi ngược chiều phía trước, lúc này xe của mình vừa đi qua biển báo khoảng cách 50M",
+    "hazard_sign": "Xe ô tô Innova lùi trên đường cao tốc"
+  },
+  {
+    "id": 92,
+    "scenario_number": 92,
+    "chapter_id": 6,
+    "chapter_name": "Giao thông trên đường tai nạn giao thông",
+    "title": "[Tai nạn] Xe mô-tô lấn làn vượt ẩu trên đường núi, va chạm với xe khách đi ngược chiều",
+    "video_path": "simulations/ch6/092.mp4",
+    "thumbnail_path": "simulations/ch6/092_thumb.webp",
+    "duration_seconds": 25.2,
+    "scoring_timeline": {
+      "t5_start": 15.12,
+      "t4_start": 15.76,
+      "t3_start": 16.4,
+      "t2_start": 17.05,
+      "t1_start": 17.69,
+      "t0_end": 18.33
+    },
+    "tip": "Nhấn space khi thấy xe máy lấn làn tại đoạn đường quanh co, lúc này xuất hiện ô tô đi ngược chiều đang đi tốc độ cao",
+    "hazard_sign": "Xe máy lấn làn vượt ẩu trên đường đèo va chạm xe khách"
+  },
+  {
+    "id": 93,
+    "scenario_number": 93,
+    "chapter_id": 6,
+    "chapter_name": "Giao thông trên đường tai nạn giao thông",
+    "title": "[Tai nạn] Xe con từ làn trong cùng bên trái lấn làn vượt ẩu để đi ra đường nhánh, va chạm với xe tải",
+    "video_path": "simulations/ch6/093.mp4",
+    "thumbnail_path": "simulations/ch6/093_thumb.webp",
+    "duration_seconds": 36.8,
+    "scoring_timeline": {
+      "t5_start": 23.0,
+      "t4_start": 23.66,
+      "t3_start": 24.32,
+      "t2_start": 24.98,
+      "t1_start": 25.64,
+      "t0_end": 26.3
+    },
+    "tip": "Nhấn space ngay khi thấy xe con phía trước xi nhan để chuyển làn (chú ý khi đến các lối ra cao tốc)",
+    "hazard_sign": "Xe con từ làn trái cắt ngang đầu xe tải để ra đường nhánh"
+  },
+  {
+    "id": 94,
+    "scenario_number": 94,
+    "chapter_id": 6,
+    "chapter_name": "Giao thông trên đường tai nạn giao thông",
+    "title": "[Tai nạn] Tai nạn liên hoàn giữa 3 xe khách do đâm vào xe đang dừng đỗ để sửa chữa",
+    "video_path": "simulations/ch6/094.mp4",
+    "thumbnail_path": "simulations/ch6/094_thumb.webp",
+    "duration_seconds": 40.8,
+    "scoring_timeline": {
+      "t5_start": 27.05,
+      "t4_start": 27.85,
+      "t3_start": 28.65,
+      "t2_start": 29.46,
+      "t1_start": 30.26,
+      "t0_end": 31.06
+    },
+    "tip": "Nhấn space khi thấy đèn cảnh báo của xe khách phía trước sáng rõ",
+    "hazard_sign": "Xe khách dừng đỗ sửa chữa trên đường bật đèn cảnh báo"
+  },
+  {
+    "id": 95,
+    "scenario_number": 95,
+    "chapter_id": 6,
+    "chapter_name": "Giao thông trên đường tai nạn giao thông",
+    "title": "[Tai nạn] Tài xế giật mình đánh lái gấp đâm xe vào dải phân cách, xe đổ vào đám đông làm 5 người thiệt mạng",
+    "video_path": "simulations/ch6/095.mp4",
+    "thumbnail_path": "simulations/ch6/095_thumb.webp",
+    "duration_seconds": 28.6,
+    "scoring_timeline": {
+      "t5_start": 15.2,
+      "t4_start": 16.18,
+      "t3_start": 17.17,
+      "t2_start": 18.15,
+      "t1_start": 19.14,
+      "t0_end": 20.12
+    },
+    "tip": "Nhấn space khi quan sát thấy đèn cảnh báo của nơi sửa chữa đường phía trước chớp sáng",
+    "hazard_sign": "Đèn cảnh báo rào chắn công trường thi công chớp sáng"
+  },
+  {
+    "id": 96,
+    "scenario_number": 96,
+    "chapter_id": 6,
+    "chapter_name": "Giao thông trên đường tai nạn giao thông",
+    "title": "[Tai nạn] Tai nạn xe container không làm chủ tốc độ đâm trực diện vào xe ô tô con đang dừng chờ đèn đỏ",
+    "video_path": "simulations/ch6/096.mp4",
+    "thumbnail_path": "simulations/ch6/096_thumb.webp",
+    "duration_seconds": 33.1,
+    "scoring_timeline": {
+      "t5_start": 27.36,
+      "t4_start": 28.0,
+      "t3_start": 28.64,
+      "t2_start": 29.27,
+      "t1_start": 29.91,
+      "t0_end": 30.55
+    },
+    "tip": "Nhấn space khi thấy các xe phía trước đã dừng đèn đỏ (tuy nhiên xe của mình không giảm tốc độ)",
+    "hazard_sign": "Đoàn xe dừng đèn đỏ nhưng xe phía sau không giảm tốc"
+  },
+  {
+    "id": 97,
+    "scenario_number": 97,
+    "chapter_id": 6,
+    "chapter_name": "Giao thông trên đường tai nạn giao thông",
+    "title": "[Tai nạn] Xe khách vào cua với tốc độ cao, lấn sang đường ngược chiều va chạm với xe đi chiều ngược lại",
+    "video_path": "simulations/ch6/097.mp4",
+    "thumbnail_path": "simulations/ch6/097_thumb.webp",
+    "duration_seconds": 46.3,
+    "scoring_timeline": {
+      "t5_start": 29.24,
+      "t4_start": 29.71,
+      "t3_start": 30.18,
+      "t2_start": 30.65,
+      "t1_start": 31.12,
+      "t0_end": 31.59
+    },
+    "tip": "Nhấn space khi quan sát thấy đầu xe khách đi ngược chiều lấn làn tại khúc cua",
+    "hazard_sign": "Xe khách vào cua tốc độ cao, lấn sang làn ngược chiều"
+  },
+  {
+    "id": 98,
+    "scenario_number": 98,
+    "chapter_id": 6,
+    "chapter_name": "Giao thông trên đường tai nạn giao thông",
+    "title": "[Tai nạn] Tai nạn đèo Prenn xe khách mất lái đâm vào người điều tiết giao thông và xe khách đi ngược chiều",
+    "video_path": "simulations/ch6/098.mp4",
+    "thumbnail_path": "simulations/ch6/098_thumb.webp",
+    "duration_seconds": 39.0,
+    "scoring_timeline": {
+      "t5_start": 23.65,
+      "t4_start": 24.38,
+      "t3_start": 25.1,
+      "t2_start": 25.83,
+      "t1_start": 26.55,
+      "t0_end": 27.28
+    },
+    "tip": "Nhấn space khi quan sát thấy rõ hình ảnh người điều tiết giao thông và phía xa có xe đang đi lại nhưng xe chính không giảm tốc độ",
+    "hazard_sign": "Người điều tiết giao thông và xe khách ngược chiều"
+  },
+  {
+    "id": 99,
+    "scenario_number": 99,
+    "chapter_id": 6,
+    "chapter_name": "Giao thông trên đường tai nạn giao thông",
+    "title": "[Tai nạn] Hầm Hải Vân xe kéo rơ mooc mất lái lấn làn đâm trực diện vào xe tải đi chiều ngược lại gây tai nạn",
+    "video_path": "simulations/ch6/099.mp4",
+    "thumbnail_path": "simulations/ch6/099_thumb.webp",
+    "duration_seconds": 38.0,
+    "scoring_timeline": {
+      "t5_start": 26.35,
+      "t4_start": 26.96,
+      "t3_start": 27.57,
+      "t2_start": 28.18,
+      "t1_start": 28.79,
+      "t0_end": 29.4
+    },
+    "tip": "Nhấn space khi quan sát thấy thân xe của xe phía trước qua vạch phân làn, lấn hẳn sang làn đường ngược lại",
+    "hazard_sign": "Xe kéo rơ-moóc mất lái lấn làn trong hầm đâm xe tải"
+  },
+  {
+    "id": 100,
+    "scenario_number": 100,
+    "chapter_id": 6,
+    "chapter_name": "Giao thông trên đường tai nạn giao thông",
+    "title": "[Tai nạn] Xe ô tô con chở người đi qua đường sắt tại Nam Định không chú ý va chạm với tàu hỏa",
+    "video_path": "simulations/ch6/100.mp4",
+    "thumbnail_path": "simulations/ch6/100_thumb.webp",
+    "duration_seconds": 30.6,
+    "scoring_timeline": {
+      "t5_start": 17.86,
+      "t4_start": 18.48,
+      "t3_start": 19.1,
+      "t2_start": 19.72,
+      "t1_start": 20.34,
+      "t0_end": 20.96
+    },
+    "tip": "Nhấn space khi thấy có đầu tàu xuất hiện bên phải (qua cái cây, lúc này khoảng cách quá gần)",
+    "hazard_sign": "Đầu tàu hỏa xuất hiện tại đường ngang giao cắt Nam Định"
+  },
+  {
+    "id": 101,
+    "scenario_number": 101,
+    "chapter_id": 6,
+    "chapter_name": "Giao thông trên đường tai nạn giao thông",
+    "title": "[Tai nạn] Xe ô tô 16 chỗ chở khách rẽ trái qua đường sắt không chú ý va chạm với tàu hỏa",
+    "video_path": "simulations/ch6/101.mp4",
+    "thumbnail_path": "simulations/ch6/101_thumb.webp",
+    "duration_seconds": 36.2,
+    "scoring_timeline": {
+      "t5_start": 21.63,
+      "t4_start": 22.13,
+      "t3_start": 22.63,
+      "t2_start": 23.12,
+      "t1_start": 23.62,
+      "t0_end": 24.12
+    },
+    "tip": "Nhấn space khi thấy xe của mình rẽ trái thì quan sát thấy đèn đỏ báo hiệu có tàu chuẩn bị đi qua của đường sắt",
+    "hazard_sign": "Đèn đỏ cảnh báo tàu hỏa sắp đi qua khi xe rẽ trái"
+  },
+  {
+    "id": 102,
+    "scenario_number": 102,
+    "chapter_id": 6,
+    "chapter_name": "Giao thông trên đường tai nạn giao thông",
+    "title": "[Tai nạn] Xe khách va chạm với xe cứu hỏa đi ngược chiều tại nút giao Pháp Vân",
+    "video_path": "simulations/ch6/102.mp4",
+    "thumbnail_path": "simulations/ch6/102_thumb.webp",
+    "duration_seconds": 31.1,
+    "scoring_timeline": {
+      "t5_start": 21.93,
+      "t4_start": 22.62,
+      "t3_start": 23.32,
+      "t2_start": 24.01,
+      "t1_start": 24.71,
+      "t0_end": 25.4
+    },
+    "tip": "Nhấn space khi thấy có xe cứu hỏa chuẩn bị nhập vào đi ngược chiều trong cao tốc",
+    "hazard_sign": "Xe cứu hỏa đi ngược chiều tại nút giao Pháp Vân"
+  },
+  {
+    "id": 103,
+    "scenario_number": 103,
+    "chapter_id": 6,
+    "chapter_name": "Giao thông trên đường tai nạn giao thông",
+    "title": "[Tai nạn] Phía trước đột nhiên có xe ô tô từ làn đối diện đi ngược chiều va chạm với xe con",
+    "video_path": "simulations/ch6/103.mp4",
+    "thumbnail_path": "simulations/ch6/103_thumb.webp",
+    "duration_seconds": 36.3,
+    "scoring_timeline": {
+      "t5_start": 26.24,
+      "t4_start": 26.88,
+      "t3_start": 27.52,
+      "t2_start": 28.17,
+      "t1_start": 28.81,
+      "t0_end": 29.45
+    },
+    "tip": "Nhấn space khi thấy xe màu đỏ đang đi ở làn đối diện có xu hướng rẽ ở ngay đoạn quay xe trước mặt",
+    "hazard_sign": "Xe con từ hướng đối diện chuyển hướng nguy hiểm, gây va chạm"
+  },
+  {
+    "id": 104,
+    "scenario_number": 104,
+    "chapter_id": 6,
+    "chapter_name": "Giao thông trên đường tai nạn giao thông",
+    "title": "[Tai nạn] Tại ngã tư Hàng Xanh, lái xe ô tô con trong tình trạng có nồng độ cồn không làm chủ tốc độ đâm vào loạt xe dừng chờ đèn đỏ",
+    "video_path": "simulations/ch6/104.mp4",
+    "thumbnail_path": "simulations/ch6/104_thumb.webp",
+    "duration_seconds": 40.0,
+    "scoring_timeline": {
+      "t5_start": 29.16,
+      "t4_start": 29.67,
+      "t3_start": 30.18,
+      "t2_start": 30.68,
+      "t1_start": 31.19,
+      "t0_end": 31.7
+    },
+    "tip": "Nhấn space khi đèn giao thông chuyển từ xanh sang đỏ, các xe phía trước dừng lại nhưng xe chính không giảm tốc độ",
+    "hazard_sign": "Xe phía sau không giảm tốc độ đâm dồn toa các xe chờ đèn đỏ"
+  },
+  {
+    "id": 105,
+    "scenario_number": 105,
+    "chapter_id": 6,
+    "chapter_name": "Giao thông trên đường tai nạn giao thông",
+    "title": "[Tai nạn] Xe khách 45 chỗ đâm vào xe đầu kéo kéo rơ moóc chở máy ủi đi từ đường tránh ra gây tai nạn thảm khốc",
+    "video_path": "simulations/ch6/105.mp4",
+    "thumbnail_path": "simulations/ch6/105_thumb.webp",
+    "duration_seconds": 30.5,
+    "scoring_timeline": {
+      "t5_start": 20.35,
+      "t4_start": 20.84,
+      "t3_start": 21.33,
+      "t2_start": 21.82,
+      "t1_start": 22.31,
+      "t0_end": 22.8
+    },
+    "tip": "Nhấn space khi xe mình đã lệch lái sang bên trái, trong khi làn ngược chiều có xe chuẩn bị đi đến",
+    "hazard_sign": "Xe đầu kéo chở máy ủi đi ra từ đường tránh"
+  },
+  {
+    "id": 106,
+    "scenario_number": 106,
+    "chapter_id": 6,
+    "chapter_name": "Giao thông trên đường tai nạn giao thông",
+    "title": "[Tai nạn] Xe khách 48 chỗ thiếu kỹ năng điều khiển, không thông thuộc địa hình lao xuống vực tại Kon Tum",
+    "video_path": "simulations/ch6/106.mp4",
+    "thumbnail_path": "simulations/ch6/106_thumb.webp",
+    "duration_seconds": 40.6,
+    "scoring_timeline": {
+      "t5_start": 26.05,
+      "t4_start": 26.68,
+      "t3_start": 27.31,
+      "t2_start": 27.94,
+      "t1_start": 28.57,
+      "t0_end": 29.2
+    },
+    "tip": "Nhấn space khi quan sát thấy rõ biển báo đang sửa đường và hình ảnh lờ mờ  vật cản trước mặt",
+    "hazard_sign": "Biển báo công trường và chướng ngại vật trong sương mù"
+  },
+  {
+    "id": 107,
+    "scenario_number": 107,
+    "chapter_id": 6,
+    "chapter_name": "Giao thông trên đường tai nạn giao thông",
+    "title": "[Tai nạn] Xe khách chạy vượt xe tải, đâm trực diện vào xe khách đi chiều ngược lại gây tai nạn liên hoàn 3 xe",
+    "video_path": "simulations/ch6/107.mp4",
+    "thumbnail_path": "simulations/ch6/107_thumb.webp",
+    "duration_seconds": 41.5,
+    "scoring_timeline": {
+      "t5_start": 21.75,
+      "t4_start": 22.35,
+      "t3_start": 22.95,
+      "t2_start": 23.55,
+      "t1_start": 24.15,
+      "t0_end": 24.75
+    },
+    "tip": "Nhấn space khi xe chính rẽ một phần sang đường ngược chiều, quan sát thấy ánh đèn của xe ngược chiều ở khoảng cách gần",
+    "hazard_sign": "Xe khách vượt ẩu đâm trực diện xe khách ngược chiều"
+  },
+  {
+    "id": 108,
+    "scenario_number": 108,
+    "chapter_id": 6,
+    "chapter_name": "Giao thông trên đường tai nạn giao thông",
+    "title": "[Tai nạn] Trời mưa, đường trơn trượt xe tải khi vào cua không làm chủ tốc độ đã đâm vào xe ben đi ngược chiều",
+    "video_path": "simulations/ch6/108.mp4",
+    "thumbnail_path": "simulations/ch6/108_thumb.webp",
+    "duration_seconds": 36.8,
+    "scoring_timeline": {
+      "t5_start": 29.8,
+      "t4_start": 30.23,
+      "t3_start": 30.66,
+      "t2_start": 31.09,
+      "t1_start": 31.52,
+      "t0_end": 31.95
+    },
+    "tip": "Nhấn space khi xe đang vào cua nhưng đi tốc độ cao, bắt đầu lệch làn,  phía trước quan sát RÕ có xe đi ngược chiều",
+    "hazard_sign": "Xe tải mất kiểm soát khi vào cua trơn ướt va chạm xe ben"
+  },
+  {
+    "id": 109,
+    "scenario_number": 109,
+    "chapter_id": 6,
+    "chapter_name": "Giao thông trên đường tai nạn giao thông",
+    "title": "[Tai nạn] Xe 16 chỗ từ đường nhánh, khuất tầm nhìn rẽ vào đường chính không giảm tốc độ, bị xe sơ mi rơ moóc đâm vào (tại Ngã 3 Nà Phặc - Bắc Kạn)",
+    "video_path": "simulations/ch6/109.mp4",
+    "thumbnail_path": "simulations/ch6/109_thumb.webp",
+    "duration_seconds": 31.0,
+    "scoring_timeline": {
+      "t5_start": 18.97,
+      "t4_start": 19.62,
+      "t3_start": 20.27,
+      "t2_start": 20.91,
+      "t1_start": 21.56,
+      "t0_end": 22.21
+    },
+    "tip": "Nhấn space khi thấy có xe từ đường nhánh chuẩn bị đi vào ngã ba phía trước với tốc độ cao",
+    "hazard_sign": "Xe 16 chỗ từ đường nhánh khuất tầm nhìn lao ra ngã ba"
+  },
+  {
+    "id": 110,
+    "scenario_number": 110,
+    "chapter_id": 6,
+    "chapter_name": "Giao thông trên đường tai nạn giao thông",
+    "title": "[Tai nạn] Xe container bất ngờ tông vào hàng loạt phương tiện đang dừng đèn đỏ tại quốc lộ 1, đoạn nút giao Mỹ Phước - Tân Vạn, Bình Dương",
+    "video_path": "simulations/ch6/110.mp4",
+    "thumbnail_path": "simulations/ch6/110_thumb.webp",
+    "duration_seconds": 32.7,
+    "scoring_timeline": {
+      "t5_start": 18.93,
+      "t4_start": 19.53,
+      "t3_start": 20.13,
+      "t2_start": 20.73,
+      "t1_start": 21.33,
+      "t0_end": 21.93
+    },
+    "tip": "Nhấn space khi đèn giao thông chuyển từ xanh sang đỏ, các xe phía trước dừng lại nhưng xe chính không giảm tốc độ",
+    "hazard_sign": "Xe container tông hàng loạt xe dừng đèn đỏ tại nút giao"
+  },
+  {
+    "id": 111,
+    "scenario_number": 111,
+    "chapter_id": 6,
+    "chapter_name": "Giao thông trên đường tai nạn giao thông",
+    "title": "[Tai nạn] Xe khách lấn làn vượt xe tải chỗ đường cong, đâm vào xe khách đi ngược chiều Tai nạn tại km 1791+ 400 trên đường Hồ Chí Minh, đoạn qua thôn 7, xã Hoà Phú, TP.Buôn Ma Thuột (Đắk Lắk)",
+    "video_path": "simulations/ch6/111.mp4",
+    "thumbnail_path": "simulations/ch6/111_thumb.webp",
+    "duration_seconds": 24.7,
+    "scoring_timeline": {
+      "t5_start": 18.25,
+      "t4_start": 18.86,
+      "t3_start": 19.47,
+      "t2_start": 20.08,
+      "t1_start": 20.69,
+      "t0_end": 21.3
+    },
+    "tip": "Nhấn space khi thấy xe khách màu đỏ bắt đầu lấn làn để vượt",
+    "hazard_sign": "Xe khách đỏ lấn làn vượt xe tải tại đoạn đường cong"
+  },
+  {
+    "id": 112,
+    "scenario_number": 112,
+    "chapter_id": 6,
+    "chapter_name": "Giao thông trên đường tai nạn giao thông",
+    "title": "[Tai nạn] Xe khách 16 chỗ vượt ẩu qua xe đầu kéo va chạm với xe khách đang xuống dốc tốc độ cao, gây tai nạn liên hoàn giữa 3 xe tại km12+400 đoạn qua phường Hương Hồ, TP. Huế",
+    "video_path": "simulations/ch6/112.mp4",
+    "thumbnail_path": "simulations/ch6/112_thumb.webp",
+    "duration_seconds": 27.2,
+    "scoring_timeline": {
+      "t5_start": 13.95,
+      "t4_start": 14.72,
+      "t3_start": 15.5,
+      "t2_start": 16.27,
+      "t1_start": 17.05,
+      "t0_end": 17.82
+    },
+    "tip": "Nhấn space khi xe chính đè vạch phân làn, thân xe di chuyển hẳn sang làn đường bên trái, phía trước xuất hiện xe đi ngược chiều ở khoảng cách gần",
+    "hazard_sign": "Xe khách 16 chỗ vượt ẩu đối đầu xe khách đang xuống dốc"
+  },
+  {
+    "id": 113,
+    "scenario_number": 113,
+    "chapter_id": 6,
+    "chapter_name": "Giao thông trên đường tai nạn giao thông",
+    "title": "[Tai nạn] Khi đèn tín hiệu chuyển sang xanh, đột ngột có xe con cố vượt từ đường giao bên trái sang làm va chạm với xe con",
+    "video_path": "simulations/ch6/113.mp4",
+    "thumbnail_path": "simulations/ch6/113_thumb.webp",
+    "duration_seconds": 32.9,
+    "scoring_timeline": {
+      "t5_start": 23.73,
+      "t4_start": 24.3,
+      "t3_start": 24.88,
+      "t2_start": 25.45,
+      "t1_start": 26.03,
+      "t0_end": 26.6
+    },
+    "tip": "Nhấn space khi quan sát thấy có ô tô màu xanh ở bên trái vượt đèn đỏ đi với tốc độ cao",
+    "hazard_sign": "Xe con màu xanh vượt đèn đỏ cắt ngang ngã tư"
+  },
+  {
+    "id": 114,
+    "scenario_number": 114,
+    "chapter_id": 6,
+    "chapter_name": "Giao thông trên đường tai nạn giao thông",
+    "title": "[Tai nạn] Ô tô 7 chỗ đi trên cầu treo hẹp ban đêm, tài xế lái xe va chạm với xe máy, xe đâm xuống sông tại cầu treo qua sông Giăng, Thanh Chương, Nghệ An",
+    "video_path": "simulations/ch6/114.mp4",
+    "thumbnail_path": "simulations/ch6/114_thumb.webp",
+    "duration_seconds": 37.1,
+    "scoring_timeline": {
+      "t5_start": 18.83,
+      "t4_start": 19.69,
+      "t3_start": 20.56,
+      "t2_start": 21.42,
+      "t1_start": 22.29,
+      "t0_end": 23.15
+    },
+    "tip": "Nhấn space khi thấy ở bên kia cầu có đèn xe máy ngược chiều nhưng xe của bạn không dừng lại mà tiếp tục đi vào với tốc độ cao",
+    "hazard_sign": "Xuất hiện ánh đèn xe máy đi đối diện trên cầu treo hẹp"
+  },
+  {
+    "id": 115,
+    "scenario_number": 115,
+    "chapter_id": 6,
+    "chapter_name": "Giao thông trên đường tai nạn giao thông",
+    "title": "[Tai nạn] Ban đêm trên quốc lộ, xe con phanh gấp tránh xe máy từ ngõ lao ra dẫn đến va chạm",
+    "video_path": "simulations/ch6/115.mp4",
+    "thumbnail_path": "simulations/ch6/115_thumb.webp",
+    "duration_seconds": 30.5,
+    "scoring_timeline": {
+      "t5_start": 19.4,
+      "t4_start": 20.06,
+      "t3_start": 20.72,
+      "t2_start": 21.38,
+      "t1_start": 22.04,
+      "t0_end": 22.7
+    },
+    "tip": "Nhấn space khi quan sát thấy xe máy đi nhanh từ ngõ ra trước mặt làm xe con nhấn đèn phanh",
+    "hazard_sign": "Ban đêm, xe máy từ ngõ lao ra khiến xe trước phanh gấp"
+  },
+  {
+    "id": 116,
+    "scenario_number": 116,
+    "chapter_id": 6,
+    "chapter_name": "Giao thông trên đường tai nạn giao thông",
+    "title": "[Tai nạn] Phía trước có đá lở đột ngột và rơi xuống (tai nạn tại Đồng Văn, Hà Giang)",
+    "video_path": "simulations/ch6/116.mp4",
+    "thumbnail_path": "simulations/ch6/116_thumb.webp",
+    "duration_seconds": 30.0,
+    "scoring_timeline": {
+      "t5_start": 17.3,
+      "t4_start": 18.21,
+      "t3_start": 19.12,
+      "t2_start": 20.03,
+      "t1_start": 20.94,
+      "t0_end": 21.85
+    },
+    "tip": "Nhấn space khi quan sát thấy có dấu hiệu đất đá rơi từ trên cao xuống",
+    "hazard_sign": "Đất đá sạt lở từ vách núi rơi xuống mặt đường"
+  },
+  {
+    "id": 117,
+    "scenario_number": 117,
+    "chapter_id": 6,
+    "chapter_name": "Giao thông trên đường tai nạn giao thông",
+    "title": "[Tai nạn] Ban ngày tại ngã ba, xe con phanh gấp tránh xe máy rẽ ẩu dẫn đến xe khách phía sau đâm va",
+    "video_path": "simulations/ch6/117.mp4",
+    "thumbnail_path": "simulations/ch6/117_thumb.webp",
+    "duration_seconds": 25.6,
+    "scoring_timeline": {
+      "t5_start": 17.63,
+      "t4_start": 18.15,
+      "t3_start": 18.67,
+      "t2_start": 19.19,
+      "t1_start": 19.71,
+      "t0_end": 20.23
+    },
+    "tip": "Nhấn space khi xe con phía trước bật đèn phanh khi gặp xe máy rẽ ẩu",
+    "hazard_sign": "Ban ngày tại ngã ba, xe máy rẽ ẩu khiến xe trước phanh gấp"
+  },
+  {
+    "id": 118,
+    "scenario_number": 118,
+    "chapter_id": 6,
+    "chapter_name": "Giao thông trên đường tai nạn giao thông",
+    "title": "[Tai nạn] Xe 16 chỗ rẽ không quan sát, không làm chủ tốc độ đâm vào xe bán tải đang lùi",
+    "video_path": "simulations/ch6/118.mp4",
+    "thumbnail_path": "simulations/ch6/118_thumb.webp",
+    "duration_seconds": 29.7,
+    "scoring_timeline": {
+      "t5_start": 17.35,
+      "t4_start": 18.28,
+      "t3_start": 19.21,
+      "t2_start": 20.14,
+      "t1_start": 21.07,
+      "t0_end": 22.0
+    },
+    "tip": "Nhấn space khi quan sát thấy xe bán tải phía trước lùi hẳn vào làn đường đang đi của xe mình",
+    "hazard_sign": "Xe bán tải lùi đột ngột ra làn đường chính"
+  },
+  {
+    "id": 119,
+    "scenario_number": 119,
+    "chapter_id": 6,
+    "chapter_name": "Giao thông trên đường tai nạn giao thông",
+    "title": "[Tai nạn] Xe khách không tuân thủ khoảng cách an toàn, xử lý tình huống không kịp dẫn tới va chạm với xe tải đang dừng đỗ",
+    "video_path": "simulations/ch6/119.mp4",
+    "thumbnail_path": "simulations/ch6/119_thumb.webp",
+    "duration_seconds": 36.3,
+    "scoring_timeline": {
+      "t5_start": 18.65,
+      "t4_start": 19.18,
+      "t3_start": 19.71,
+      "t2_start": 20.24,
+      "t1_start": 20.77,
+      "t0_end": 21.3
+    },
+    "tip": "Nhấn space khi xe tải đi ngay phía trước xi nhan rẽ trái (xe bạn đi quá gần)",
+    "hazard_sign": "Xe tải đi trước bật xi nhan rẽ trái ở cự ly quá gần"
+  },
+  {
+    "id": 120,
+    "scenario_number": 120,
+    "chapter_id": 6,
+    "chapter_name": "Giao thông trên đường tai nạn giao thông",
+    "title": "[Tai nạn] Xe tải không làm chủ được tốc độ mất lái lao vào chợ dân sinh và va chạm với các xe đang đi phía trước",
+    "video_path": "simulations/ch6/120.mp4",
+    "thumbnail_path": "simulations/ch6/120_thumb.webp",
+    "duration_seconds": 40.0,
+    "scoring_timeline": {
+      "t5_start": 20.38,
+      "t4_start": 20.94,
+      "t3_start": 21.51,
+      "t2_start": 22.07,
+      "t1_start": 22.64,
+      "t0_end": 23.2
+    },
+    "tip": "Nhấn space khi chuẩn bị đi vào đoạn đường có cảnh báo đi chậm, xe phía trước phanh sáng đèn",
+    "hazard_sign": "Xe tải không làm chủ tốc độ, mất lái lao vào khu vực chợ ven đường"
+  }
+]

@@ -1,0 +1,1604 @@
+[
+    {
+        "id": "61d56144ff83b5323c8bbe63",
+        "folder": "chapter1",
+        "title": "Chương 1: Giao thông trên đường phố",
+        "situations": [
+            {
+                "id": "oARU_lVPu4o",
+                "folder": "th1",
+                "title": "TH1: Người đi bộ sang đường khuất sau xe tải.",
+                "suggested_image": "1.png",
+                "suggested_details": "Gợi ý: Ấn phím space khi người đi bộ xuất hiện sau đuôi xe tải.",
+                "url_video": "1.m3u8",
+                "total_duration": "00:27.041",
+                "score_segments": [
+                    17.0,
+                    19.0
+                ]
+            },
+            {
+                "id": "ZzdhOWXwJE8",
+                "folder": "th10",
+                "title": "TH10: Xe ô tô làn đường đối diện lấn làn vượt xe tải đang dừng đỗ tại khu vực đông đúc.",
+                "suggested_image": "10.png",
+                "suggested_details": "Gợi ý: Ấn phím space khi thấy xe con từ đường nhánh đang đi ra với tốc độ cao.",
+                "url_video": "10.m3u8",
+                "total_duration": "00:31.333",
+                "score_segments": [
+                    18.0,
+                    22.0
+                ]
+            },
+            {
+                "id": "IO25UinFvm8",
+                "folder": "th11",
+                "title": "TH11: Xe bồn bê-tông từ đường nhánh lấn làn để rẽ tại ngã ba không có đèn giao thông có nhiều xe đang dừng đỗ.",
+                "suggested_image": "11.png",
+                "suggested_details": "Gợi ý: Ấn phím space khi thấy xe trộn bê tông bắt đầu rẽ phải vào đường xe đang chạy.",
+                "url_video": "11.m3u8",
+                "total_duration": "00:32.666",
+                "score_segments": [
+                    17.0,
+                    24.0
+                ]
+            },
+            {
+                "id": "ISWuBwW0SOs",
+                "folder": "th12",
+                "title": "TH12: Xe mô tô lấn làn vượt ẩu nguy hiểm tại giao lộ.",
+                "suggested_image": "12.png",
+                "suggested_details": "Gợi ý: Ấn phím space tại thời điểm xe con bắt đầu đánh lái trái và di chuyển.",
+                "url_video": "12.m3u8",
+                "total_duration": "00:36.958",
+                "score_segments": [
+                    21.0,
+                    22.0
+                ]
+            },
+            {
+                "id": "I4qhv1MWJ_c",
+                "folder": "th13",
+                "title": "TH13: Người đi xe đạp từ vỉa hè bất ngờ đi xuống đường để sang đường.",
+                "suggested_image": "13.png",
+                "suggested_details": "Gợi ý: Ấn phím space tại thời điểm xe đạp bắt đầu đi xuống lòng đường.",
+                "url_video": "13.m3u8",
+                "total_duration": "00:30.083",
+                "score_segments": [
+                    18.0,
+                    20.0
+                ]
+            },
+            {
+                "id": "B6oEmXD6EXE",
+                "folder": "th14",
+                "title": "TH14: Tình huống nguy hiểm khi gặp xe tải lớn đi ra hầm chui dân sinh.",
+                "suggested_image": "14.png",
+                "suggested_details": "Gợi ý: Ấn phím space tại thời điểm nhìn thấy đầu xe tải xuất hiện chuẩn bị tới đường hẹp.",
+                "url_video": "14.m3u8",
+                "total_duration": "00:34.125",
+                "score_segments": [
+                    21.0,
+                    24.0
+                ]
+            },
+            {
+                "id": "03Il4yxzous",
+                "folder": "th15",
+                "title": "TH15: Xe phía trước phanh gấp để tránh xe chuyển làn rẽ trái tại ngã ba.",
+                "suggested_image": "15.png",
+                "suggested_details": "Gợi ý: Ấn phím Space khi thấy đèn phanh xe phía trước sang.",
+                "url_video": "15.m3u8",
+                "total_duration": "00:33.208",
+                "score_segments": [
+                    20.0,
+                    24.0
+                ]
+            },
+            {
+                "id": "bkRqe-m6Bts",
+                "folder": "th16",
+                "title": "TH16: Xe ô tô từ đường nhánh bên trái bất ngờ đi nhanh ra có nguy cơ va chạm với xe bạn.",
+                "suggested_image": "16.png",
+                "suggested_details": "Gợi ý: Ấn phím space tại thời điểm vừa thấy xe con đang lao đến.",
+                "url_video": "16.m3u8",
+                "total_duration": "00:30.250",
+                "score_segments": [
+                    18.0,
+                    20.0
+                ]
+            },
+            {
+                "id": "TIohTMxb0FQ",
+                "folder": "th17",
+                "title": "TH17: Xe buýt lấn làn đường vượt ẩu tại ngã tư có đèn giao thông",
+                "suggested_image": "17.png",
+                "suggested_details": "Gợi ý: Ấn phím space ngay sau khi nhận thấy có xe buýt chạy lấn làn.",
+                "url_video": "17.m3u8",
+                "total_duration": "00:29.000",
+                "score_segments": [
+                    15.0,
+                    17.0
+                ]
+            },
+            {
+                "id": "tBexNYjnmuk",
+                "folder": "th18",
+                "title": "TH18: Gặp tài xế xe đang dừng đỗ ven đường đột ngột mở cửa xe.",
+                "suggested_image": "18.png",
+                "suggested_details": "Gợi ý: Ấn phím space ngay khi nhận thấy cửa xe bên phía tài xế đang mở hé.",
+                "url_video": "18.m3u8",
+                "total_duration": "00:31.333",
+                "score_segments": [
+                    18.0,
+                    21.0
+                ]
+            },
+            {
+                "id": "GRdp_D1b81Q",
+                "folder": "th19",
+                "title": "TH19: Tài xế xe đứng bên đường đang mở cửa xe.",
+                "suggested_image": "19.png",
+                "suggested_details": "Gợi ý: Ấn phím space khi xe đang chạy tiến gần đến xe đang bật đèn cảnh báo, có người đang bước xuống đường.",
+                "url_video": "19.m3u8",
+                "total_duration": "00:28.916",
+                "score_segments": [
+                    19.0,
+                    21.0
+                ]
+            },
+            {
+                "id": "OPnZ-8WLKzQ",
+                "folder": "th2",
+                "title": "TH2: Người đi bộ vượt đèn đỏ sang đường.",
+                "suggested_image": "2.png",
+                "suggested_details": "Gợi ý: Ấn phím space khi chân trái người đi bộ bước lên giữa giải phân cách.",
+                "url_video": "2.m3u8",
+                "total_duration": "00:39.541",
+                "score_segments": [
+                    25.0,
+                    26.0
+                ]
+            },
+            {
+                "id": "ITKk3j6hP1Q",
+                "folder": "th20",
+                "title": "TH20: Tài xế xe đang đỗ ven đường đi ra mở cửa xe tại khu vực đường hẹp.",
+                "suggested_image": "20.png",
+                "suggested_details": "Gợi ý: Ấn phím space ngay khi nhận thấy đèn tín hiệu xe trắng chớp tắt.",
+                "url_video": "20.m3u8",
+                "total_duration": "00:37.291",
+                "score_segments": [
+                    25.0,
+                    28.0
+                ]
+            },
+            {
+                "id": "Z3nhVrJJSA0",
+                "folder": "th21",
+                "title": "TH21: Xe ô tô phía trước dừng lại và lùi vào nơi đỗ tại khu vực đường hẹp.",
+                "suggested_image": "21.png",
+                "suggested_details": "Gợi ý: Ấn phím space khi thấy đèn phanh xe phía trước sang.",
+                "url_video": "21.m3u8",
+                "total_duration": "00:39.458",
+                "score_segments": [
+                    20.0,
+                    22.0
+                ]
+            },
+            {
+                "id": "4N4Kn29z7fI",
+                "folder": "th22",
+                "title": "TH22: Gặp xe ô tô từ đường nhánh bên phải tại ngã ba đi ra với tốc độ nhanh.",
+                "suggested_image": "22.png",
+                "suggested_details": "Gợi ý: Ấn phím space khi thấy xe sắp vào giao lộ để rẽ trái.",
+                "url_video": "22.m3u8",
+                "total_duration": "00:32.833",
+                "score_segments": [
+                    20.0,
+                    23.0
+                ]
+            },
+            {
+                "id": "EVbAkBxdIko",
+                "folder": "th23",
+                "title": "TH23: Xe ô tô đối diện lấn làn vượt xe đang có tín hiệu dừng khẩn cấp.",
+                "suggested_image": "23.png",
+                "suggested_details": "Gợi ý: Ấn phím space ngay khi thấy xe con lấn làn né xe tả.",
+                "url_video": "23.m3u8",
+                "total_duration": "00:32.666",
+                "score_segments": [
+                    22.0,
+                    24.0
+                ]
+            },
+            {
+                "id": "oABPM5Dxdqw",
+                "folder": "th24",
+                "title": "TH24: Xe tải lớn ở làn đối diện lấn làn vượt xe đang thu gom rác.",
+                "suggested_image": "24.png",
+                "suggested_details": "Gợi ý: Ấn phím space ngay khi thấy xe tải lấn làn né xe rác.",
+                "url_video": "24.m3u8",
+                "total_duration": "00:34.208",
+                "score_segments": [
+                    21.0,
+                    24.0
+                ]
+            },
+            {
+                "id": "a24XfKfDD8g",
+                "folder": "th25",
+                "title": "TH25: Xe ô tô khách bất ngờ đi ra từ nơi đỗ tại đường hẹp.",
+                "suggested_image": "25.png",
+                "suggested_details": "Gợi ý: Ấn phím space khi thấy xe khách xi nhan và đánh lái.",
+                "url_video": "25.m3u8",
+                "total_duration": "00:41.250",
+                "score_segments": [
+                    17.0,
+                    24.0
+                ]
+            },
+            {
+                "id": "1U9Khgq1izQ",
+                "folder": "th26",
+                "title": "TH26: Tránh xe tại khu vực công trình sửa đường xuất hiện sau khúc cua.",
+                "suggested_image": "26.png",
+                "suggested_details": "Gợi ý: Ấn phím space khi xe tiến gần đến công trình và xuất hiện xe ngược chiều.",
+                "url_video": "26.m3u8",
+                "total_duration": "00:41.250",
+                "score_segments": [
+                    19.0,
+                    23.0
+                ]
+            },
+            {
+                "id": "bbgzwqlwMjQ",
+                "folder": "th27",
+                "title": "TH27: Xe khách bật đèn cảnh báo đứng giữa ngã tư để đón khác.",
+                "suggested_image": "27.png",
+                "suggested_details": "Gợi ý: Ấn phím space khi đèn tín hiệu chuyển xanh, nhưng xe khách không di chuyển.",
+                "url_video": "27.m3u8",
+                "total_duration": "00:34.750",
+                "score_segments": [
+                    21.0,
+                    23.0
+                ]
+            },
+            {
+                "id": "8ZUuOxuoB14",
+                "folder": "th28",
+                "title": "TH28: Xe ô tô phía trước đang đi, đột ngột phanh gấp khi gặp vũng nước trên đường.",
+                "suggested_image": "28.png",
+                "suggested_details": "Gợi ý: Ấn phím Space khi thấy đèn phanh xe phía trước sang.",
+                "url_video": "28.m3u8",
+                "total_duration": "00:35.958",
+                "score_segments": [
+                    19.0,
+                    21.0
+                ]
+            },
+            {
+                "id": "pqbtthDRlw8",
+                "folder": "th29",
+                "title": "TH29: Trời mưa, ô tô phía trước phanh gấp để tránh xe mô-tô tạt đầu khi gặp chướng ngại vật.",
+                "suggested_image": "29.png",
+                "suggested_details": "Gợi ý: Ấn phím Space khi thấy đèn phanh xe phía trước sang.",
+                "url_video": "29.m3u8",
+                "total_duration": "00:34.000",
+                "score_segments": [
+                    19.0,
+                    21.0
+                ]
+            },
+            {
+                "id": "CTE1WC1_HuI",
+                "folder": "th3",
+                "title": "TH3: Xe phía trước phanh gấp để tránh xe buýt đang dừng tại bến xe buýt.",
+                "suggested_image": "3.png",
+                "suggested_details": "Gợi ý: Ấn phím space khi nhận thấy đèn phanh xe phía trước sáng lên.",
+                "url_video": "3.m3u8",
+                "total_duration": "00:34.083",
+                "score_segments": [
+                    22.0,
+                    24.0
+                ]
+            },
+            {
+                "id": "06-N2UFpAzA",
+                "folder": "th4",
+                "title": "TH4: Xe con từ đường nhánh đi nhanh ra tại ngã ba không có đèn tín hiệu giao thông.",
+                "suggested_image": "4.png",
+                "suggested_details": "Gợi ý: Ấn phím space tại thời điểm nhận thấy có xe đen đang ở nhánh đường phụ chuẩn bị rẽ.",
+                "url_video": "4.m3u8",
+                "total_duration": "00:34.458",
+                "score_segments": [
+                    17.0,
+                    22.0
+                ]
+            },
+            {
+                "id": "-sa9a3ZNH4k",
+                "folder": "th5",
+                "title": "TH5: Xe máy đi thẳng đột ngột rẻ trái sang đường trước đầu xe bạn.",
+                "suggested_image": "5.png",
+                "suggested_details": "Gợi ý: Ấn phím space tại thời điểm nhận thấy xe máy bất ngờ chuyển sang làn xe bên cạnh.",
+                "url_video": "5.m3u8",
+                "total_duration": "00:33.500",
+                "score_segments": [
+                    19.0,
+                    23.0
+                ]
+            },
+            {
+                "id": "sYwdHq3bDaM",
+                "folder": "th6",
+                "title": "TH6: Xe buýt lấn làn để vượt tại ngã ba.",
+                "suggested_image": "6.png",
+                "suggested_details": "Gợi ý: Ấn phím space tại thời điểm xe buýt bắt đầu đánh lái tránh xe con.",
+                "url_video": "6.m3u8",
+                "total_duration": "00:30.854",
+                "score_segments": [
+                    20.0,
+                    22.0
+                ]
+            },
+            {
+                "id": "3krGVzvVb3o",
+                "folder": "th7",
+                "title": "TH7: Xe phía trước phanh gấp tránh người đi bộ vượt đèn đỏ sang đường.",
+                "suggested_image": "7.png",
+                "suggested_details": "Gợi ý: Ấn phím Space khi thấy đèn phanh xe phía trước sang.",
+                "url_video": "7.m3u8",
+                "total_duration": "00:33.083",
+                "score_segments": [
+                    17.0,
+                    21.0
+                ]
+            },
+            {
+                "id": "_CteLUg6tfc",
+                "folder": "th8",
+                "title": "TH8: Xe đạp bất ngờ đi ra từ đường nhánh tại ngã ba.",
+                "suggested_image": "8.png",
+                "suggested_details": "Gợi ý: Ấn phím Space khi nhận thấy xe đạp tiến sát giao lộ chuẩn bị sang đường.",
+                "url_video": "8.m3u8",
+                "total_duration": "00:34.208",
+                "score_segments": [
+                    17.0,
+                    19.0
+                ]
+            },
+            {
+                "id": "wCIKl_-h1t4",
+                "folder": "th9",
+                "title": "TH9: Xe ô tô làn đường đối diện lấn làn vượt xe tải đang dừng đỗ tại khu vực đông đúc.",
+                "suggested_image": "9.png",
+                "suggested_details": "Gợi ý: Ấn phim space khi thấy xe con bắt đầu đánh lái lấn làn đường.",
+                "url_video": "9.m3u8",
+                "total_duration": "00:23.416",
+                "score_segments": [
+                    15.0,
+                    17.0
+                ]
+            }
+        ]
+    },
+    {
+        "id": "61d5624405eac1322ef459f9",
+        "folder": "chapter2",
+        "title": "Chương 2: Giao thông trên đường giao thông nông thông.",
+        "situations": [
+            {
+                "id": "1aUVUtIXYIM",
+                "folder": "th30",
+                "title": "TH30: Đường nông thôn, xe đi gặp đàn bò đang đứng trên đường.",
+                "suggested_image": "30.png",
+                "suggested_details": "Gợi ý: Ấn phím space khi thấy 2 con bò và xe đến gần đống rơm bên phải.",
+                "url_video": "30.m3u8",
+                "total_duration": "00:37.166",
+                "score_segments": [
+                    18.0,
+                    21.0
+                ]
+            },
+            {
+                "id": "Bixd9gUOf1M",
+                "folder": "th31",
+                "title": "TH31: Đường nông thôn, gặp đàn bò đi từ dưới vệ đường băng qua đường.",
+                "suggested_image": "31.png",
+                "suggested_details": "Gợi ý: Ấn phím space khi phát hiện đàn gia súc đang cắt qua đường.",
+                "url_video": "31.m3u8",
+                "total_duration": "00:37.625",
+                "score_segments": [
+                    16.0,
+                    21.0
+                ]
+            },
+            {
+                "id": "Ad7OlipsQKI",
+                "folder": "th32",
+                "title": "TH32: Người đi bộ băng qua đường lúc chập tối ngay trước xe bạn.",
+                "suggested_image": "32.png",
+                "suggested_details": "Gợi ý: Ấn phím space khi phát hiện người đi bộ có xu hướng cắt qua đường và có xe đi ngược chiều đang đến gần.",
+                "url_video": "32.m3u8",
+                "total_duration": "00:29.500",
+                "score_segments": [
+                    19.0,
+                    21.0
+                ]
+            },
+            {
+                "id": "zn0drjh4ZzU",
+                "folder": "th33",
+                "title": "TH33: Học sinh đi ra đường tại khu vực gần trường học.",
+                "suggested_image": "33.png",
+                "suggested_details": "Gợi ý: Ấn phím space ngay khi phát hiện có nhiều người đi bộ đứng tràn ra đường.",
+                "url_video": "33.m3u8",
+                "total_duration": "00:33.416",
+                "score_segments": [
+                    19.0,
+                    22.0
+                ]
+            },
+            {
+                "id": "NXnxsix7Rhc",
+                "folder": "th34",
+                "title": "TH34: Gặp xe khách tại đoạn đường cong vào cua chiếm hết làn đường tại khu vực đường hẹp.",
+                "suggested_image": "34.png",
+                "suggested_details": "Gợi ý: Ấn phím space ngay khi thấy xe khách lấn đường chuẩn bị vượt xe đạp.",
+                "url_video": "34.m3u8",
+                "total_duration": "00:27.083",
+                "score_segments": [
+                    15.0,
+                    19.0
+                ]
+            },
+            {
+                "id": "okz8DjytxLo",
+                "folder": "th35",
+                "title": "TH35: Xe khách phía trước đột ngột phanh giảm tốc độ tránh xe đối diện tại đoạn đường cong.",
+                "suggested_image": "35.png",
+                "suggested_details": "Gợi ý: Ấn phím space ngay khi thấy xe tải đang vượt chướng ngại vật, đèn phanh xe khách sang.",
+                "url_video": "35.m3u8",
+                "total_duration": "00:27.625",
+                "score_segments": [
+                    14.0,
+                    16.0
+                ]
+            },
+            {
+                "id": "YVt1GARvKwU",
+                "folder": "th36",
+                "title": "TH36: Đường nông thôn, xuất hiện xe máy đi từ ngõ bên phải",
+                "suggested_image": "36.png",
+                "suggested_details": "Gợi ý: Ấn phím space ngay khi phát hiện xe mô tô lao nhanh ra từ ngõ.",
+                "url_video": "36.m3u8",
+                "total_duration": "00:34.416",
+                "score_segments": [
+                    24.0,
+                    25.0
+                ]
+            },
+            {
+                "id": "4vkAwwVUYCw",
+                "folder": "th37",
+                "title": "TH37: Đường nông thôn, xuất hiện nhóm xe đạp đi từ ngõ bên phải.",
+                "suggested_image": "37.png",
+                "suggested_details": "Gợi ý: Ấn phím space ngay khi phát hiện xe đạp lao nhanh ra từ ngõ.",
+                "url_video": "37.m3u8",
+                "total_duration": "00:35.500",
+                "score_segments": [
+                    25.0,
+                    27.0
+                ]
+            },
+            {
+                "id": "EeUrisq6xuo",
+                "folder": "th38",
+                "title": "TH38: Ban đêm xe ô tô tải ngược chiều bật đèn chiếu xa làm 2 xe máy phía trước giảm tốc độ.",
+                "suggested_image": "38.png",
+                "suggested_details": "Gợi ý: Ấn phím space ngay khi thấy xe tải phía trước lại gần và xe mô tô phía trước phanh đi chậm lại.",
+                "url_video": "38.m3u8",
+                "total_duration": "00:32.708",
+                "score_segments": [
+                    18.0,
+                    21.0
+                ]
+            },
+            {
+                "id": "dknpeeYtfDs",
+                "folder": "th39",
+                "title": "TH39: Xe tải từ đường nhánh nhập làn nguy hiểm.",
+                "suggested_image": "39.png",
+                "suggested_details": "Gợi ý: Ấn phím space ngay khi nhận thấy xe tải phía trước có xu hướng nhập làn nguy hiểm, có nguy cơ gây tai nạn.",
+                "url_video": "39.m3u8",
+                "total_duration": "00:31.916",
+                "score_segments": [
+                    22.0,
+                    24.0
+                ]
+            },
+            {
+                "id": "tE4pXYp4EwM",
+                "folder": "th40",
+                "title": "TH40: Gần cổng làng, phía sau có xe mô tô lấn làn để vượt xe ô tô đang dừng đỗ.",
+                "suggested_image": "40.png",
+                "suggested_details": "Gợi ý: Ấn phím space ngay khi thấy xe máy đang lấn làn vượt lên.",
+                "url_video": "40.m3u8",
+                "total_duration": "00:34.833",
+                "score_segments": [
+                    17.0,
+                    20.0
+                ]
+            },
+            {
+                "id": "N4HsawJ9OBw",
+                "folder": "th41",
+                "title": "TH41: Xe con làn đối diện rẽ nhanh cắt qua đầu xe bạn tại ngã ba.",
+                "suggested_image": "41.png",
+                "suggested_details": "Gợi ý: Ấn phím space khi thấy xe con không nhường đường và rẽ trái.",
+                "url_video": "41.m3u8",
+                "total_duration": "00:33.500",
+                "score_segments": [
+                    20.0,
+                    21.0
+                ]
+            },
+            {
+                "id": "9guES6RvWZk",
+                "folder": "th42",
+                "title": "TH42: Tại ngã tư, đèn xanh, xe bạn bắt đầu di chuyển có xe mô-tô rẽ cắt ngang qua đầu xe bạn.",
+                "suggested_image": "42.png",
+                "suggested_details": "Gợi ý: Ấn phím space khi nhận thấy xe mô tô vượt đèn đỏ và phóng nhanh, có xu hướng cúp đầu xe gây tai nạn.",
+                "url_video": "42.m3u8",
+                "total_duration": "00:31.958",
+                "score_segments": [
+                    18.0,
+                    19.0
+                ]
+            },
+            {
+                "id": "hQHCAezhDmk",
+                "folder": "th43",
+                "title": "TH43: Trời mưa, xe con giảm nhanh tốc độ để tránh xe tải chuyển làn đột ngột tránh chướng ngại vật phía trước.",
+                "suggested_image": "43.png",
+                "suggested_details": "Gợi ý: Ấn phím space khi thấy xe tải phía trước xi nhan xin chuyển làn.",
+                "url_video": "43.m3u8",
+                "total_duration": "00:35.583",
+                "score_segments": [
+                    17.0,
+                    20.0
+                ]
+            }
+        ]
+    },
+    {
+        "id": "61d56318ff83b5323c8bbf48",
+        "folder": "chapter3",
+        "title": "Chương 3: Giao thông trên đường cao tốc",
+        "situations": [
+            {
+                "id": "MEX3h8bS5CA",
+                "folder": "th44",
+                "title": "TH44:  Phía sau làn phải có xe con vượt lên và chuyển làn nguy hiểm cắt ngay trước mặt xe bạn.",
+                "suggested_image": "44.png",
+                "suggested_details": "Gợi ý: Ấn phím space ngay khi phát hiện xe con phóng nhanh vượt xe và chuyển làn đột ngột.",
+                "url_video": "44.m3u8",
+                "total_duration": "00:27.125",
+                "score_segments": [
+                    16.0,
+                    18.0
+                ]
+            },
+            {
+                "id": "zWjeG14kTOM",
+                "folder": "th45",
+                "title": "TH45: Xe tải ở làn phải vượt lên và đột ngột chuyển làn sang làn giữa làm xe phía trước phải phanh gấp.",
+                "suggested_image": "45.png",
+                "suggested_details": "Gợi ý: Ấn phím space khi thấy xe tải đè vạch và chuyển sang làn xe đang chạy.",
+                "url_video": "45.m3u8",
+                "total_duration": "00:29.291",
+                "score_segments": [
+                    20.0,
+                    22.0
+                ]
+            },
+            {
+                "id": "6am0VY986Pg",
+                "folder": "th46",
+                "title": "TH46: Xe ô tô con ở làn bên trái vượt lên và chuyển làn phải cắt qua nguy hiểm trước đầu xe để rẽ ra đường gom.",
+                "suggested_image": "46.png",
+                "suggested_details": "Gợi ý: Ấn phím space khi xe trắng đã vượt lên, xi nhan và chuẩn bị chuyển làn.",
+                "url_video": "46.m3u8",
+                "total_duration": "00:37.083",
+                "score_segments": [
+                    27.0,
+                    29.0
+                ]
+            },
+            {
+                "id": "H_1NXoku5rY",
+                "folder": "th47",
+                "title": "TH47: Xe cấp cứu xin đường, xe con bên trái tăng tốc vượt lên và chuyển làn cắt qua đầu xe bạn.",
+                "suggested_image": "47.png",
+                "suggested_details": "Gợi ý: Ấn phím space khi nhìn thấy xe cứu thương trong kính hậu.",
+                "url_video": "47.m3u8",
+                "total_duration": "00:36.041",
+                "score_segments": [
+                    25.0,
+                    27.0
+                ]
+            },
+            {
+                "id": "3EZRet-dI0w",
+                "folder": "th48",
+                "title": "TH48: Xe bạn có tín hiệu để chuyển làn trái thì có xe phía sau nháy pha liên tục để vượt.",
+                "suggested_image": "48.png",
+                "suggested_details": "Gợi ý: Ấn phím space khi xe đang chạy bắt đầu chuyển làn, xe sau đang quá gần xe đang chạy.",
+                "url_video": "48.m3u8",
+                "total_duration": "00:33.666",
+                "score_segments": [
+                    15.0,
+                    16.0
+                ]
+            },
+            {
+                "id": "A3wLhV9b9cI",
+                "folder": "th49",
+                "title": "TH49: Ô tô phía trước phanh gấp do có xe tải tạt sang đột ngột vì gặp chướng ngại vật.",
+                "suggested_image": "49.png",
+                "suggested_details": "Gợi ý: Ấn phím space khi xe tải bắt đầu chuyển sang làn xe đang chạy.",
+                "url_video": "49.m3u8",
+                "total_duration": "00:33.250",
+                "score_segments": [
+                    18.0,
+                    21.0
+                ]
+            },
+            {
+                "id": "dGeXBEHU-_U",
+                "folder": "th50",
+                "title": "TH50: Xe tải phía trước làn phải đột ngột tăng tốc và chuyển sang làn giữa làm xe con phía trước phanh gấp.",
+                "suggested_image": "50.png",
+                "suggested_details": "Gợi ý: Ấn phím space ngay khi thấy xe tải bắt đầu chuyển làn vô làn xe đang chạy.",
+                "url_video": "50.m3u8",
+                "total_duration": "00:35.291",
+                "score_segments": [
+                    20.0,
+                    22.0
+                ]
+            },
+            {
+                "id": "U5dPpRGPVHE",
+                "folder": "th51",
+                "title": "TH51: Xe tải bật đền cảnh báo đi ngược đường ở làn bên phải cao tốc.",
+                "suggested_image": "51.png",
+                "suggested_details": "Gợi ý: Ấn phím space ngay khi phát hiện xe rẽ trái chạy ngược chiều.",
+                "url_video": "51.m3u8",
+                "total_duration": "00:36.041",
+                "score_segments": [
+                    19.0,
+                    23.0
+                ]
+            },
+            {
+                "id": "2q0AfxVHNXg",
+                "folder": "th52",
+                "title": "TH52: Qua đoạn đường cong đột nhiên có xe tải đi lùi trong làn khẩn cấp.",
+                "suggested_image": "52.png",
+                "suggested_details": "Gợi ý: Ấn phím space ngay khi nhận thấy xe tải đang lùi xe (có đèn báo lùi xe).",
+                "url_video": "52.m3u8",
+                "total_duration": "00:34.958",
+                "score_segments": [
+                    23.0,
+                    25.0
+                ]
+            },
+            {
+                "id": "2C9L6wFMsB0",
+                "folder": "th53",
+                "title": "TH53: Trên đường cao tốc ban đêm, đột nhiên có xe tải đi chiều ngược lại ở làn khẩn cấp.",
+                "suggested_image": "53.png",
+                "suggested_details": "Gợi ý: Ấn phím space ngay khi thấy xe chạy ngược chiều.",
+                "url_video": "53.m3u8",
+                "total_duration": "00:35.625",
+                "score_segments": [
+                    23.0,
+                    26.0
+                ]
+            },
+            {
+                "id": "HxIV9LSq3uU",
+                "folder": "th54",
+                "title": "TH54: Xe tải từ đường nhánh nhập vào cao tốc với tốc độ cao.",
+                "suggested_image": "54.png",
+                "suggested_details": "Gợi ý: Ấn phím space ngay khi thấy xe tải đã tới gần làn đường cao tốc nhưng không nhường đường.",
+                "url_video": "54.m3u8",
+                "total_duration": "00:31.458",
+                "score_segments": [
+                    20.0,
+                    23.0
+                ]
+            },
+            {
+                "id": "5R5urYE6xWg",
+                "folder": "th55",
+                "title": "TH55: Cao tốc, xe tải đột ngột giảm tốc và chuyển sang làn xe bạn do gặp xe đang gặp sự cố trên đường.",
+                "suggested_image": "55.png",
+                "suggested_details": "Gợi ý: Ấn phím space ngay khi thấy xe tải xi nhan xin chuyển làn.",
+                "url_video": "55.m3u8",
+                "total_duration": "00:36.166",
+                "score_segments": [
+                    18.0,
+                    21.0
+                ]
+            },
+            {
+                "id": "NgeHo_G8Z10",
+                "folder": "th56",
+                "title": "TH56: Xe con đang dừng ở làn khẩn cấp xi nhan nhập làn trước xe bạn.",
+                "suggested_image": "56.png",
+                "suggested_details": "Gợi ý: Ấn phím space ngay khi thấy xe con đè vạch làn xe đang chạy.",
+                "url_video": "56.m3u8",
+                "total_duration": "00:27.416",
+                "score_segments": [
+                    18.0,
+                    19.0
+                ]
+            },
+            {
+                "id": "s8Eb9kUPofs",
+                "folder": "th57",
+                "title": "TH57: Xe con phía trước giảm tốc độ và chuyển sang làn xe bạn do gặp đoạn đường sửa chữa phía trước.",
+                "suggested_image": "57.png",
+                "suggested_details": "Gợi ý: Ấn phím space ngay khi thấy xe đỏ phía trước chuyển làn tránh công trình.",
+                "url_video": "57.m3u8",
+                "total_duration": "00:41.250",
+                "score_segments": [
+                    32.0,
+                    36.0
+                ]
+            },
+            {
+                "id": "Fdln1h0EEmQ",
+                "folder": "th58",
+                "title": "TH58: Xe tải phía trước giảm tốc độ, chuyển sang làn giữa do gặp đoạn đường đang sửa chữa phía trước.",
+                "suggested_image": "58.png",
+                "suggested_details": "Gợi ý: Ấn phím space ngay khi thấy xe đèn phanh xe đỏ sang.",
+                "url_video": "58.m3u8",
+                "total_duration": "00:41.250",
+                "score_segments": [
+                    25.0,
+                    28.0
+                ]
+            },
+            {
+                "id": "MX1nU-_3ais",
+                "folder": "th59",
+                "title": "TH59: Xe container đang đi từ làn trái chuyển ra đường nhánh cắt qua làn đường xe bạn.",
+                "suggested_image": "59.png",
+                "suggested_details": "Gợi ý: Ấn phím space ngay khi thấy xe tải bắt đầu chuyển làn đường.",
+                "url_video": "59.m3u8",
+                "total_duration": "00:38.708",
+                "score_segments": [
+                    27.0,
+                    30.0
+                ]
+            },
+            {
+                "id": "JMG4SFx416c",
+                "folder": "th60",
+                "title": "TH60: Xe 16 chỗ từ làn đường khẩn cấp đi ra vào làn xe bạn.",
+                "suggested_image": "60.png",
+                "suggested_details": "Gợi ý: Ấn phím space ngay khi phát hiện xe ô tô đánh lái nhập làn cao tốc.",
+                "url_video": "60.m3u8",
+                "total_duration": "00:33.791",
+                "score_segments": [
+                    18.0,
+                    20.0
+                ]
+            },
+            {
+                "id": "zakqiZKFbIQ",
+                "folder": "th61",
+                "title": "TH61: Xe con từ đường nhánh nhập làn nguy hiểm cắt qua đầu xe bạn.",
+                "suggested_image": "61.png",
+                "suggested_details": "Gợi ý: Ấn phím space khi thấy xe con bắt đầu đè vạch và chuyển làn.",
+                "url_video": "61.m3u8",
+                "total_duration": "00:37.416",
+                "score_segments": [
+                    27.0,
+                    30.0
+                ]
+            },
+            {
+                "id": "8oQk53n-xJI",
+                "folder": "th62",
+                "title": "TH62: Xe con đi ngược chiều nguy hiểm tại làn đường tốc độ cao nhất trên cao tốc.",
+                "suggested_image": "62.png",
+                "suggested_details": "Gợi ý: Ấn phím space ngay khi thấy xe chạy ngược chiều.",
+                "url_video": "62.m3u8",
+                "total_duration": "00:36.916",
+                "score_segments": [
+                    26.0,
+                    29.0
+                ]
+            },
+            {
+                "id": "5TLP8YCMBTI",
+                "folder": "th63",
+                "title": "TH63: Đàn gia súc từ bên đường đi ra cắt qua làn đường xe bạn tại khu vực cao tốc bị hỏng.",
+                "suggested_image": "63.png",
+                "suggested_details": "Gợi ý: Ấn phím space ngay khi nhìn thấy đàn gia súc băng ra làn đường đang chạy.",
+                "url_video": "63.m3u8",
+                "total_duration": "00:30.166",
+                "score_segments": [
+                    15.0,
+                    18.0
+                ]
+            }
+        ]
+    },
+    {
+        "id": "61d56396ff83b5323c8bc046",
+        "folder": "chapter4",
+        "title": "Chương 4: Giao thông trên đường núi",
+        "situations": [
+            {
+                "id": "9Edmj5tlKRk",
+                "folder": "th64",
+                "title": "TH64: Phía đường cong xuất hiện xe tải đi đối diện làm xe khách phía trước giảm tốc độ đột ngột.",
+                "suggested_image": "64.png",
+                "suggested_details": "Gợi ý: Ấn phím space khi nhận thấy đèn phanh xe phía trước sang.",
+                "url_video": "64.m3u8",
+                "total_duration": "00:33.250",
+                "score_segments": [
+                    21.0,
+                    24.0
+                ]
+            },
+            {
+                "id": "Na-LPLxGGH0",
+                "folder": "th65",
+                "title": "TH65: Đường đèo dốc ban đêm gần đoạn đường cong, đột ngột tại khúc cua có xe khách lấn làn vượt xe tải lớn.",
+                "suggested_image": "65.png",
+                "suggested_details": "Gợi ý: Ấn phím space khi xe di chuyển chạm tới biển cảnh báo chỗ ngoặt nguy hiểm.",
+                "url_video": "65.m3u8",
+                "total_duration": "00:41.250",
+                "score_segments": [
+                    28.0,
+                    31.0
+                ]
+            },
+            {
+                "id": "eq9qGkjs7os",
+                "folder": "th66",
+                "title": "TH66: Đi phía sau xe tải chở vật liệu không được chằng buộc cẩn thận.",
+                "suggested_image": "66.png",
+                "suggested_details": "Gợi ý: Ấn phím space ngay khi nhận thấy có đất đá rơi xuống đường.",
+                "url_video": "66.m3u8",
+                "total_duration": "00:28.041",
+                "score_segments": [
+                    20.0,
+                    22.0
+                ]
+            },
+            {
+                "id": "haAj07ptH08",
+                "folder": "th67",
+                "title": "TH67: Xe ô tô phía trước phanh gấp do có động vật hoang dã đứng ven đường.",
+                "suggested_image": "67.png",
+                "suggested_details": "Gợi ý: Ấn phím space khi nhận thấy đèn phanh xe phía trước sang.",
+                "url_video": "67.m3u8",
+                "total_duration": "00:38.916",
+                "score_segments": [
+                    23.0,
+                    26.0
+                ]
+            },
+            {
+                "id": "se4nq6O7gPo",
+                "folder": "th68",
+                "title": "TH68: Đường núi, sương mù, có đàn bò đứng sát đường ngay sau đoạn đường cong.",
+                "suggested_image": "68.png",
+                "suggested_details": "Gợi ý: Ấn phím space khi thấy biển cảnh báo khúc ngoặt nguy hiểm phía trước.",
+                "url_video": "68.m3u8",
+                "total_duration": "00:32.958",
+                "score_segments": [
+                    21.0,
+                    23.0
+                ]
+            },
+            {
+                "id": "lfgRQaWZim8",
+                "folder": "th69",
+                "title": "TH69: Xe con vào cua lấn làn nguy hiểm va chạm với xe ngược chiều trên đường đối núi.",
+                "suggested_image": "69.png",
+                "suggested_details": "Gợi ý: Ấn phím space khi nhận thấy có xe xuất hiện tại khúc ngoặt nguy hiểm tiếp theo.",
+                "url_video": "69.m3u8",
+                "total_duration": "00:37.708",
+                "score_segments": [
+                    25.0,
+                    27.0
+                ]
+            },
+            {
+                "id": "Rc9ohkUy0J8",
+                "folder": "th70",
+                "title": "TH70: Xe khách lấn làn vượt xe container ngay tại khúc cua trên đường núi.",
+                "suggested_image": "70.png",
+                "suggested_details": "Gợi ý: Ấn phím space ngay khi thấy xuất hiện xe chạy ngược chiều tại khúc ngoặt nguy hiểm.",
+                "url_video": "70.m3u8",
+                "total_duration": "00:41.250",
+                "score_segments": [
+                    38.0,
+                    41.0
+                ]
+            },
+            {
+                "id": "7KXau_6dh4Q",
+                "folder": "th71",
+                "title": "TH71: Đường núi, trời mua, xe phía trước đột ngột dừng lại vì hỏng máy.",
+                "suggested_image": "71.png",
+                "suggested_details": "Gợi ý: Ấn phím space ngay khi thấy đèn phanh xe phía trước sang.",
+                "url_video": "71.m3u8",
+                "total_duration": "00:36.125",
+                "score_segments": [
+                    22.0,
+                    26.0
+                ]
+            },
+            {
+                "id": "CJhSmowDwlU",
+                "folder": "th72",
+                "title": "TH72: Xe tải lấn làn đường xe bạn để vượt các xe khác trên đường núi thời tiết sương mù.",
+                "suggested_image": "72.png",
+                "suggested_details": "Gợi ý: Ấn phím space ngay khi phát hiện có xe đang lấn làn vượt xe.",
+                "url_video": "72.m3u8",
+                "total_duration": "00:37.000",
+                "score_segments": [
+                    25.0,
+                    29.0
+                ]
+            },
+            {
+                "id": "fKVi3cZk5V0",
+                "folder": "th73",
+                "title": "TH73: Xe con lấn làn xe bạn để vượt xe tải trên đường núi ngay tại đoạn đường quanh co.",
+                "suggested_image": "73.png",
+                "suggested_details": "Gợi ý: Ấn phím space ngay khi phát hiện có xe ngược chiều tại khúc ngoặt nguy hiểm.",
+                "url_video": "73.m3u8",
+                "total_duration": "00:37.125",
+                "score_segments": [
+                    26.0,
+                    27.0
+                ]
+            }
+        ]
+    },
+    {
+        "id": "61d563b105eac1322ef45b22",
+        "folder": "chapter5",
+        "title": "Chương 5: Giao thông trên đường quốc lộ",
+        "situations": [
+            {
+                "id": "vc8ub-hKg30",
+                "folder": "th74",
+                "title": "TH74: Xe ô tô phía trước phanh gấp để tránh đoàn xe đạp từ đường nhánh đi ra.",
+                "suggested_image": "74.png",
+                "suggested_details": "Gợi ý: Ấn phím space khi thấy có xe đạp gần giao lộ.",
+                "url_video": "74.m3u8",
+                "total_duration": "00:38.791",
+                "score_segments": [
+                    22.0,
+                    25.0
+                ]
+            },
+            {
+                "id": "qqg0DFUctn0",
+                "folder": "th75",
+                "title": "TH75: Trẻ em đột ngột lao ra để nhặt quả bóng bị lăn ra đường.",
+                "suggested_image": "75.png",
+                "suggested_details": "Gợi ý: Ấn phím space ngay khi thấy trẻ em đặt chân xuống lòng đường.",
+                "url_video": "75.m3u8",
+                "total_duration": "00:29.791",
+                "score_segments": [
+                    15.0,
+                    17.0
+                ]
+            },
+            {
+                "id": "DCVN_JstZqg",
+                "folder": "th76",
+                "title": "TH76: Em bé đột ngột chạy ra đường.",
+                "suggested_image": "76.png",
+                "suggested_details": "Gợi ý: Ấn phím space ngay khi thấy trẻ em đang chạy giữa lòng đường.",
+                "url_video": "76.m3u8",
+                "total_duration": "00:32.500",
+                "score_segments": [
+                    17.0,
+                    19.0
+                ]
+            },
+            {
+                "id": "oAzP3wzncj0",
+                "folder": "th77",
+                "title": "TH77: Xe con từ làn phải (khuất tầm nhìn) cắt ngang qua các xe đang đi thẳng để sang đường.",
+                "suggested_image": "77.png",
+                "suggested_details": "Gợi ý: Ấn phím space ngay khi thấy đầu xe con xuất hiện.",
+                "url_video": "77.m3u8",
+                "total_duration": "00:32.083",
+                "score_segments": [
+                    17.0,
+                    19.0
+                ]
+            },
+            {
+                "id": "x6WS0jupEqo",
+                "folder": "th78",
+                "title": "TH78: Đèn vừa chuyển xanh, đột ngột xe mô-tô làn trái phía trước cố vượt đèn đỏ cắt qua trước đầu xe.",
+                "suggested_image": "78.png",
+                "suggested_details": "Gợi ý: Ấn phím space ngay khi thấy xe mô tô chạm vạch kẻ đường cho người đi bộ.",
+                "url_video": "78.m3u8",
+                "total_duration": "00:30.625",
+                "score_segments": [
+                    21.0,
+                    23.0
+                ]
+            },
+            {
+                "id": "nBeFl_0-vG0",
+                "folder": "th79",
+                "title": "TH79: Xe mô tô đi ra từ đường nhánh nguy hiểm phía sau xe buýt vừa đi qua.",
+                "suggested_image": "79.png",
+                "suggested_details": "Gợi ý: Ấn phím space khi 2 xe mô tô chuẩn bị rẽ phải.",
+                "url_video": "79.m3u8",
+                "total_duration": "00:34.250",
+                "score_segments": [
+                    20.0,
+                    21.0
+                ]
+            },
+            {
+                "id": "UbQ9Hq_r_TM",
+                "folder": "th80",
+                "title": "TH80: Xe mô tô vượt lên đột ngột giảm tốc độ và chuyến sang làn xe bạn để tránh chướng ngại vật trên đường.",
+                "suggested_image": "80.png",
+                "suggested_details": "Gợi ý: Ấn phím space khi thấy xe mô tô gần đến chướng ngại vật, xi nhan chuyển làn đường.",
+                "url_video": "80.m3u8",
+                "total_duration": "00:26.500",
+                "score_segments": [
+                    17.0,
+                    18.0
+                ]
+            },
+            {
+                "id": "aMwenC5t9rk",
+                "folder": "th81",
+                "title": "TH81: Xe bán tải từ đường bên kia quay đầu đột ngột lấn làn xe bạn.",
+                "suggested_image": "81.png",
+                "suggested_details": "Gợi ý: Ấn phím space khi đầu xe ô tô đánh lái, đầu xe đã đến giữa dải phân cách.",
+                "url_video": "81.m3u8",
+                "total_duration": "00:34.041",
+                "score_segments": [
+                    26.0,
+                    28.0
+                ]
+            },
+            {
+                "id": "_w2aQ7MVkgY",
+                "folder": "th82",
+                "title": "TH82: Xe tải lớn ở làn đường ngược chiều lấn làn xe bạn để vượt qua xe buýt.",
+                "suggested_image": "82.png",
+                "suggested_details": "Gợi ý: Ấn phím space ngay khi thấy đầu xe tải đang đè vạch lấn làn.",
+                "url_video": "82.m3u8",
+                "total_duration": "00:35.208",
+                "score_segments": [
+                    17.0,
+                    20.0
+                ]
+            },
+            {
+                "id": "MX14nIuPcc0",
+                "folder": "th83",
+                "title": "TH83: Xuất hiện gia súc từ vệ đường đi ra đường quốc lộ ngay trước mặt xe bạn.",
+                "suggested_image": "83.png",
+                "suggested_details": "Gợi ý: Ấn phím space ngay khi thấy con bò bắt đầu di chuyển.",
+                "url_video": "83.m3u8",
+                "total_duration": "00:30.458",
+                "score_segments": [
+                    18.0,
+                    20.0
+                ]
+            },
+            {
+                "id": "52_iAytXJYE",
+                "folder": "th84",
+                "title": "TH84: Xe con phía trước giảm tốc đột ngột và chuyển làn để tránh xe buýt đang dừng.",
+                "suggested_image": "84.png",
+                "suggested_details": "Gợi ý: Ấn phím space khi thấy xe con xi nhan xin chuyển làn.",
+                "url_video": "84.m3u8",
+                "total_duration": "00:31.625",
+                "score_segments": [
+                    20.0,
+                    22.0
+                ]
+            },
+            {
+                "id": "nL3cVornefU",
+                "folder": "th85",
+                "title": "TH85: Khúc gỗ trên xe tải phía trước bị rơi xuống do xe phanh gấp.",
+                "suggested_image": "85.png",
+                "suggested_details": "Gợi ý: Ấn phím space ngay khi thấy đèn phanh xe tải sang.",
+                "url_video": "85.m3u8",
+                "total_duration": "00:39.458",
+                "score_segments": [
+                    27.0,
+                    28.0
+                ]
+            },
+            {
+                "id": "bCtRD20cIlo",
+                "folder": "th86",
+                "title": "TH86: Xe con đi phía trước giảm tốc và chuyển làn đột ngột để tránh chướng ngại vật.",
+                "suggested_image": "86.png",
+                "suggested_details": "Gợi ý: Ấn phím space ngay khi thấy xe con đánh lái.",
+                "url_video": "86.m3u8",
+                "total_duration": "00:30.854",
+                "score_segments": [
+                    15.0,
+                    17.0
+                ]
+            },
+            {
+                "id": "7nVQowvLHXY",
+                "folder": "th87",
+                "title": "TH87: Đi qua chỗ giao cắt với đường sắt ban đêm, không có đèn tính hiệu, phía sau xe con đột nhiên có tàu đi tới.",
+                "suggested_image": "87.png",
+                "suggested_details": "Gợi ý: Ấn phím space ngay khi thấy đầu xe lửa đang tới.",
+                "url_video": "87.m3u8",
+                "total_duration": "00:34.250",
+                "score_segments": [
+                    14.0,
+                    17.0
+                ]
+            },
+            {
+                "id": "MnSlrivr8iE",
+                "folder": "th88",
+                "title": "TH88: Xe mô tô phanh và chuyển làn để tránh xe buýt vào trả khách.",
+                "suggested_image": "88.png",
+                "suggested_details": "Gợi ý: Ấn phím space ngay khi thấy xe mô tô xi nhan chuyển làn né xe buýt.",
+                "url_video": "88.m3u8",
+                "total_duration": "00:31.291",
+                "score_segments": [
+                    22.0,
+                    23.0
+                ]
+            },
+            {
+                "id": "pFFaEBLjL0s",
+                "folder": "th89",
+                "title": "TH89: Xe đạp từ bên kia đường đối diện băng qua đường không quan sát trước mặt xe bạn.",
+                "suggested_image": "89.png",
+                "suggested_details": "Gợi ý: Ấn phím space khi thấy xe đạp bắt đầu di chuyển qua làn đường hướng xe đang chạy.",
+                "url_video": "89.m3u8",
+                "total_duration": "00:30.541",
+                "score_segments": [
+                    19.0,
+                    21.0
+                ]
+            },
+            {
+                "id": "xNypqw8HBy4",
+                "folder": "th90",
+                "title": "TH90: Xe bán tải phía trước giảm tốc độ và chuyển làn khẩn cấp để tránh xe mô-tô đi ngược chiều.",
+                "suggested_image": "90.png",
+                "suggested_details": "Gợi ý: Ấn phím space khi thấy xe con xi nhan và bắt đầu đánh lái chuyển là.",
+                "url_video": "90.m3u8",
+                "total_duration": "00:29.083",
+                "score_segments": [
+                    17.0,
+                    20.0
+                ]
+            }
+        ]
+    },
+    {
+        "id": "61d5640b05eac1322ef45b56",
+        "folder": "chapter6",
+        "title": "Chương 6: Các tình huống từ các vụ tai nạn điển hình đã xảy ra trong thực tế",
+        "situations": [
+            {
+                "id": "kqb9aLa7ss8",
+                "folder": "th100",
+                "title": "TH100: [Tai nạn] Xe ô tô con chở người đi qua đường sắt tại Nam Định không chú ý va chạm với tàu hoả.",
+                "suggested_image": "100.png",
+                "suggested_details": "Gợi ý: Ấn phím space ngay khi thấy đầu tàu hoả xuất hiện.",
+                "url_video": "100.m3u8",
+                "total_duration": "00:30.625",
+                "score_segments": [
+                    18.0,
+                    20.0
+                ]
+            },
+            {
+                "id": "lM_WNCZCSQg",
+                "folder": "th101",
+                "title": "TH101: [Tai nạn] Xe ô tô 16 chỗ chở khách rẽ trái qua đường sắt không chú ý va chạm với tàu hoả.",
+                "suggested_image": "101.png",
+                "suggested_details": "Gợi ý: Ấn phím space sau khi bắt đầu đánh lái và thấy đèn báo tàu hoả sang.",
+                "url_video": "101.m3u8",
+                "total_duration": "00:36.208",
+                "score_segments": [
+                    22.0,
+                    23.0
+                ]
+            },
+            {
+                "id": "JEp6YoLfd-E",
+                "folder": "th102",
+                "title": "TH102: [Tai nạn] Xe khách va chạm với xe cứu hoả đi ngược chiều tại nút giao Pháp Vân.",
+                "suggested_image": "102.png",
+                "suggested_details": "Gợi ý: Ấn phím space ngay khi thấy có xe đi ngược chiều tại lối ra cao tốc.",
+                "url_video": "102.m3u8",
+                "total_duration": "00:31.125",
+                "score_segments": [
+                    22.0,
+                    25.0
+                ]
+            },
+            {
+                "id": "O1bgVRiAWNc",
+                "folder": "th103",
+                "title": "TH103: [Tai nạn] Phía trước đột nhiên có xe ô tô từ làn đối diện đi ngược chiều va chạm với xe con.",
+                "suggested_image": "103.png",
+                "suggested_details": "Gợi ý: Ấn phím space ngay khi thấy xe con đánh lái tại chỗ quay đầu.",
+                "url_video": "103.m3u8",
+                "total_duration": "00:36.375",
+                "score_segments": [
+                    27.0,
+                    29.0
+                ]
+            },
+            {
+                "id": "2m-ChvGHUo0",
+                "folder": "th104",
+                "title": "TH104: [Tai nạn] Tại ngã tư Hàng Xanh, lái xe ô tô con trong tình trạng có nồng độ cồn không làm chủ tốc độ đâm vào loạt xe dừng chờ đèn đỏ.",
+                "suggested_image": "104.png",
+                "suggested_details": "Gợi ý: Ấn phím space ngay khi xe đang chạy tiến gần đến giao lộ có tín hiệu.",
+                "url_video": "104.m3u8",
+                "total_duration": "00:39.583",
+                "score_segments": [
+                    29.0,
+                    31.0
+                ]
+            },
+            {
+                "id": "eQvW0un2b8s",
+                "folder": "th105",
+                "title": "TH105: [Tai nạn] Xe khách 45 chỗ đâm vào xe đầu kéo kéo rơ móoc chở máy ủi đi từ đường tránh ra gây tai nạn thảm khốc.",
+                "suggested_image": "105.png",
+                "suggested_details": "Gợi ý: Ấn phím space ngay khi nhận thấy rõ có xe đi ngược chiều.",
+                "url_video": "105.m3u8",
+                "total_duration": "00:30.500",
+                "score_segments": [
+                    21.0,
+                    22.0
+                ]
+            },
+            {
+                "id": "a9IOfM7H7PA",
+                "folder": "th106",
+                "title": "TH106: [Tai nạn] Xe khách 48 chỗ thiếu kỹ năng điều khiển, không thông thuộc địa hình lao xuống vực tại Kon Tum.",
+                "suggested_image": "106.png",
+                "suggested_details": "Gợi ý: Ấn phím space ngay khi nhìn thấy có công trình phía trước.",
+                "url_video": "106.m3u8",
+                "total_duration": "00:40.708",
+                "score_segments": [
+                    26.0,
+                    28.0
+                ]
+            },
+            {
+                "id": "sMnHE5GzRZI",
+                "folder": "th107",
+                "title": "TH107: [Tai nạn] Xe khách chạy vượt xe tải, đâm trực diện vào xe khách đi chiều ngược lại gây tai nạn liên hoàn 3 xe.",
+                "suggested_image": "107.png",
+                "suggested_details": "Gợi ý: Ấn phím space ngay khi xe đang chạy đánh lái lấn làn vượt xe.",
+                "url_video": "107.m3u8",
+                "total_duration": "00:41.250",
+                "score_segments": [
+                    22.0,
+                    24.0
+                ]
+            },
+            {
+                "id": "xnwRhfM0EHE",
+                "folder": "th108",
+                "title": "TH108: [Tai nạn] Trời mưa, đường trơn trượt xe tải khi vào cua không làm chủ tốc độ đã đâm và xe ben đi ngược chiều.",
+                "suggested_image": "108.png",
+                "suggested_details": "Gợi ý: Ấn phím space ngay khi thấy đầu xe ben đi ngược chiều.",
+                "url_video": "108.m3u8",
+                "total_duration": "00:36.791",
+                "score_segments": [
+                    30.0,
+                    31.0
+                ]
+            },
+            {
+                "id": "o28kz6dNRcs",
+                "folder": "th109",
+                "title": "TH109: [Tai nạn] Xe 16 chỗ từ đường nhánh, khuất tầm nhìn rẽ vào đường chính không giảm tốc độ, bị xe sơ mi rơ moóc đâm vào (tại Ngã 3 Nà Phặc - Bắc Kạn).",
+                "suggested_image": "109.png",
+                "suggested_details": "Gợi ý: Ấn phím space ngay khi thấy xe con xuất hiện gần giao lộ.",
+                "url_video": "109.m3u8",
+                "total_duration": "00:31.041",
+                "score_segments": [
+                    19.0,
+                    22.0
+                ]
+            },
+            {
+                "id": "KabgWsozYwM",
+                "folder": "th110",
+                "title": "TH110: [Tai nạn] Xe container bất ngờ tông vào hàng loạt phương tiện đang dừng đèn đỏ tại quốc lộ 1, đoạn nút giao Mỹ Phước - Tân Vạn, Bình Dương.",
+                "suggested_image": "110.png",
+                "suggested_details": "Gợi ý: Ấn phím space ngay khi xe gần tới lối rẽ phải nhưng không thấy giảm tốc độ.",
+                "url_video": "110.m3u8",
+                "total_duration": "00:32.750",
+                "score_segments": [
+                    19.0,
+                    21.0
+                ]
+            },
+            {
+                "id": "rh7rdeayWJA",
+                "folder": "th111",
+                "title": "TH111: [Tai nạn] Xe khách lấn làn vượt xe tải chỗ đường xong đâm vào xe khách đi ngược chiều Tai nạn tại 1791+400 trên đường Hồ Chí Minh, đoạn qua thôn 7, xã Hoà Phú, TP.Buôn Ma Thuộc (Đắk Lắk).",
+                "suggested_image": "111.png",
+                "suggested_details": "Gợi ý: Ấn phím space ngay khi thấy xe khách lấn làn xe đang chạy.",
+                "url_video": "111.m3u8",
+                "total_duration": "00:24.791",
+                "score_segments": [
+                    19.0,
+                    21.0
+                ]
+            },
+            {
+                "id": "GoD33Au2d2o",
+                "folder": "th112",
+                "title": "TH112: Xe khách 16 chỗ vượt ẩu qua xe đầu kéo va chạm với xe khách đang xuống dốc tốc độ cao gây tai nạn liên hoàn giữa 3 xe tại km12+400 đoạn qua phường Hương Hồ, TP.Huế",
+                "suggested_image": "112.png",
+                "suggested_details": "Gợi ý: Ấn phím space ngay khi xe đang chạy đã lấn làn chuẩn bị vượt xe tải.",
+                "url_video": "112.m3u8",
+                "total_duration": "00:27.250",
+                "score_segments": [
+                    14.0,
+                    17.0
+                ]
+            },
+            {
+                "id": "DWz9Q-7TWfg",
+                "folder": "th113",
+                "title": "TH113: [Tai nạn] Khi đèn tín hiệu chuyển sang xanh, đột ngột có xe con cố vượt từ đường giao bên trái sang làm va chạm với xe con.",
+                "suggested_image": "113.png",
+                "suggested_details": "Gợi ý: Ấn phím space ngay khi thấy xe đang chạy bắt đầu di chuyển.",
+                "url_video": "113.m3u8",
+                "total_duration": "00:32.916",
+                "score_segments": [
+                    24.0,
+                    26.0
+                ]
+            },
+            {
+                "id": "h6bikM9JP5Y",
+                "folder": "th114",
+                "title": "TH114: [Tai nạn] Ô tô 7 chỗ đi trên cầu treo hẹp ban đêm, tài xế lái xe va chạm với xe máy, xe đâm xuống sông tại cầu treo qua sông Giăng, Thanh Chương, Nghệ An.",
+                "suggested_image": "114.png",
+                "suggested_details": "Gợi ý: Ấn phím space ngay khi xe đang chạy bắt đầu đi vô cầu.",
+                "url_video": "114.m3u8",
+                "total_duration": "00:33.000",
+                "score_segments": [
+                    19.0,
+                    22.0
+                ]
+            },
+            {
+                "id": "bK3N8aJKgfU",
+                "folder": "th115",
+                "title": "TH115: [Tai nạn] Ban đêm, xe con phanh gấp tránh xe máy từ ngõ lao ra, xe khách không làm chủ tốc độ đã đâm trực diện vào xe con.",
+                "suggested_image": "115.png",
+                "suggested_details": "Gợi ý: Ấn phím space ngay khi thấy xe mô tô cúp đầu xe con trước mặt.",
+                "url_video": "115.m3u8",
+                "total_duration": "00:30.541",
+                "score_segments": [
+                    20.0,
+                    22.0
+                ]
+            },
+            {
+                "id": "lsLvJdT2fgQ",
+                "folder": "th116",
+                "title": "TH116: [Tai nạn] Phía trước có đá lở đột ngột và rơi xuống (tai nạn tại Đồng Văn, Hà Giang)",
+                "suggested_image": "116.png",
+                "suggested_details": "Gợi ý: Ấn phím space ngay sau khi đi qua biển cảnh báo sạt lở.",
+                "url_video": "116.m3u8",
+                "total_duration": "00:30.083",
+                "score_segments": [
+                    18.0,
+                    21.0
+                ]
+            },
+            {
+                "id": "cusuvk8ussE",
+                "folder": "th117",
+                "title": "TH117: [Tai nạn] Xe con phanh gấp tránh xe máy từ ngõ lao ra, xe khách không làm chủ tốc độ đã đâm trực diện vào xe con.",
+                "suggested_image": "117.png",
+                "suggested_details": "Gợi ý: Ấn phím space ngay khi thấy xe mô tô khuất đầu xe con trước mặt.",
+                "url_video": "117.m3u8",
+                "total_duration": "00:25.708",
+                "score_segments": [
+                    18.0,
+                    19.0
+                ]
+            },
+            {
+                "id": "vcVnFgU--tk",
+                "folder": "th118",
+                "title": "TH118: [Tai nạn] Xe 16 chỗ rẽ không quan sát, không làm chủ tốc độ đâm vào xe bán tải đang lùi.",
+                "suggested_image": "118.png",
+                "suggested_details": "Gợi ý: Ấn phím space ngay khi chuẩn bị xe đang chạy chuẩn bị vô đường rẽ.",
+                "url_video": "118.m3u8",
+                "total_duration": "00:29.666",
+                "score_segments": [
+                    18.0,
+                    21.0
+                ]
+            },
+            {
+                "id": "PjZxf53eMwE",
+                "folder": "th119",
+                "title": "TH119: [Tai nạn] Xe khách không tuân thủ khoảng cách an toàn, xử lý tình huống không kịp va chạm với xe tải dừng đỗ.",
+                "suggested_image": "119.png",
+                "suggested_details": "Gợi ý: Ấn phím space khi thấy khoảng cách với xe tải quá gần, xe tải bật xi nhan.",
+                "url_video": "119.m3u8",
+                "total_duration": "00:36.333",
+                "score_segments": [
+                    19.0,
+                    21.0
+                ]
+            },
+            {
+                "id": "W-Rs0CoH7YE",
+                "folder": "th120",
+                "title": "TH120: [Tai nạn] Xe tải không làm chủ được tốc độ mất lái lao vào chợ dân sinh và va chạm với các xe đang đi phía trước.",
+                "suggested_image": "120.png",
+                "suggested_details": "Gợi ý: Ấn phím space ngay khi thấy đèn phanh xe tải sang.",
+                "url_video": "120.m3u8",
+                "total_duration": "00:40.083",
+                "score_segments": [
+                    21.0,
+                    22.0
+                ]
+            },
+            {
+                "id": "O8FxdcgZ6UY",
+                "folder": "th91",
+                "title": "TH91: [Tai nạn] Xe ô tô Innova lùi trên cao tốc Hà Nội - Thái Nguyên.",
+                "suggested_image": "91.png",
+                "suggested_details": "Gợi ý: Ấn phím space khi thấy khoảng cách đến xe trước mặt thiếu an toàn (biển 50m).",
+                "url_video": "91.m3u8",
+                "total_duration": "00:30.937",
+                "score_segments": [
+                    16.0,
+                    19.0
+                ]
+            },
+            {
+                "id": "bXGCgOVZ1LQ",
+                "folder": "th92",
+                "title": "TH92: [Tai nạn] Xe mô-tô lấn làn vượt ẩu trên đường núi, va chạm với xe khách đi ngược chiều.",
+                "suggested_image": "92.png",
+                "suggested_details": "Gợi ý: Ấn phím space khi thấy xe mô tô đang lấn làn và có xe ngược chiều ở khúc ngoặt.",
+                "url_video": "92.m3u8",
+                "total_duration": "00:25.208",
+                "score_segments": [
+                    15.0,
+                    18.0
+                ]
+            },
+            {
+                "id": "DWk9OgXwGv0",
+                "folder": "th93",
+                "title": "TH93: [Tai nạn] Xe con từ làn trong cùng bên trái lấn làn vượt ẩu để đi ra đường nhánh, va chạm với xe tải.",
+                "suggested_image": "93.png",
+                "suggested_details": "Gợi ý: Ấn phím space ngay khi thấy đèn phanh xe con sáng và xi nhan.",
+                "url_video": "93.m3u8",
+                "total_duration": "00:36.833",
+                "score_segments": [
+                    23.0,
+                    26.0
+                ]
+            },
+            {
+                "id": "lMO-mL6lHjs",
+                "folder": "th94",
+                "title": "TH94: [Tai nạn] Tai nạn liên hoàn giữa 3 xe khách do đâm vào xe đang dừng đỗ để sửa chữa.",
+                "suggested_image": "94.png",
+                "suggested_details": "Gợi ý: Ấn phím space ngay khi thấy đèn cảnh báo xe phía trước bật.",
+                "url_video": "94.m3u8",
+                "total_duration": "00:40.833",
+                "score_segments": [
+                    26.0,
+                    31.0
+                ]
+            },
+            {
+                "id": "bUx1DUlfqHc",
+                "folder": "th95",
+                "title": "TH95: [Tai nạn] tài xế giật mình đánh lái gấp đâm xe vào dải phân cách, xe đổ vào đám đông làm 5 người thiệt mạng.",
+                "suggested_image": "95.png",
+                "suggested_details": "Gợi ý: Ấn phím space khi thấy đèn cảnh báo phía trước, khoảng cách tới vật cản nguy hiểm.",
+                "url_video": "95.m3u8",
+                "total_duration": "00:28.625",
+                "score_segments": [
+                    15.0,
+                    20.0
+                ]
+            },
+            {
+                "id": "pfZNkRaTaE8",
+                "folder": "th96",
+                "title": "TH96: [Tai nạn] Tai nạn xe container không làm chủ tốc độ đâm trực diện vào xe ô tô con đang dừng chờ đèn đỏ.",
+                "suggested_image": "96.png",
+                "suggested_details": "Gợi ý: Ấn phím space khi khoảng cách xe đang chạy đến giao lộ nguy hiểm.",
+                "url_video": "96.m3u8",
+                "total_duration": "00:33.166",
+                "score_segments": [
+                    27.0,
+                    30.0
+                ]
+            },
+            {
+                "id": "Dk6OZeJcDmM",
+                "folder": "th97",
+                "title": "TH97: [Tai nạn] Xe khách vào cua với tốc độ cao, lấn sang đường ngược chiều va chạm với xe đi chiều ngược lại.",
+                "suggested_image": "97.png",
+                "suggested_details": "Gợi ý: Ấn phím space ngay khi thấy đầu xe khách xuất hiện tại khúc ngoặt.",
+                "url_video": "97.m3u8",
+                "total_duration": "00:41.250",
+                "score_segments": [
+                    29.0,
+                    31.0
+                ]
+            },
+            {
+                "id": "FJ7NOYVCaA8",
+                "folder": "th98",
+                "title": "TH98: [Tai nạn] Tai nạn đèo Prenn xe khách mất lái đâm vào người điều tiết giao thông và xe khách đi ngược chiều.",
+                "suggested_image": "98.png",
+                "suggested_details": "Gợi ý: Ấn phím space ngay khi thấy công trình phía trước.",
+                "url_video": "98.m3u8",
+                "total_duration": "00:39.041",
+                "score_segments": [
+                    24.0,
+                    27.0
+                ]
+            },
+            {
+                "id": "peYuPxUWFwM",
+                "folder": "th99",
+                "title": "TH99: [Tai nạn] Hầm Hải Vân xe kéo rơ mooc mất lái lấn làn đâm trực diện vào xe tải đi ngược chiều gây tai nạn.",
+                "suggested_image": "99.png",
+                "suggested_details": "Gợi ý: Ấn phím space ngay khi thấy xe phía trước lấn sang làn xe đang chạy.",
+                "url_video": "99.m3u8",
+                "total_duration": "00:38.041",
+                "score_segments": [
+                    27.0,
+                    28.0
+                ]
+            }
+        ]
+    }
+]

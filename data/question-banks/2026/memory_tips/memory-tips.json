@@ -1,0 +1,86 @@
+[
+  {
+    "id": 1,
+    "order": 1,
+    "title": "Nồng độ cồn",
+    "quick_rule": "Người điều khiển xe mô tô, ô tô, máy kéo trên đường mà trong máu hoặc hơi thở có nồng độ cồn: Bị nghiêm cấm.",
+    "explanation": "Trong cơ thể có nồng độ cồn khi điều khiển phương tiện là hành vi bị nghiêm cấm tuyệt đối theo quy định của pháp luật. Trong các câu hỏi sát hạch lý thuyết, mọi phương án chứa cụm từ 'Bị nghiêm cấm' đều là đáp án đúng."
+  },
+  {
+    "id": 2,
+    "order": 2,
+    "title": "Khoảng cách an toàn tối thiểu",
+    "quick_rule": "Dưới 60km/h: Chủ động và đảm bảo khoảng cách an toàn phù hợp.",
+    "explanation": "Khoảng cách an toàn tối thiểu tương ứng với tốc độ lưu hành (V):\n• 35m nếu vận tốc lưu hành (V) = 60 (km/h)\n• 55m nếu 60 < V ≤ 80 (km/h)\n• 70m nếu 80 < V ≤ 100 (km/h)\n• 100m nếu 100 < V ≤ 120 (km/h)\n• Dưới 60km/h: Chủ động và đảm bảo khoảng cách."
+  },
+  {
+    "id": 3,
+    "order": 3,
+    "title": "Các hạng GPLX",
+    "quick_rule": "A1: mô tô đến 125 cm³ hoặc đến 11 kW | A: mô tô trên 125 cm³ hoặc trên 11 kW | B: xe đến 8 chỗ, tải và chuyên dùng đến 3.500 kg.",
+    "explanation": "Quy định phân hạng giấy phép lái xe:\n• Hạng A1: lái xe mô tô hai bánh đến 125 cm³ hoặc đến 11 kW.\n• Hạng A: cấp cho người lái xe mô tô hai bánh có dung tích xi-lanh trên 125 cm³ hoặc có công suất động cơ điện trên 11 kW.\n• Hạng B: đến 08 chỗ (không kể lái xe); ô tô tải và chuyên dùng đến 3.500 kg; kéo rơ moóc đến 750 kg.\n• Hạng C1: ô tô tải và chuyên dùng trên 3.500 kg đến 7.500 kg và lái xe Hạng B.\n• Hạng C: ô tô tải và chuyên dùng trên 7.500 kg và lái xe Hạng B, C1.\n• Hạng D1: trên 08 chỗ đến 16 chỗ (không kể lái xe); và lái xe Hạng B, C1, C.\n• Hạng D2: trên 16 chỗ đến 29 chỗ (không kể lái xe); và lái xe hạng B, C1, C, D1.\n• Hạng D: trên 29 chỗ (không kể lái xe); xe giường nằm; và lái xe hạng B, C1, C, D1, D2.\n• Hạng BE: lái xe hạng B kéo rơ moóc trên 750kg.\n• Hạng CE: lái xe hạng C kéo rơ moóc trên 750 kg; xe ô tô đầu kéo kéo sơ mi rơ moóc.\n• Hạng DE: hạng D kéo rơ moóc trên 750 kg; xe ô tô chở khách nối toa."
+  },
+  {
+    "id": 4,
+    "order": 4,
+    "title": "Hỏi về tuổi (T)",
+    "quick_rule": "Độ tuổi tối đa lái xe ô tô trên 29 chỗ: Nam 57 tuổi và Nữ 55 tuổi. Độ tuổi lấy bằng cách nhau 3 tuổi.",
+    "explanation": "Độ tuổi quy định lấy bằng lái theo hạng (cách nhau 3 tuổi):\n• Xe dưới 50cm³: 16 tuổi.\n• Hạng A1, A, B1, B, C1: 18 tuổi.\n• Hạng C, BE: 21 tuổi.\n• Hạng D1, D2, C1E, CE: 24 tuổi.\n• Hạng D, D1E, D2E, DE: 27 tuổi.\n• Độ tuổi tối đa người lái xe ô tô trên 29 chỗ: Nam 57 tuổi và Nữ 55 tuổi."
+  },
+  {
+    "id": 5,
+    "order": 5,
+    "title": "Quy tắc cấm trên đường đặc biệt",
+    "quick_rule": "Trên đường cao tốc, đường hầm, đường vòng, đầu dốc, nơi tầm nhìn hạn chế: Không quay đầu, không lùi, không vượt.",
+    "explanation": "Các quy tắc cấm bắt buộc cần nhớ:\n• Không được quay đầu xe, không lùi, không vượt trên đường cao tốc, trong đường hầm, đường vòng, đầu dốc, nơi tầm nhìn hạn chế.\n• Không được vượt trên cầu hẹp có một làn xe.\n• Không được phép quay đầu xe ở phần đường dành cho người đi bộ qua đường.\n• Cấm lùi xe ở khu vực cấm dừng và nơi đường bộ giao nhau."
+  },
+  {
+    "id": 6,
+    "order": 6,
+    "title": "Tại nơi giao nhau không có tín hiệu đèn",
+    "quick_rule": "Có vòng xuyến: Nhường đường bên trái | Không có vòng xuyến: Nhường bên phải.",
+    "explanation": "Quy tắc nhường đường tại nút giao không có đèn tín hiệu:\n• Có vòng xuyến: Phải nhường đường cho xe đi đến từ bên trái.\n• Không có vòng xuyến: Phải nhường đường cho xe đi đến từ bên phải."
+  },
+  {
+    "id": 7,
+    "order": 7,
+    "title": "Biển báo cấm (thứ tự)",
+    "quick_rule": "Cấm nhỏ thì cấm lớn, cấm lớn không cấm nhỏ: Cấm ô tô con → Cấm xe tải → Cấm máy kéo → Cấm rơ moóc, sơ mi rơ moóc.",
+    "explanation": "Thứ tự hiệu lực biển cấm từ nhỏ đến lớn:\nCấm ô tô (Gồm: mô tô 3 bánh, Xe Lam, xe khách) → Cấm xe tải → Cấm Máy kéo → Cấm rơ moóc, sơ mi rơ moóc.\n• Cấm xe nhỏ thì cấm luôn xe lớn phía sau.\n• Cấm xe lớn thì không cấm xe nhỏ phía trước."
+  },
+  {
+    "id": 8,
+    "order": 8,
+    "title": "Nhất chớm, nhì ưu, tam đường, tứ hướng",
+    "quick_rule": "Thứ tự quyền ưu tiên tại giao lộ: Nhất chớm → Nhì ưu (Hỏa - Sự - An - Thương) → Tam đường → Tứ hướng.",
+    "explanation": "4 bước xét quyền ưu tiên sa hình:\n• Nhất chớm: Xe nào chớm tới vạch trước thì được đi trước.\n• Nhì ưu: Xe ưu tiên được đi trước. Thứ tự xe ưu tiên: Hỏa - Sự - An - Thương (Cứu hỏa - Quân sự - Công an - Cứu thương - Hộ đê - Đoàn xe tang).\n• Tam đường: Xe ở đường chính, đường ưu tiên được đi trước.\n• Tứ hướng: Thứ tự hướng đi: Bên phải trống → Rẽ phải → Đi thẳng → Rẽ trái."
+  },
+  {
+    "id": 9,
+    "order": 9,
+    "title": "5 nhóm biển báo hiệu",
+    "quick_rule": "Nguy hiểm (Tam giác vàng) | Cấm (Tròn đỏ) | Hiệu lệnh (Tròn xanh) | Chỉ dẫn (Vuông/Chữ nhật xanh) | Phụ (Trắng đen).",
+    "explanation": "Đặc điểm nhận diện 5 nhóm biển báo hiệu đường bộ:\n• Biển nguy hiểm: hình tam giác vàng.\n• Biển cấm: vòng tròn đỏ.\n• Biển hiệu lệnh: vòng tròn xanh.\n• Biển chỉ dẫn: vuông hoặc hình chữ nhật xanh.\n• Biển phụ: vuông, chữ nhật trắng đen - Hiệu lực nằm ở biển phụ khi có đặt biển phụ."
+  },
+  {
+    "id": 10,
+    "order": 10,
+    "title": "Tốc độ TRONG khu vực đông dân cư",
+    "quick_rule": "Đường đôi hoặc 1 chiều có từ 2 làn xe cơ giới: 60km/h | Đường 2 chiều hoặc 1 chiều có 1 làn xe cơ giới: 50km/h.",
+    "explanation": "Quy định tốc độ tối đa cho phép trong khu vực đông dân cư:\n• 60km/h: Đối với đường đôi hoặc đường 1 chiều có từ 2 làn xe cơ giới trở lên.\n• 50km/h: Đối với đường 2 chiều hoặc đường 1 chiều có 1 làn xe cơ giới."
+  },
+  {
+    "id": 11,
+    "order": 11,
+    "title": "Hiệu lệnh người điều khiển giao thông",
+    "quick_rule": "Giơ tay thẳng đứng: Tất cả dừng | Giang ngang tay: Trái phải đi, trước sau dừng | Tay phải giơ trước: Sau/phải dừng, trước rẽ phải, trái đi các hướng.",
+    "explanation": "Quy tắc hiệu lệnh của Cảnh sát giao thông:\n• Giơ tay thẳng đứng: Tất cả dừng, trừ xe đã ở trong ngã tư được phép đi.\n• Giang ngang tay: Trái phải đi; Trước sau dừng.\n• Tay phải giơ trước: Sau, phải dừng; trước rẽ phải; trái đi các hướng; người đi bộ qua đường đi sau người điều khiển."
+  },
+  {
+    "id": 12,
+    "order": 12,
+    "title": "Các quy tắc quan trọng khác",
+    "quick_rule": "Còi: 5h - 22h | Đỗ xe cách lề ≤ 0,25m, cách xe khác 20m | Cách ray tàu 5m | Xe gắn máy tối đa 40km/h.",
+    "explanation": "Các quy tắc và con số cốt lõi hay gặp trong đề thi:\n• Tốc độ chậm đi về bên phải.\n• Chỉ sử dụng còi từ 5 giờ sáng đến 22 giờ tối.\n• Trong đô thị sử dụng đèn chiếu gần.\n• Xe mô tô không được kéo xe khác.\n• 05 năm không cấp lại nếu sử dụng bằng lái đã khai báo mất.\n• Chuyển làn đường phải có tín hiệu báo trước.\n• Xe thô sơ phải đi làn đường bên phải trong cùng.\n• Đứng cách ray đường sắt tối thiểu 5m.\n• Xe gắn máy tốc độ tối đa 40km/h.\n• Dừng xe, đỗ xe cách lề đường, hè phố không quá 0,25 mét.\n• Dừng xe, đỗ xe trên đường hẹp cách xe khác tối thiểu 20 mét."
+  }
+]

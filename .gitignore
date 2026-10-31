@@ -37,3 +37,22 @@ out/
 .vscode/
 
 .agents/**
+# Local audit copies and generated artifacts (not application source)
+__pycache__/
+*.py[cod]
+*.bak
+*.bak.*
+hs_err_pid*.log
+replay_pid*.log
+/handoff/screen12-bank-source-before-*/
+/_local/
+/local-secrets.json
+.env
+.env.*
+!.env.example
+!.env.sample
+
+# Simulation media binaries (large video and thumbnail assets)
+/data/simulations/**/simulations/
+*.mp4
+*.webp

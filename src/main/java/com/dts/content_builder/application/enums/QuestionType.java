@@ -6,5 +6,6 @@ public enum QuestionType {
     TRUE_FALSE,
     FILL_BLANK,
     ORDERING,
-    MATCHING
+    MATCHING,
+    SIMULATION
 }
