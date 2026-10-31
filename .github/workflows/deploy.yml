@@ -74,6 +74,11 @@ jobs:
                 environment:
                   JAVA_TOOL_OPTIONS: "-Xms64m -Xmx128m -XX:+UseSerialGC -XX:MaxMetaspaceSize=128m -Xss512k"
                   EUREKA_URI: "http://eureka-server:8761/eureka/"
+                logging:
+                  driver: "json-file"
+                  options:
+                    max-size: "20m"
+                    max-file: "3"
                 networks: [dts-network]
 
             networks:
