@@ -54,24 +54,6 @@ jobs:
           docker push $IMAGE:latest
           docker push $IMAGE:${{ github.sha }}
 
-      - name: Prepare VPS Directory
-        uses: appleboy/ssh-action@v1.2.2
-        with:
-          host: ${{ secrets.VPS_HOST }}
-          username: ${{ secrets.VPS_USER }}
-          password: ${{ secrets.VPS_PASSWORD }}
-          script: |
-            mkdir -p ${{ env.DEPLOY_DIR }}
-
-      - name: Copy files to VPS
-        uses: appleboy/scp-action@v0.1.7
-        with:
-          host: ${{ secrets.VPS_HOST }}
-          username: ${{ secrets.VPS_USER }}
-          password: ${{ secrets.VPS_PASSWORD }}
-          source: "docker-compose.prod.yml"
-          target: "${{ env.DEPLOY_DIR }}/"
-
       - name: Deploy VPS
         uses: appleboy/ssh-action@v1.2.2
         with:
@@ -79,9 +61,26 @@ jobs:
           username: ${{ secrets.VPS_USER }}
           password: ${{ secrets.VPS_PASSWORD }}
           script: |
-            echo "${{ secrets.GITHUB_TOKEN }}" | docker login ghcr.io -u ${{ github.actor }} --password-stdin
+            mkdir -p ${{ env.DEPLOY_DIR }}
             cd ${{ env.DEPLOY_DIR }}
-            mv -f docker-compose.prod.yml docker-compose.yml
+            cat << 'EOF' > docker-compose.yml
+            services:
+              content-builder:
+                image: ${{ env.IMAGE }}:latest
+                container_name: content-builder
+                restart: unless-stopped
+                ports: ["8082:8082"]
+                mem_limit: 224m
+                environment:
+                  JAVA_TOOL_OPTIONS: "-Xms64m -Xmx128m -XX:+UseSerialGC -XX:MaxMetaspaceSize=128m -Xss512k"
+                  EUREKA_URI: "http://eureka-server:8761/eureka/"
+                networks: [dts-network]
+
+            networks:
+              dts-network: { external: true }
+            EOF
+            docker network create dts-network || true
+            echo "${{ secrets.GITHUB_TOKEN }}" | docker login ghcr.io -u ${{ github.actor }} --password-stdin
             docker compose pull
             docker compose up -d
             docker image prune -a -f
