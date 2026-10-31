@@ -54,15 +54,26 @@ jobs:
           docker push $IMAGE:latest
           docker push $IMAGE:${{ github.sha }}
 
-      - uses: appleboy/scp-action@v0.1.7
+      - name: Prepare VPS Directory
+        uses: appleboy/ssh-action@v1.2.2
+        with:
+          host: ${{ secrets.VPS_HOST }}
+          username: ${{ secrets.VPS_USER }}
+          password: ${{ secrets.VPS_PASSWORD }}
+          script: |
+            mkdir -p ${{ env.DEPLOY_DIR }}
+
+      - name: Copy files to VPS
+        uses: appleboy/scp-action@v0.1.7
         with:
           host: ${{ secrets.VPS_HOST }}
           username: ${{ secrets.VPS_USER }}
           password: ${{ secrets.VPS_PASSWORD }}
           source: "docker-compose.prod.yml"
-          target: ${{ env.DEPLOY_DIR }}
+          target: "${{ env.DEPLOY_DIR }}/"
 
-      - uses: appleboy/ssh-action@v1.2.2
+      - name: Deploy VPS
+        uses: appleboy/ssh-action@v1.2.2
         with:
           host: ${{ secrets.VPS_HOST }}
           username: ${{ secrets.VPS_USER }}
